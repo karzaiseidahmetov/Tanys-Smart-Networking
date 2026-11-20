@@ -1,0 +1,1506 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#7B1E2B">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Tanys">
+<title>Tanys — Smart Networking</title>
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="icon" href="/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/icon.svg">
+<style>
+:root{
+  --bg:#ffffff; --surface:#ffffff; --sunk:#f5f3f3; --ink:#1b1718; --muted:#6f6868; --line:#e2dcdc; --line2:#cfc7c7;
+  --accent:#7B1E2B; --accent-hover:#651823; --accent-ink:#ffffff; --accent-soft:#f6ecee; --accent-line:#e6c9ce;
+  --good:#2f6b4f; --good-soft:#eef4f0; --bad:#a3352b;
+  --nav-h:0px; --safe-b:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#121011; --surface:#1a1718; --sunk:#221e1f; --ink:#eeeaea; --muted:#a39a9b; --line:#332d2e; --line2:#4a4244;
+    --accent:#d9808c; --accent-hover:#e597a1; --accent-ink:#1a0d10; --accent-soft:#2c1a1e; --accent-line:#6a3540;
+    --good:#7cc4a0; --good-soft:#1a2721; --bad:#ff8a80;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#121011; --surface:#1a1718; --sunk:#221e1f; --ink:#eeeaea; --muted:#a39a9b; --line:#332d2e; --line2:#4a4244;
+  --accent:#d9808c; --accent-hover:#e597a1; --accent-ink:#1a0d10; --accent-soft:#2c1a1e; --accent-line:#6a3540;
+  --good:#7cc4a0; --good-soft:#1a2721; --bad:#ff8a80;
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--ink)}
+body{font:15px/1.55 "Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased;-webkit-tap-highlight-color:transparent}
+button{font:inherit;color:inherit}
+.hidden{display:none!important}
+
+/* ---------- auth ---------- */
+#auth{min-height:100vh;min-height:100dvh;display:grid;place-items:center;padding:24px 16px}
+.auth-box{width:100%;max-width:380px}
+.auth-logo{display:flex;flex-direction:column;align-items:center;text-align:center;margin-bottom:26px}
+.auth-logo svg{width:64px;height:64px;margin-bottom:12px}
+.auth-logo b{font-size:26px;letter-spacing:-.02em}
+.auth-logo span{color:var(--muted);font-size:14px;margin-top:4px}
+.auth-tabs{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--line2);border-radius:10px;padding:3px;margin-bottom:16px}
+.auth-tabs button{border:0;background:none;padding:8px;border-radius:7px;cursor:pointer;color:var(--muted)}
+.auth-tabs button.on{background:var(--accent);color:var(--accent-ink);font-weight:600}
+.auth-err{color:var(--bad);font-size:13px;min-height:20px;margin-top:8px}
+.auth-lang{display:flex;justify-content:center;margin-top:18px}
+
+/* ---------- header ---------- */
+header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.bar{max-width:1120px;margin:0 auto;padding:10px 16px 0;display:flex;flex-wrap:wrap;gap:0 14px;align-items:center;min-width:0}
+.bar>*{min-width:0}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);cursor:pointer}
+.brand svg{width:30px;height:30px;flex:none}
+.brand b{font-size:17px;letter-spacing:-.01em}
+.brand small{display:block;font-size:11px;color:var(--muted);letter-spacing:.04em;text-transform:uppercase;line-height:1.1}
+/* tabs live on their own row under the brand row, so the header never overflows */
+nav.top{order:10;flex:0 0 100%;display:flex;gap:2px;margin:6px 0 0 -11px;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+nav.top::-webkit-scrollbar{display:none}
+nav.top button{border:0;background:none;color:var(--muted);padding:9px 11px 11px;cursor:pointer;position:relative;white-space:nowrap;flex:none}
+nav.top button:hover{color:var(--ink)}
+nav.top button.on{color:var(--accent);font-weight:600}
+nav.top button.on::after{content:"";position:absolute;left:11px;right:11px;bottom:0;height:2px;background:var(--accent)}
+.user{flex:none}
+.lang{flex:none}
+.badge{display:inline-block;min-width:18px;padding:0 5px;margin-left:5px;border-radius:9px;background:var(--accent);color:var(--accent-ink);font-size:11px;line-height:18px;text-align:center;font-weight:600}
+.spacer{flex:1}
+.lang{display:flex;gap:2px}
+.lang button{border:1px solid transparent;background:none;color:var(--muted);padding:4px 8px;border-radius:6px;cursor:pointer;font-size:13px}
+.lang button.on{border-color:var(--line2);color:var(--ink);font-weight:600}
+.user{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--muted)}
+.user .ava{width:30px;height:30px;font-size:12px}
+.iconbtn{border:1px solid var(--line2);background:none;border-radius:8px;width:34px;height:34px;display:grid;place-items:center;cursor:pointer;color:var(--muted)}
+.iconbtn:hover{color:var(--accent);border-color:var(--accent)}
+.iconbtn svg{width:18px;height:18px}
+.iconbtn.danger:hover{color:var(--bad);border-color:var(--bad)}
+.evchip{display:flex;align-items:center;gap:6px;border:1px solid var(--accent-line);background:var(--accent-soft);color:var(--accent);border-radius:999px;padding:5px 12px 5px 9px;font-size:13px;font-weight:600;cursor:pointer;max-width:260px}
+.evchip svg{width:16px;height:16px;flex:none}
+.evchip span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+@media (max-width:760px){.evchip{max-width:150px;font-size:12px}}
+.ev-line{display:inline-flex;align-items:center;gap:8px;color:var(--accent);font-weight:600;font-size:14px;margin:0 0 8px}
+.ev-line svg{width:16px;height:16px}
+.events{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:14px}
+@media (max-width:520px){.events{grid-template-columns:1fr}}
+.ev{border:1px solid var(--line2);border-radius:14px;padding:18px;background:var(--surface);display:flex;flex-direction:column;gap:10px}
+.ev.active{border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
+.ev-top{display:flex;gap:14px;align-items:flex-start}
+.ev-date{flex:none;width:58px;border:1px solid var(--line2);border-radius:10px;text-align:center;overflow:hidden}
+.ev-date b{display:block;font-size:22px;line-height:1.1;padding:4px 0 2px}
+.ev-date small{display:block;font-size:11px;text-transform:uppercase;background:var(--accent);color:var(--accent-ink);padding:2px 0;letter-spacing:.04em}
+.ev-name{font-weight:700;font-size:16px;line-height:1.3}
+.ev-meta{display:flex;gap:6px 12px;flex-wrap:wrap;color:var(--muted);font-size:13px;align-items:center}
+.ev-meta svg{width:14px;height:14px;vertical-align:-2px}
+.ev-desc{color:var(--muted);font-size:13.5px}
+.ev-foot{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:auto}
+.ev-foot .spacer{flex:1}
+/* hall map */
+.hall-wrap{border:1px solid var(--line2);border-radius:12px;padding:12px;margin-bottom:16px;background:var(--surface)}
+.hall-head{display:flex;justify-content:space-between;align-items:baseline;gap:8px;margin-bottom:8px;flex-wrap:wrap}
+.hall-head b{font-size:14px}
+.hall-head span{font-size:12px;color:var(--muted)}
+.hall{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
+.zone{border:1px dashed var(--line2);border-radius:8px;min-height:72px;padding:6px 8px;display:flex;flex-direction:column;gap:4px}
+.zone.mine{border:1.5px solid var(--accent);background:var(--accent-soft)}
+.zone .zl{font-size:11.5px;color:var(--muted);line-height:1.2}
+.zone .zl b{color:var(--ink);margin-right:4px}
+.zdots{display:flex;flex-wrap:wrap;gap:4px}
+.hdot{width:22px;height:22px;border-radius:50%;background:var(--accent);color:var(--accent-ink);font-size:11px;font-weight:700;display:grid;place-items:center}
+.hdot.me{background:var(--ink);color:var(--bg);width:auto;padding:0 7px;border-radius:11px}
+.hall-entr{text-align:center;font-size:11px;color:var(--muted);margin-top:6px;letter-spacing:.06em;text-transform:uppercase}
+.seat{display:inline-flex;align-items:center;gap:5px;font-size:12.5px;color:var(--ink);border:1px solid var(--line2);border-radius:999px;padding:2px 10px}
+.seat svg{width:13px;height:13px;color:var(--accent)}
+.seat .sn{display:inline-grid;place-items:center;width:18px;height:18px;border-radius:50%;background:var(--accent);color:var(--accent-ink);font-size:10.5px;font-weight:700}
+.seat-edit{display:flex;gap:6px;align-items:center;flex-wrap:wrap;font-size:13px;color:var(--muted);border-top:1px solid var(--line);padding-top:10px}
+.seat-edit select,.seat-edit input[type=number]{width:auto;padding:5px 8px;font-size:13px}
+.seat-edit input[type=number]{width:70px;flex:none}
+
+/* jobs */
+.segtabs{display:flex;gap:4px;border:1px solid var(--line2);border-radius:10px;padding:3px;margin-bottom:14px;flex-wrap:wrap;width:fit-content;max-width:100%}
+.segtabs button{border:0;background:none;padding:7px 12px;border-radius:7px;cursor:pointer;color:var(--muted);font-size:14px}
+.segtabs button.on{background:var(--accent);color:var(--accent-ink);font-weight:600}
+.jobs-bar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+.jobs-bar input{flex:2;min-width:200px}.jobs-bar select{flex:1;min-width:150px;width:auto}
+.vacs{display:grid;grid-template-columns:repeat(auto-fill,minmax(360px,1fr));gap:14px}
+@media (max-width:520px){.vacs{grid-template-columns:1fr}}
+.vac{border:1px solid var(--line2);border-radius:14px;padding:18px;background:var(--surface);display:flex;flex-direction:column;gap:10px}
+.vac:hover{border-color:var(--accent-line)}
+.vac-top{display:flex;gap:12px;align-items:flex-start}
+.vac-title{font-weight:700;font-size:16.5px;line-height:1.3}
+.vac-co{color:var(--muted);font-size:13px}
+.vac-sal{margin-left:auto;text-align:right;font-weight:700;color:var(--accent);white-space:nowrap;font-size:14.5px}
+.vac-sal small{display:block;font-weight:400;color:var(--muted);font-size:11px}
+.vac-desc{font-size:13.5px;color:var(--muted)}
+.vac-why{font-size:14px;border-left:2px solid var(--accent);padding-left:10px}
+.vac-foot{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:auto}
+.vac-foot .who{font-size:12.5px;color:var(--muted);flex:1;min-width:140px}
+.cands{border-top:1px solid var(--line);padding-top:10px;display:flex;flex-direction:column;gap:8px}
+.cand{display:flex;gap:10px;align-items:flex-start;padding:10px;border:1px solid var(--line);border-radius:10px}
+.cand .ava{width:34px;height:34px;font-size:12px}
+.cand .why{margin:4px 0 0;font-size:13px;color:var(--muted)}
+.need-ev{border:1px dashed var(--accent-line);background:var(--accent-soft);border-radius:12px;padding:22px;text-align:center}
+.need-ev p{margin:0 0 12px;color:var(--ink)}
+.modal{position:fixed;inset:0;z-index:80;background:rgba(0,0,0,.35);display:grid;place-items:center;padding:16px}
+.modal-box{background:var(--surface);border:1px solid var(--line2);border-radius:14px;padding:20px;max-width:360px;width:100%}
+.modal-box h3{font-size:16px;margin:0 0 6px}
+.modal-box p{color:var(--muted);font-size:14px;margin:0 0 18px}
+.modal-box .row{justify-content:flex-end}
+.modal-box .row .btn{flex:0 0 auto}
+.btn.danger{background:var(--bad);border-color:var(--bad);color:#fff}
+
+/* ---------- bottom nav (mobile) ---------- */
+nav.bottom{display:none}
+@media (max-width:760px){
+  :root{--nav-h:62px}
+  nav.top,.user .uname{display:none}
+  .bar{gap:10px;padding:10px 16px;flex-wrap:nowrap}
+  .brand small,.brand span{display:none}
+  nav.bottom{display:grid;grid-template-columns:repeat(5,1fr);position:fixed;left:0;right:0;bottom:0;z-index:30;
+    background:var(--surface);border-top:1px solid var(--line);padding-bottom:var(--safe-b);height:calc(var(--nav-h) + var(--safe-b))}
+  nav.bottom button{border:0;background:none;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;font-size:10.5px;color:var(--muted);cursor:pointer;position:relative;padding:6px 2px}
+  nav.bottom button svg{width:22px;height:22px}
+  nav.bottom button.on{color:var(--accent);font-weight:600}
+  nav.bottom .badge{position:absolute;top:4px;left:calc(50% + 6px);margin:0;font-size:10px;line-height:16px;min-width:16px}
+  main{padding-bottom:calc(var(--nav-h) + var(--safe-b) + 24px)!important}
+  footer{display:none}
+  input[type=text],input[type=password],input[type=number],select,textarea{font-size:16px!important}
+}
+
+main{max-width:1120px;margin:0 auto;padding:32px 16px 72px}
+.hero{margin-bottom:24px}
+.hero h1{font-size:28px;line-height:1.2;letter-spacing:-.02em;margin:0 0 6px;font-weight:700}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.hero p{color:var(--muted);margin:0;max-width:640px}
+@media (max-width:760px){main{padding-top:20px}.hero h1{font-size:22px}.hero{margin-bottom:16px}}
+
+.grid{display:grid;grid-template-columns:minmax(0,400px) minmax(0,1fr);gap:40px;align-items:start}
+@media (max-width:920px){.grid{grid-template-columns:1fr;gap:24px}}
+.panel{border:1px solid var(--line2);border-radius:14px;padding:22px;background:var(--surface)}
+@media (max-width:520px){.panel{padding:16px}}
+h2{font-size:17px;margin:0 0 4px;letter-spacing:-.01em}
+h3{font-size:14px;margin:0 0 12px;font-weight:600}
+.sub{color:var(--muted);font-size:13px;margin:0 0 16px}
+.label{display:block;font-size:12px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;margin:18px 0 7px}
+.label .req{color:var(--accent)}
+input[type=text],input[type=password],input[type=number],select,textarea{width:100%;border:1px solid var(--line2);background:var(--surface);color:var(--ink);border-radius:8px;padding:10px 11px;font:inherit}
+textarea{min-height:88px;resize:vertical}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
+.row{display:flex;gap:10px}.row>*{flex:1;min-width:0}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{border:1px solid var(--line2);background:transparent;color:var(--ink);border-radius:999px;padding:5px 11px;font-size:13px;cursor:pointer;user-select:none;transition:background .12s,border-color .12s}
+.chip:hover{border-color:var(--accent-line)}
+.chip.on{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.goals{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.goals .chip{border-radius:8px;padding:9px 10px;text-align:center}
+.btn{border:1px solid var(--accent);border-radius:8px;padding:10px 16px;font-weight:600;cursor:pointer;background:var(--accent);color:var(--accent-ink);transition:background .12s}
+.btn:hover{background:var(--accent-hover)}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--line2);font-weight:500}
+.btn.ghost:hover{border-color:var(--accent);color:var(--accent)}
+.btn.sm{padding:6px 11px;font-size:13px}
+.btn.block{width:100%}
+.btn:disabled{opacity:.55;cursor:default}
+.presets{display:flex;gap:6px;flex-wrap:wrap;align-items:center;padding:10px 12px;background:var(--sunk);border-radius:10px;margin-bottom:4px}
+.presets span{font-size:12px;color:var(--muted);margin-right:2px}
+.presets button{border:0;background:none;color:var(--accent);font-size:13px;padding:2px 6px;cursor:pointer;text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--accent-line)}
+.check{display:flex;gap:8px;align-items:center;font-size:13px;margin-top:16px;color:var(--muted)}
+.check input{accent-color:var(--accent);width:16px;height:16px}
+.actions{margin-top:20px;display:flex;gap:8px}
+.whoami{display:flex;align-items:center;gap:10px;padding:10px 12px;border:1px dashed var(--line2);border-radius:10px;font-size:13px;color:var(--muted);margin-bottom:6px}
+.whoami b{color:var(--ink)}
+
+/* ---------- results ---------- */
+.meta{display:flex;gap:8px;align-items:center;flex-wrap:wrap;color:var(--muted);font-size:13px;margin-bottom:14px}
+.pill{display:inline-block;padding:1px 9px;border-radius:999px;font-size:12px;border:1px solid var(--accent-line);color:var(--accent);background:var(--accent-soft)}
+.pill.plain{border-color:var(--line2);background:transparent;color:var(--muted)}
+.pill.good{border-color:transparent;background:var(--good-soft);color:var(--good)}
+.rec{border:1px solid var(--line2);border-radius:12px;padding:16px 18px;margin-bottom:12px;background:var(--surface);transition:border-color .15s}
+.rec:hover{border-color:var(--accent-line)}
+@media (max-width:520px){.rec{padding:14px}}
+.rec-top{display:flex;gap:14px;align-items:flex-start}
+.num{font-size:12px;color:var(--muted);width:16px;padding-top:12px;font-variant-numeric:tabular-nums}
+.ava{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;font-weight:600;font-size:14px;flex:none;background:var(--accent-soft);color:var(--accent)}
+.rec-name{font-weight:600;font-size:15.5px}
+.rec-role{color:var(--muted);font-size:13px}
+.score{margin-left:auto;text-align:right;flex:none;min-width:58px}
+.score b{font-size:18px;font-weight:600;color:var(--accent);font-variant-numeric:tabular-nums}
+.meter{height:3px;background:var(--line);border-radius:2px;margin-top:4px;overflow:hidden}
+.meter i{display:block;height:100%;background:var(--accent)}
+.score small{display:block;color:var(--muted);font-size:11px;margin-top:3px}
+.body{margin-left:72px}
+@media (max-width:520px){.body{margin-left:0}.num{display:none}.rec-top{gap:10px}}
+.why{margin:10px 0}
+.ice{border-left:2px solid var(--accent);padding:4px 0 4px 12px;font-size:14px;display:flex;gap:10px;align-items:flex-start}
+.ice span{flex:1}
+.ice em{font-style:normal;color:var(--muted);font-size:12px;display:block}
+.copy{border:0;background:none;color:var(--muted);cursor:pointer;font-size:12px;padding:2px 4px}
+.copy:hover{color:var(--accent)}
+.tags{display:flex;flex-wrap:wrap;gap:4px;margin-top:10px}
+.tag{font-size:12px;padding:0 7px;border-radius:5px;background:var(--sunk);color:var(--muted)}
+.tag.hit{background:var(--accent-soft);color:var(--accent)}
+.rec-foot{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:12px}
+.fb{border:1px solid var(--line2);background:transparent;border-radius:8px;padding:6px 11px;font-size:13px;cursor:pointer}
+.fb:hover{border-color:var(--accent);color:var(--accent)}
+.fb.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink);font-weight:600}
+.fb.primary:hover{background:var(--accent-hover);color:var(--accent-ink)}
+@media (max-width:520px){.rec-foot .spacer{display:none}.rec-foot .fb{flex:1;text-align:center;padding:9px 6px}.rec-foot .pill{width:100%;text-align:center}}
+.empty{color:var(--muted);text-align:center;padding:48px 10px;font-size:14px}
+.empty svg{width:44px;height:44px;opacity:.5;margin-bottom:8px}
+.booths{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px}
+.booth{border:1px solid var(--line2);border-radius:10px;padding:12px;font-size:13px;color:var(--muted)}
+.booth b{display:block;font-size:14px;color:var(--ink);margin-bottom:2px}
+
+/* ---------- chats ---------- */
+.chat-wrap{display:grid;grid-template-columns:minmax(240px,320px) minmax(0,1fr);border:1px solid var(--line2);border-radius:14px;overflow:hidden;height:calc(100vh - 260px);min-height:440px;background:var(--surface)}
+.chat-list{border-right:1px solid var(--line);overflow-y:auto}
+.chat-item{display:flex;gap:12px;align-items:center;padding:12px 14px;border-bottom:1px solid var(--line);cursor:pointer}
+.chat-item:hover{background:var(--sunk)}
+.chat-item.on{background:var(--accent-soft)}
+.chat-item .meta2{flex:1;min-width:0}
+.chat-item .last{color:var(--muted);font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.chat-item .time{color:var(--muted);font-size:11px;align-self:flex-start}
+.chat-item .badge{margin:0}
+.conv{display:flex;flex-direction:column;min-width:0;min-height:0}
+.conv-head{display:flex;gap:12px;align-items:center;padding:12px 16px;border-bottom:1px solid var(--line)}
+.conv-head .back{display:none}
+.msgs{flex:1;overflow-y:auto;padding:16px;display:flex;flex-direction:column;gap:8px;background:var(--sunk)}
+.msg{max-width:78%;padding:9px 12px;border-radius:14px;font-size:14.5px;line-height:1.45;white-space:pre-wrap;word-wrap:break-word;background:var(--surface);border:1px solid var(--line);align-self:flex-start;border-bottom-left-radius:4px}
+.msg.me{align-self:flex-end;background:var(--accent);color:var(--accent-ink);border-color:var(--accent);border-bottom-left-radius:14px;border-bottom-right-radius:4px}
+.msg small{display:block;font-size:11px;opacity:.7;margin-top:3px}
+.msg .demo{font-size:10.5px;opacity:.75;border:1px solid currentColor;border-radius:4px;padding:0 4px;margin-left:6px}
+.typing{align-self:flex-start;color:var(--muted);font-size:13px;padding:8px 12px;background:var(--surface);border:1px solid var(--line);border-radius:14px;border-bottom-left-radius:4px;display:flex;align-items:center;gap:8px}
+.dots{display:inline-flex;gap:3px}
+.dots i{width:6px;height:6px;border-radius:50%;background:var(--muted);animation:blink 1.2s infinite ease-in-out}
+.dots i:nth-child(2){animation-delay:.2s}.dots i:nth-child(3){animation-delay:.4s}
+@keyframes blink{0%,80%,100%{opacity:.25;transform:translateY(0)}40%{opacity:1;transform:translateY(-2px)}}
+@media (prefers-reduced-motion:reduce){.dots i{animation:none;opacity:.6}}
+.msg small{display:flex;align-items:center;justify-content:flex-end;gap:4px}
+.tick{display:inline-flex;width:17px;height:11px;flex:none}
+.tick svg{width:17px;height:11px}
+.msg.me .tick{color:rgba(255,255,255,.75)}
+.msg.me .tick.read{color:#8fd8ff}
+:root[data-theme="dark"] .msg.me .tick{color:rgba(26,13,16,.6)}
+:root[data-theme="dark"] .msg.me .tick.read{color:#0b6fa8}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .msg.me .tick{color:rgba(26,13,16,.6)}:root:not([data-theme="light"]) .msg.me .tick.read{color:#0b6fa8}}
+.chat-item .last .tick{vertical-align:-1px;margin-right:3px;color:var(--muted)}
+.chat-item .last .tick.read{color:#2f9fe0}
+.chat-item .last.typing-l{color:var(--accent);font-style:italic}
+.modal-box .stack{display:flex;flex-direction:column;gap:8px}
+.modal-box .stack .btn{width:100%}
+.compose{border-top:1px solid var(--line);padding:10px;display:flex;gap:8px;align-items:flex-end;background:var(--surface)}
+.compose textarea{min-height:44px;max-height:140px;resize:none;border-radius:20px;padding:10px 14px}
+.compose .btn{border-radius:20px;padding:10px 16px}
+.notice{font-size:13px;color:var(--muted);background:var(--accent-soft);border-top:1px solid var(--accent-line);padding:10px 14px;text-align:center}
+.first-hint{font-size:12px;color:var(--muted);padding:6px 14px 0;background:var(--surface)}
+.conv-empty{flex:1;display:grid;place-items:center;color:var(--muted);text-align:center;padding:20px}
+@media (max-width:760px){
+  .chat-wrap{grid-template-columns:1fr;height:auto;min-height:0;border:0;border-radius:0;margin:0 -16px;background:transparent}
+  .chat-list{border-right:0}
+  .chat-item{padding:14px 16px}
+  .conv{position:fixed;inset:0;z-index:40;background:var(--surface)}
+  .conv.closed{display:none}
+  .conv-head{padding:10px 12px;padding-top:calc(10px + env(safe-area-inset-top,0px))}
+  .conv-head .back{display:grid}
+  .compose{padding-bottom:calc(10px + var(--safe-b))}
+  .msg{max-width:86%}
+}
+
+/* ---------- history ---------- */
+.hist-tabs{display:flex;gap:6px;margin-bottom:14px;flex-wrap:wrap}
+.hist-item{display:flex;gap:14px;align-items:center;padding:14px 16px;border:1px solid var(--line2);border-radius:12px;margin-bottom:10px;background:var(--surface);flex-wrap:wrap}
+.hist-item:hover{border-color:var(--accent-line)}
+.hist-item .when{color:var(--muted);font-size:12px;white-space:nowrap}
+.mark{font-size:12px;padding:2px 9px;border-radius:999px;white-space:nowrap}
+.mark.met{background:var(--accent);color:var(--accent-ink)}
+.mark.no{border:1px solid var(--line2);color:var(--muted)}
+.hist-sum{display:flex;gap:24px;margin-bottom:18px;flex-wrap:wrap}
+.hist-sum div b{display:block;font-size:24px;font-weight:600;color:var(--accent)}
+.hist-sum div span{font-size:13px;color:var(--muted)}
+
+/* ---------- dashboard ---------- */
+.dash{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));margin-bottom:24px;border:1px solid var(--line2);border-radius:14px;overflow:hidden}
+.kpi{padding:16px 18px;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.kpi b{font-size:26px;font-weight:600;display:block;letter-spacing:-.02em}
+.kpi span{color:var(--muted);font-size:13px}
+.hb{display:grid;grid-template-columns:140px 1fr 32px;gap:10px;align-items:center;font-size:13px;margin:6px 0}
+.hb .tr{background:var(--sunk);border-radius:3px;height:8px;overflow:hidden}
+.hb .fl{height:100%;background:var(--accent);border-radius:3px}
+.hb .n{text-align:right;color:var(--muted);font-variant-numeric:tabular-nums}
+.cloud{display:flex;flex-wrap:wrap;gap:4px 12px;align-items:baseline;margin-bottom:12px}
+.cloud span{color:var(--accent);font-weight:600}
+.legend{display:flex;gap:14px;font-size:12px;color:var(--muted);margin-bottom:8px}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:5px;vertical-align:-1px}
+.mrow{display:grid;grid-template-columns:140px 1fr;gap:10px;align-items:center;font-size:13px;margin:8px 0}
+.mrow .bars{display:flex;flex-direction:column;gap:3px}
+.mrow .b{height:7px;border-radius:3px}
+.mrow small{color:var(--muted)}
+@media (max-width:520px){.hb{grid-template-columns:96px 1fr 28px}.mrow{grid-template-columns:96px 1fr}.goals{grid-template-columns:1fr 1fr}}
+
+table{width:100%;border-collapse:collapse;font-size:13px}
+th,td{text-align:left;padding:10px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+th{color:var(--muted);font-weight:600;font-size:12px;text-transform:uppercase;letter-spacing:.04em}
+.tablewrap{overflow-x:auto}
+@media (max-width:760px){
+  table thead{display:none}
+  table,tbody,tr,td{display:block;width:100%}
+  tr{border:1px solid var(--line2);border-radius:12px;padding:10px 12px;margin-bottom:10px}
+  td{border:0;padding:3px 0}
+}
+.toast{position:fixed;bottom:calc(20px + var(--nav-h) + var(--safe-b));left:50%;transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:9px 16px;border-radius:8px;font-size:14px;opacity:0;transition:opacity .2s;pointer-events:none;z-index:60;max-width:calc(100% - 32px);text-align:center}
+.toast.on{opacity:1}
+footer{max-width:1120px;margin:0 auto;padding:0 16px 32px;color:var(--muted);font-size:12px}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="logo" viewBox="0 0 32 32">
+    <rect width="32" height="32" rx="8" fill="var(--accent)"/>
+    <path d="M10 20 Q16 9 22 20" fill="none" stroke="var(--accent-ink)" stroke-width="2.2" stroke-linecap="round"/>
+    <circle cx="10" cy="20" r="3.4" fill="var(--accent-ink)"/>
+    <circle cx="22" cy="20" r="3.4" fill="var(--accent-ink)"/>
+    <circle cx="16" cy="12.2" r="2" fill="var(--accent-line)"/>
+  </symbol>
+  <symbol id="i-match" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="7" cy="15" r="3"/><circle cx="17" cy="15" r="3"/><path d="M7 12 Q12 3 17 12"/></g></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+  <symbol id="i-hist" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 2"/></g></symbol>
+  <symbol id="i-people" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="9" cy="9" r="3"/><path d="M3 19c0-3 3-5 6-5s6 2 6 5"/><circle cx="17" cy="8" r="2.4"/><path d="M16 13c3 0 5 2 5 5"/></g></symbol>
+  <symbol id="i-dash" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M5 20V11M12 20V5M19 20v-6"/></g></symbol>
+  <symbol id="i-out" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 5h4v14h-4M10 8l-4 4 4 4M6 12h9"/></g></symbol>
+  <symbol id="i-back" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5.5" width="16" height="14" rx="2"/><path d="M4 10h16M9 3.5v4M15 3.5v4"/></g></symbol>
+  <symbol id="i-job" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="7.5" width="17" height="12" rx="2"/><path d="M9 7.5V5.5a1.5 1.5 0 011.5-1.5h3A1.5 1.5 0 0115 5.5v2M3.5 12.5h17"/></g></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-6-5.5-6-11a6 6 0 0112 0c0 5.5-6 11-6 11z"/><circle cx="12" cy="10" r="2.2"/></g></symbol>
+  <symbol id="i-trash" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/></g></symbol>
+  <symbol id="i-send" viewBox="0 0 24 24"><path d="M4 12l16-8-6 16-2-7z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+</svg>
+
+<!-- ================= AUTH ================= -->
+<section id="auth" class="hidden">
+  <div class="auth-box">
+    <div class="auth-logo">
+      <svg><use href="#logo"/></svg>
+      <b>Tanys</b>
+      <span data-i="auth_tag"></span>
+    </div>
+    <div class="panel">
+      <div class="auth-tabs"><button type="button" data-am="login" class="on" data-i="login"></button><button type="button" data-am="register" data-i="register"></button></div>
+      <form id="authForm" autocomplete="on">
+        <div id="nameRow" class="hidden">
+          <label class="label" for="aName" data-i="a_name"></label>
+          <input type="text" id="aName" maxlength="60" autocomplete="name">
+        </div>
+        <label class="label" for="aUser" data-i="a_user"></label>
+        <input type="text" id="aUser" maxlength="32" autocomplete="username" autocapitalize="none" spellcheck="false" data-ph="ph_user">
+        <label class="label" for="aPass" data-i="a_pass"></label>
+        <input type="password" id="aPass" autocomplete="current-password" data-ph="ph_pass">
+        <div class="auth-err" id="authErr"></div>
+        <button class="btn block" type="submit" id="authGo" style="margin-top:6px"></button>
+      </form>
+    </div>
+    <div class="auth-lang lang" id="langsAuth">
+      <button data-l="kk">ҚАЗ</button><button data-l="ru">РУС</button><button data-l="en">ENG</button>
+    </div>
+  </div>
+</section>
+
+<!-- ================= APP ================= -->
+<div id="app" class="hidden">
+<header>
+  <div class="bar">
+    <a class="brand" onclick="go('match')">
+      <svg><use href="#logo"/></svg>
+      <span><b>Tanys</b><small>Smart Networking</small></span>
+    </a>
+    <nav class="top">
+      <button data-tab="events" data-i="tab_events"></button>
+      <button data-tab="match" class="on" data-i="tab_match"></button>
+      <button data-tab="jobs" data-i="tab_jobs"></button>
+      <button data-tab="chats"><span data-i="tab_chats"></span><span class="badge hidden" data-badge="chats">0</span></button>
+      <button data-tab="history"><span data-i="tab_history"></span><span class="badge hidden" data-badge="history">0</span></button>
+      <button data-tab="people" data-i="tab_people"></button>
+      <button data-tab="dash" data-i="tab_dash"></button>
+    </nav>
+    <div class="spacer"></div>
+    <button class="evchip hidden" id="evChip" type="button" onclick="go('events')"><svg><use href="#i-cal"/></svg><span id="evChipName"></span></button>
+    <div class="lang" id="langs">
+      <button data-l="kk">ҚАЗ</button><button data-l="ru">РУС</button><button data-l="en">ENG</button>
+    </div>
+    <div class="user"><div class="ava" id="meAva"></div><span class="uname" id="meName"></span>
+      <button class="iconbtn" id="logout" type="button" data-t="logout"><svg><use href="#i-out"/></svg></button></div>
+  </div>
+</header>
+
+<nav class="bottom">
+  <button data-tab="match" class="on"><svg><use href="#i-match"/></svg><span data-i="tab_match"></span></button>
+  <button data-tab="chats"><svg><use href="#i-chat"/></svg><span data-i="tab_chats"></span><span class="badge hidden" data-badge="chats">0</span></button>
+  <button data-tab="history"><svg><use href="#i-hist"/></svg><span data-i="tab_history"></span><span class="badge hidden" data-badge="history">0</span></button>
+  <button data-tab="events"><svg><use href="#i-cal"/></svg><span data-i="tab_events_s"></span></button>
+  <button data-tab="jobs"><svg><use href="#i-job"/></svg><span data-i="tab_jobs_s"></span></button>
+</nav>
+
+<main>
+<!-- EVENTS -->
+<section id="tab-events" class="hidden">
+  <div class="hero" style="display:flex;gap:16px;align-items:flex-end;flex-wrap:wrap">
+    <div style="flex:1;min-width:260px"><h1 data-i="ev_title"></h1><p data-i="ev_sub"></p></div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn ghost" type="button" onclick="go('dash')" data-i="tab_dash"></button><button class="btn" type="button" id="evNewBtn" data-i="ev_new"></button></div>
+  </div>
+  <form class="panel hidden" id="evForm" autocomplete="off" style="margin-bottom:20px">
+    <h2 data-i="ev_new"></h2>
+    <div class="row" style="flex-wrap:wrap">
+      <div style="flex:2;min-width:240px"><label class="label" for="evName"><span data-i="ev_name"></span> <span class="req">*</span></label><input type="text" id="evName" maxlength="100"></div>
+      <div style="min-width:160px"><label class="label" for="evType" data-i="ev_type"></label><select id="evType"></select></div>
+      <div style="min-width:160px"><label class="label" for="evDate"><span data-i="ev_date"></span> <span class="req">*</span></label><input type="date" id="evDate"></div>
+    </div>
+    <div class="row" style="flex-wrap:wrap">
+      <div style="min-width:200px"><label class="label" for="evCity" data-i="ev_city"></label><input type="text" id="evCity" maxlength="60"></div>
+      <div style="flex:2;min-width:240px"><label class="label" for="evPlace" data-i="ev_place"></label><input type="text" id="evPlace" maxlength="100"></div>
+    </div>
+    <label class="label" for="evDesc" data-i="ev_desc"></label>
+    <textarea id="evDesc" maxlength="500" style="min-height:64px"></textarea>
+    <div class="actions"><button class="btn" type="submit" data-i="ev_create"></button><button class="btn ghost" type="button" id="evCancel" data-i="cancel"></button></div>
+  </form>
+  <div class="events" id="evList"></div>
+</section>
+
+<!-- MATCH -->
+<section id="tab-match">
+  <div class="hero">
+    <p class="ev-line hidden" id="evLine"></p>
+    <h1 data-ih="hero"></h1>
+    <p data-i="hero_sub"></p>
+  </div>
+  <div class="grid">
+    <form class="panel" id="form" autocomplete="off">
+      <h2 data-i="form_title"></h2>
+      <p class="sub" data-i="form_sub"></p>
+      <div class="whoami"><div class="ava" id="formAva" style="width:32px;height:32px;font-size:12px"></div><span><span data-i="you"></span> <b id="formName"></b></span></div>
+      <div class="presets"><span data-i="demo"></span></div>
+
+      <div class="row">
+        <div><label class="label" for="role"><span data-i="f_role"></span> <span class="req">*</span></label><select id="role"></select></div>
+        <div style="max-width:150px"><label class="label" for="exp" style="white-space:nowrap"><span data-i="f_exp"></span> <span class="req">*</span></label><input type="number" id="exp" min="0" max="50" value="1" inputmode="numeric"></div>
+      </div>
+
+      <span class="label"><span data-i="f_goal"></span> <span class="req">*</span></span>
+      <div class="goals" id="goals"></div>
+
+      <div id="hireBox" class="hidden">
+        <span class="label" data-i="f_hiring"></span>
+        <div class="chips" id="hiring"></div>
+      </div>
+
+      <label class="label" for="stackInput"><span data-i="f_stack"></span> <span class="req">*</span></label>
+      <input type="text" id="stackInput" list="skillsList" data-ph="ph_stack" enterkeyhint="done">
+      <datalist id="skillsList"></datalist>
+      <div class="chips" id="stack" style="margin-top:8px"></div>
+
+      <span class="label"><span data-i="f_interests"></span> <span class="req">*</span></span>
+      <div class="chips" id="interests"></div>
+
+      <label class="label" for="about"><span data-i="f_about"></span> <span class="req">*</span></label>
+      <textarea id="about" maxlength="1500" data-ph="ph_about"></textarea>
+
+      <span class="label" data-i="f_langs"></span>
+      <div class="chips" id="spoken"></div>
+
+      <span class="label" data-i="f_slots"></span>
+      <div class="chips" id="slots"></div>
+
+      <label class="check"><input type="checkbox" id="visible" checked> <span data-i="f_visible"></span></label>
+
+      <div class="actions">
+        <button class="btn" type="submit" id="go" data-i="go" style="flex:1"></button>
+        <button class="btn ghost" type="button" id="clear" data-i="clear"></button>
+      </div>
+    </form>
+
+    <div>
+      <div id="results">
+        <h2 data-i="res_title" style="margin-bottom:6px"></h2>
+        <div class="meta" id="resMeta"></div>
+        <div class="hall-wrap hidden" id="hallMap"></div>
+        <div id="recs"></div>
+      </div>
+      <div class="hidden" id="boothCard" style="margin-top:28px">
+        <h3 data-i="booths"></h3>
+        <div class="booths" id="booths"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- JOBS -->
+<section id="tab-jobs" class="hidden">
+  <div class="hero" style="display:flex;gap:16px;align-items:flex-end;flex-wrap:wrap">
+    <div style="flex:1;min-width:260px"><h1 data-i="jobs_title"></h1><p data-i="jobs_sub"></p></div>
+    <button class="btn" type="button" id="vacNewBtn" data-i="vac_new"></button>
+  </div>
+  <div class="segtabs" id="jobsSeg">
+    <button type="button" data-jv="match" class="on" data-i="jv_match"></button>
+    <button type="button" data-jv="all" data-i="jv_all"></button>
+    <button type="button" data-jv="mine" data-i="jv_mine"></button>
+  </div>
+  <form class="panel hidden" id="vacForm" autocomplete="off" style="margin-bottom:20px">
+    <h2 data-i="vac_new"></h2>
+    <div class="row" style="flex-wrap:wrap">
+      <div style="flex:2;min-width:240px"><label class="label" for="vTitle" data-i="v_title"></label><input type="text" id="vTitle" maxlength="100" data-ph="ph_vtitle"></div>
+      <div style="min-width:180px"><label class="label" for="vRole"><span data-i="v_role"></span> <span class="req">*</span></label><select id="vRole"></select></div>
+    </div>
+    <div class="row" style="flex-wrap:wrap">
+      <div style="min-width:140px"><label class="label" for="vLevel" data-i="v_level"></label><select id="vLevel"><option value="junior">Junior</option><option value="middle" selected>Middle</option><option value="senior">Senior</option></select></div>
+      <div style="min-width:140px"><label class="label" for="vFormat" data-i="v_format"></label><select id="vFormat"></select></div>
+      <div style="min-width:140px"><label class="label" for="vCity" data-i="ev_city"></label><input type="text" id="vCity" maxlength="60"></div>
+      <div style="min-width:140px"><label class="label" for="vSalary" data-i="v_salary"></label><input type="number" id="vSalary" min="0" step="50000" inputmode="numeric"></div>
+    </div>
+    <div class="row" style="flex-wrap:wrap">
+      <div style="min-width:200px"><label class="label" for="vCompany" data-i="v_company"></label><input type="text" id="vCompany" maxlength="80"></div>
+      <div style="flex:2;min-width:240px"><label class="label" for="vStack" data-i="v_stack"></label><input type="text" id="vStack" maxlength="300" data-ph="ph_stack"></div>
+    </div>
+    <label class="label" for="vDesc" data-i="ev_desc"></label>
+    <textarea id="vDesc" maxlength="1500" style="min-height:72px"></textarea>
+    <div class="actions"><button class="btn" type="submit" data-i="vac_publish"></button><button class="btn ghost" type="button" id="vacCancel" data-i="cancel"></button></div>
+  </form>
+  <div class="jobs-bar" id="jobsBar">
+    <input type="text" id="jq" data-ph="ph_jsearch">
+    <select id="jRole"></select>
+    <select id="jFormat"></select>
+  </div>
+  <div id="jobsList"></div>
+</section>
+
+<!-- CHATS -->
+<section id="tab-chats" class="hidden">
+  <div class="hero">
+    <h1 data-i="chats_title"></h1>
+    <p data-i="chats_sub"></p>
+  </div>
+  <div class="chat-wrap">
+    <div class="chat-list" id="chatList"></div>
+    <div class="conv closed" id="conv">
+      <div class="conv-empty" id="convEmpty"></div>
+      <div class="conv-head hidden" id="convHead">
+        <button class="iconbtn back" type="button" id="convBack"><svg><use href="#i-back"/></svg></button>
+        <div class="ava" id="convAva"></div>
+        <div style="min-width:0;flex:1"><div class="rec-name" id="convName"></div><div class="rec-role" id="convRole"></div></div>
+        <button class="iconbtn danger" type="button" id="convDelete" data-t="c_delete"><svg><use href="#i-trash"/></svg></button>
+      </div>
+      <div class="msgs hidden" id="msgs"></div>
+      <div class="notice hidden" id="waitNotice"></div>
+      <div class="first-hint hidden" id="firstHint"></div>
+      <form class="compose hidden" id="compose">
+        <textarea id="msgText" rows="1" maxlength="1000" data-ph="ph_msg"></textarea>
+        <button class="btn" type="submit" id="sendBtn"><svg width="18" height="18" style="vertical-align:-3px"><use href="#i-send"/></svg></button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- HISTORY -->
+<section id="tab-history" class="hidden">
+  <div class="hero">
+    <h1 data-i="hist_title"></h1>
+    <p data-i="hist_sub"></p>
+  </div>
+  <div class="hist-sum" id="histSum"></div>
+  <div class="hist-tabs" id="histFilter"></div>
+  <div id="histList"></div>
+</section>
+
+<!-- PEOPLE -->
+<section id="tab-people" class="hidden">
+  <div class="hero">
+    <h1 data-i="people_title"></h1>
+    <p data-i="people_sub"></p>
+  </div>
+  <div class="row" style="margin-bottom:14px;flex-wrap:wrap">
+    <input type="text" id="q" data-ph="ph_search" style="min-width:200px">
+    <select id="fGoal" style="max-width:240px;min-width:160px"></select>
+  </div>
+  <div class="tablewrap"><table><thead><tr>
+    <th data-i="th_name"></th><th data-i="th_role"></th><th data-i="th_goal"></th><th data-i="th_stack"></th><th data-i="th_about"></th><th></th>
+  </tr></thead><tbody id="ptable"></tbody></table></div>
+</section>
+
+<!-- DASHBOARD -->
+<section id="tab-dash" class="hidden">
+  <div class="hero">
+    <h1 data-i="dash_title"></h1>
+    <p data-i="dash_sub"></p>
+  </div>
+  <div class="kpis" id="kpis"></div>
+  <div class="dash">
+    <div class="panel"><h3 data-i="d_goals"></h3><div id="dGoals"></div></div>
+    <div class="panel"><h3 data-i="d_interests"></h3><div class="cloud" id="dCloud"></div><div id="dInter"></div></div>
+    <div class="panel"><h3 data-i="d_market"></h3>
+      <div class="legend"><span><i style="background:var(--accent)"></i><span data-i="d_demand"></span></span><span><i style="background:var(--accent-line)"></i><span data-i="d_supply"></span></span></div>
+      <div id="dMarket"></div></div>
+    <div class="panel"><h3 data-i="d_skills"></h3><div id="dSkills"></div></div>
+  </div>
+</section>
+</main>
+<footer data-i="footer"></footer>
+</div>
+<div class="modal hidden" id="delModal" role="dialog" aria-modal="true">
+  <div class="modal-box">
+    <h3 data-i="c_del_title"></h3>
+    <p id="delText"></p>
+    <div class="stack">
+      <button class="btn danger" type="button" id="delAll" data-i="c_del_all"></button>
+      <button class="btn ghost" type="button" id="delOk" data-i="c_del_me"></button>
+      <button class="btn ghost" type="button" id="delCancel" data-i="cancel" style="border-color:transparent"></button>
+    </div>
+  </div>
+</div>
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+const I18N = {
+ ru:{auth_tag:"С кем познакомиться на IT-мероприятии и почему",login:"Вход",register:"Регистрация",a_name:"Имя и фамилия",a_user:"Логин",a_pass:"Пароль",
+  ph_user:"латиница, цифры, _ .",ph_pass:"минимум 6 символов",do_login:"Войти",do_register:"Создать аккаунт",
+  e_username:"Логин: 3–32 символа — латиница, цифры, _ или .",e_password:"Пароль — минимум 6 символов",e_name:"Укажите имя",e_taken:"Такой логин уже занят",e_credentials:"Неверный логин или пароль",
+  logout:"Выйти",you:"Вы:",
+  tab_match:"Подбор",tab_chats:"Чаты",tab_history:"История",tab_people:"Участники",tab_dash:"Организатору",tab_dash_s:"Зал",tab_events:"Мероприятия",tab_events_s:"События",
+  ev_title:"Митапы и конференции",ev_sub:"Зарегистрируйтесь на мероприятие — подбор знакомств идёт только среди его участников.",
+  ev_new:"Новое мероприятие",ev_name:"Название",ev_type:"Тип",ev_date:"Дата",ev_city:"Город",ev_place:"Место",ev_desc:"Описание",ev_create:"Создать и зарегистрироваться",
+  t_meetup:"Митап",t_conference:"Конференция",t_hackathon:"Хакатон",
+  ev_join:"Зарегистрироваться",ev_leave:"Отменить регистрацию",ev_open:"Открыть подбор",ev_people:"Участники",ev_registered:"Вы зарегистрированы",ev_current:"Текущее",
+  ev_count:"участников",ev_joined:"Вы зарегистрированы на «{name}»",ev_left:"Регистрация отменена",ev_switched:"Текущее мероприятие: «{name}»",ev_created:"Мероприятие создано",
+  ev_need:"Чтобы получить рекомендации, зарегистрируйтесь на мероприятие.",ev_choose:"Выбрать мероприятие",ev_at:"Подбор на мероприятии:",
+  tab_jobs:"Работа",tab_jobs_s:"Работа",jobs_title:"Работа и найм",jobs_sub:"Без привязки к мероприятию: ищите вакансии или кандидатов — AI подберёт и объяснит почему.",
+  jv_match:"Подходят мне",jv_all:"Все вакансии",jv_mine:"Мои вакансии",
+  vac_new:"Новая вакансия",v_title:"Название",ph_vtitle:"например, Middle Python-разработчик",v_role:"Роль",v_level:"Уровень",v_format:"Формат",v_salary:"Зарплата от, ₸",v_company:"Компания",v_stack:"Стек (через запятую)",vac_publish:"Опубликовать",
+  f_office:"Офис",f_remote:"Удалённо",f_hybrid:"Гибрид",all_roles:"Все роли",all_formats:"Любой формат",ph_jsearch:"Поиск: роль, стек, компания…",
+  sal_from:"от {n} ₸",posted_by:"Автор:",apply:"Откликнуться",applied:"Отклик отправлен",applied_toast:"Отклик отправлен — сообщение уже в чате",open_chat:"Открыть чат",
+  cands:"Подобрать кандидатов",cands_hide:"Скрыть",apps_n:"откликов",applicants:"Отклики",vac_delete:"Удалить",vac_deleted:"Вакансия удалена",vac_created:"Вакансия опубликована",
+  no_profile_jobs:"Чтобы подобрать вакансии, заполните анкету на вкладке «Подбор».",fill_profile:"Заполнить анкету",
+  mine_empty:"У вас пока нет вакансий. Нажмите «Новая вакансия».",jobs_empty:"Ничего не найдено.",cands_empty:"Пока нет подходящих кандидатов.",
+  e_vac_role:"Выберите роль",profile_saved:"Анкета сохранена",go_jobs:"Смотреть вакансии",
+  hall_title:"Карта зала",hall_hint:"Цифры — ваши рекомендации",hall_you:"Вы",hall_entr:"Вход",seat_fmt:"Зона {z} · {label} · стол {t}",my_seat:"Моё место:",seat_table:"стол",seat_save:"Сохранить",seat_saved:"Место сохранено",th_seat:"Место",
+  e_not_registered:"Сначала зарегистрируйтесь на мероприятие",e_no_event:"Выберите мероприятие",e_event_name:"Укажите название (от 3 символов)",e_event_date:"Укажите дату",
+  hero:"С кем стоит <em>познакомиться</em> на мероприятии",hero_sub:"Заполните анкету — за пару секунд получите 5 человек, объяснение «почему», первую фразу и время для встречи 1:1.",
+  form_title:"Анкета",form_sub:"Займёт 1–2 минуты. Поля со * обязательны.",
+  demo:"Быстрое демо:",f_role:"Роль",f_exp:"Опыт, лет",f_goal:"Цель",f_hiring:"Кого нанимаете",
+  f_stack:"Стек — Enter, чтобы добавить",ph_stack:"python, react, figma…",f_interests:"Интересы",f_about:"О себе",
+  ph_about:"Например: Junior Python-бэкендер, хочу в финтех, делал проект на FastAPI…",f_langs:"Языки общения",f_slots:"Свободные слоты для встреч 1:1",
+  f_visible:"Показывать мою анкету другим участникам",go:"Подобрать 5 знакомств",clear:"Очистить",
+  res_title:"Рекомендации",res_empty:"Заполните анкету или нажмите на одно из быстрых демо — здесь появятся 5 человек.",
+  ms:"мс",found:"Из текста распознано:",score:"совпадение",met:"Познакомились",no:"Не подошло",write:"Написать",
+  copy:"копировать",copied:"Скопировано",slot:"Встреча 1:1",fallback:"близкий вариант",ice:"Первая фраза",
+  recalc:"Пересчитано с учётом отзыва",booths:"Стенды, которые стоит посетить",yrs:"лет опыта",
+  saved_met:"Отмечено: познакомились",saved_no:"Отмечено: не подошло — подобрали замену",
+  chats_title:"Чаты",chats_sub:"Начните знакомство с первого сообщения. Пока собеседник не ответил, можно отправить только одно сообщение.",
+  c_empty:"Пока нет диалогов. Нажмите «Написать» у рекомендации — первое сообщение уже будет подготовлено.",c_pick:"Выберите диалог слева",
+  ph_msg:"Сообщение…",c_wait:"Первое сообщение отправлено. Дождитесь ответа — после этого можно продолжить переписку.",
+  c_first:"Это ваше первое сообщение — оно уже заполнено фразой для знакомства, можно отредактировать.",c_typing:"печатает…",demo_reply:"демо-ответ",
+  sent:"Отправлено",e_wait:"Дождитесь ответа собеседника",
+  c_delete:"Удалить чат",c_del_title:"Удалить чат?",c_del_text:"Переписка с {name}. «У всех» — исчезнет у обоих, «у меня» — только у вас.",cancel:"Отмена",
+  c_del_all:"Удалить у всех",c_del_me:"Удалить у меня",c_deleted:"Чат удалён у вас",c_deleted_all:"Чат удалён у всех",
+  st_sent:"Отправлено",st_delivered:"Доставлено",st_read:"Прочитано",
+  hist_title:"История",hist_sub:"Все, кого вы отметили. Отметку можно отменить — человек вернётся в рекомендации.",
+  h_all:"Все",h_met:"Познакомились",h_no:"Не подошли",h_empty:"Пока никого не отмечено. Нажмите «Познакомились» или «Не подошло» у рекомендации.",
+  h_undo:"Отменить",h_total:"всего отметок",undone:"Отметка отменена",
+  people_title:"Участники",people_sub:"База синтетических анкет (имена вымышлены) и зарегистрированные участники.",
+  ph_search:"Поиск по имени, стеку, тексту…",all_goals:"Все цели",th_name:"Имя",th_role:"Роль",th_goal:"Цель",th_stack:"Стек",th_about:"О себе",
+  dash_title:"Карта интересов зала",dash_sub:"Кто пришёл, что ищут и где не хватает людей.",
+  k_total:"участников",k_hire:"нанимают",k_seek:"ищут работу",k_ment:"менторов / менти",k_fb:"знакомств отмечено",
+  d_goals:"Цели участников",d_interests:"Популярные интересы",d_market:"Найм в зале по ролям",d_demand:"нанимают",d_supply:"ищут работу",d_skills:"Топ технологий",
+  need_fields:"Заполните обязательные поля: ",err:"Ошибка сервера",
+  footer:"Tanys · Qazaq IT Community · AI for Smart Campus · AI in Engineering Hackathon 2026"},
+ kk:{auth_tag:"IT-іс-шарада кіммен танысу керек және неге",login:"Кіру",register:"Тіркелу",a_name:"Аты-жөні",a_user:"Логин",a_pass:"Құпиясөз",
+  ph_user:"латын әріптері, сандар, _ .",ph_pass:"кемінде 6 таңба",do_login:"Кіру",do_register:"Аккаунт ашу",
+  e_username:"Логин: 3–32 таңба — латын әріптері, сандар, _ немесе .",e_password:"Құпиясөз — кемінде 6 таңба",e_name:"Атыңызды жазыңыз",e_taken:"Бұл логин бос емес",e_credentials:"Логин немесе құпиясөз қате",
+  logout:"Шығу",you:"Сіз:",
+  tab_match:"Іріктеу",tab_chats:"Чаттар",tab_history:"Тарих",tab_people:"Қатысушылар",tab_dash:"Ұйымдастырушыға",tab_dash_s:"Зал",tab_events:"Іс-шаралар",tab_events_s:"Іс-шара",
+  ev_title:"Митаптар мен конференциялар",ev_sub:"Іс-шараға тіркеліңіз — таныстар тек сол іс-шараның қатысушыларынан іріктеледі.",
+  ev_new:"Жаңа іс-шара",ev_name:"Атауы",ev_type:"Түрі",ev_date:"Күні",ev_city:"Қала",ev_place:"Орны",ev_desc:"Сипаттамасы",ev_create:"Құру және тіркелу",
+  t_meetup:"Митап",t_conference:"Конференция",t_hackathon:"Хакатон",
+  ev_join:"Тіркелу",ev_leave:"Тіркеуден бас тарту",ev_open:"Іріктеуді ашу",ev_people:"Қатысушылар",ev_registered:"Сіз тіркелдіңіз",ev_current:"Ағымдағы",
+  ev_count:"қатысушы",ev_joined:"Сіз «{name}» іс-шарасына тіркелдіңіз",ev_left:"Тіркеу тоқтатылды",ev_switched:"Ағымдағы іс-шара: «{name}»",ev_created:"Іс-шара құрылды",
+  ev_need:"Ұсыныстар алу үшін іс-шараға тіркеліңіз.",ev_choose:"Іс-шараны таңдау",ev_at:"Іріктеу өтетін іс-шара:",
+  tab_jobs:"Жұмыс",tab_jobs_s:"Жұмыс",jobs_title:"Жұмыс және жалдау",jobs_sub:"Іс-шараға байланбай: вакансия немесе кандидат іздеңіз — AI іріктеп, неге екенін түсіндіреді.",
+  jv_match:"Маған сәйкес",jv_all:"Барлық вакансиялар",jv_mine:"Менің вакансияларым",
+  vac_new:"Жаңа вакансия",v_title:"Атауы",ph_vtitle:"мысалы, Middle Python-әзірлеуші",v_role:"Рөл",v_level:"Деңгей",v_format:"Формат",v_salary:"Жалақы, ₸-ден",v_company:"Компания",v_stack:"Стек (үтір арқылы)",vac_publish:"Жариялау",
+  f_office:"Кеңсе",f_remote:"Қашықтан",f_hybrid:"Аралас",all_roles:"Барлық рөлдер",all_formats:"Кез келген формат",ph_jsearch:"Іздеу: рөл, стек, компания…",
+  sal_from:"{n} ₸-ден",posted_by:"Автор:",apply:"Өтініш беру",applied:"Өтініш жіберілді",applied_toast:"Өтініш жіберілді — хабарлама чатта",open_chat:"Чатты ашу",
+  cands:"Кандидаттарды іріктеу",cands_hide:"Жасыру",apps_n:"өтініш",applicants:"Өтініштер",vac_delete:"Өшіру",vac_deleted:"Вакансия өшірілді",vac_created:"Вакансия жарияланды",
+  no_profile_jobs:"Вакансияларды іріктеу үшін «Іріктеу» қойындысында сауалнаманы толтырыңыз.",fill_profile:"Сауалнаманы толтыру",
+  mine_empty:"Әзірге вакансияңыз жоқ. «Жаңа вакансия» батырмасын басыңыз.",jobs_empty:"Ештеңе табылмады.",cands_empty:"Әзірге сәйкес кандидат жоқ.",
+  e_vac_role:"Рөлді таңдаңыз",profile_saved:"Сауалнама сақталды",go_jobs:"Вакансияларды көру",
+  hall_title:"Зал картасы",hall_hint:"Сандар — сізге ұсынылғандар",hall_you:"Сіз",hall_entr:"Кіреберіс",seat_fmt:"{z} аймағы · {label} · {t}-үстел",my_seat:"Менің орным:",seat_table:"үстел",seat_save:"Сақтау",seat_saved:"Орын сақталды",th_seat:"Орны",
+  e_not_registered:"Алдымен іс-шараға тіркеліңіз",e_no_event:"Іс-шараны таңдаңыз",e_event_name:"Атауын жазыңыз (кемінде 3 таңба)",e_event_date:"Күнін көрсетіңіз",
+  hero:"Іс-шарада кіммен <em>танысу</em> керек",hero_sub:"Сауалнаманы толтырыңыз — бірнеше секундта 5 адамды, «неге» деген түсіндірмені, алғашқы сөзді және 1:1 кездесу уақытын аласыз.",
+  form_title:"Сауалнама",form_sub:"1–2 минут алады. * белгісі бар өрістер міндетті.",
+  demo:"Жылдам демо:",f_role:"Рөл",f_exp:"Тәжірибе, жыл",f_goal:"Мақсат",f_hiring:"Кімді жалдайсыз",
+  f_stack:"Стек — қосу үшін Enter",ph_stack:"python, react, figma…",f_interests:"Қызығушылықтар",f_about:"Өзім туралы",
+  ph_about:"Мысалы: Junior Python-әзірлеушімін, финтехте жұмыс істегім келеді…",f_langs:"Сөйлесу тілдері",f_slots:"1:1 кездесуге бос уақыт",
+  f_visible:"Сауалнамамды басқа қатысушыларға көрсету",go:"5 таныс іріктеу",clear:"Тазалау",
+  res_title:"Ұсыныстар",res_empty:"Сауалнаманы толтырыңыз немесе жылдам демоны басыңыз — осында 5 адам шығады.",
+  ms:"мс",found:"Мәтіннен анықталды:",score:"сәйкестік",met:"Таныстық",no:"Сәйкес емес",write:"Жазу",
+  copy:"көшіру",copied:"Көшірілді",slot:"1:1 кездесу",fallback:"жақын нұсқа",ice:"Алғашқы сөз",
+  recalc:"Пікіріңіз бойынша қайта есептелді",booths:"Баруға тұрарлық стендтер",yrs:"жыл тәжірибе",
+  saved_met:"Белгіленді: таныстық",saved_no:"Белгіленді: сәйкес емес — орнына басқа адам ұсынылды",
+  chats_title:"Чаттар",chats_sub:"Танысуды алғашқы хабарламадан бастаңыз. Әңгімелесуші жауап бергенше тек бір хабарлама жіберуге болады.",
+  c_empty:"Әзірге диалог жоқ. Ұсыныстағы «Жазу» батырмасын басыңыз — алғашқы хабарлама дайын тұрады.",c_pick:"Сол жақтан диалогты таңдаңыз",
+  ph_msg:"Хабарлама…",c_wait:"Алғашқы хабарлама жіберілді. Жауапты күтіңіз — содан кейін хат алмасуды жалғастыра аласыз.",
+  c_first:"Бұл сіздің алғашқы хабарламаңыз — танысу сөзі дайын тұр, өзгертуге болады.",c_typing:"жазып жатыр…",demo_reply:"демо-жауап",
+  sent:"Жіберілді",e_wait:"Әңгімелесушінің жауабын күтіңіз",
+  c_delete:"Чатты өшіру",c_del_title:"Чатты өшіру керек пе?",c_del_text:"{name} екеуіңіздің хат алмасуыңыз. «Барлығында» — екеуіңізде де жойылады, «менде» — тек сізде.",cancel:"Бас тарту",
+  c_del_all:"Барлығында өшіру",c_del_me:"Тек менде өшіру",c_deleted:"Чат сізде өшірілді",c_deleted_all:"Чат барлығында өшірілді",
+  st_sent:"Жіберілді",st_delivered:"Жеткізілді",st_read:"Оқылды",
+  hist_title:"Тарих",hist_sub:"Сіз белгілеген адамдардың бәрі. Белгіні болдырмауға болады — адам ұсыныстарға қайта оралады.",
+  h_all:"Барлығы",h_met:"Таныстық",h_no:"Сәйкес емес",h_empty:"Әзірге ешкім белгіленбеген. Ұсыныстағы «Таныстық» немесе «Сәйкес емес» батырмасын басыңыз.",
+  h_undo:"Болдырмау",h_total:"барлық белгі",undone:"Белгі алынды",
+  people_title:"Қатысушылар",people_sub:"Синтетикалық сауалнамалар базасы (аттар ойдан шығарылған) және тіркелген қатысушылар.",
+  ph_search:"Аты, стек, мәтін бойынша іздеу…",all_goals:"Барлық мақсаттар",th_name:"Аты",th_role:"Рөл",th_goal:"Мақсат",th_stack:"Стек",th_about:"Өзі туралы",
+  dash_title:"Залдың қызығушылық картасы",dash_sub:"Кім келді, не іздейді, қай жерде адам жетіспейді.",
+  k_total:"қатысушы",k_hire:"жалдайды",k_seek:"жұмыс іздейді",k_ment:"ментор / менти",k_fb:"таныстық белгіленді",
+  d_goals:"Қатысушылардың мақсаттары",d_interests:"Танымал қызығушылықтар",d_market:"Залдағы жалдау (рөл бойынша)",d_demand:"жалдайды",d_supply:"жұмыс іздейді",d_skills:"Топ технологиялар",
+  need_fields:"Міндетті өрістерді толтырыңыз: ",err:"Сервер қатесі",
+  footer:"Tanys · Qazaq IT Community · AI for Smart Campus · AI in Engineering Hackathon 2026"},
+ en:{auth_tag:"Who to meet at an IT event — and why",login:"Sign in",register:"Sign up",a_name:"Full name",a_user:"Username",a_pass:"Password",
+  ph_user:"latin letters, digits, _ .",ph_pass:"at least 6 characters",do_login:"Sign in",do_register:"Create account",
+  e_username:"Username: 3–32 chars — latin letters, digits, _ or .",e_password:"Password must be at least 6 characters",e_name:"Please enter your name",e_taken:"This username is taken",e_credentials:"Wrong username or password",
+  logout:"Sign out",you:"You:",
+  tab_match:"Match",tab_chats:"Chats",tab_history:"History",tab_people:"People",tab_dash:"Organizers",tab_dash_s:"Hall",tab_events:"Events",tab_events_s:"Events",
+  ev_title:"Meetups & conferences",ev_sub:"Register for an event — people are matched only among its participants.",
+  ev_new:"New event",ev_name:"Name",ev_type:"Type",ev_date:"Date",ev_city:"City",ev_place:"Venue",ev_desc:"Description",ev_create:"Create and register",
+  t_meetup:"Meetup",t_conference:"Conference",t_hackathon:"Hackathon",
+  ev_join:"Register",ev_leave:"Cancel registration",ev_open:"Open matching",ev_people:"Participants",ev_registered:"You're registered",ev_current:"Current",
+  ev_count:"participants",ev_joined:"You're registered for “{name}”",ev_left:"Registration cancelled",ev_switched:"Current event: “{name}”",ev_created:"Event created",
+  ev_need:"Register for an event to get recommendations.",ev_choose:"Choose an event",ev_at:"Matching at:",
+  tab_jobs:"Jobs",tab_jobs_s:"Jobs",jobs_title:"Jobs & hiring",jobs_sub:"No event needed: look for vacancies or candidates — AI matches them and explains why.",
+  jv_match:"For me",jv_all:"All vacancies",jv_mine:"My vacancies",
+  vac_new:"New vacancy",v_title:"Title",ph_vtitle:"e.g. Middle Python developer",v_role:"Role",v_level:"Level",v_format:"Format",v_salary:"Salary from, ₸",v_company:"Company",v_stack:"Stack (comma-separated)",vac_publish:"Publish",
+  f_office:"Office",f_remote:"Remote",f_hybrid:"Hybrid",all_roles:"All roles",all_formats:"Any format",ph_jsearch:"Search: role, stack, company…",
+  sal_from:"from {n} ₸",posted_by:"Posted by:",apply:"Apply",applied:"Applied",applied_toast:"Application sent — the message is in your chats",open_chat:"Open chat",
+  cands:"Find candidates",cands_hide:"Hide",apps_n:"applications",applicants:"Applications",vac_delete:"Delete",vac_deleted:"Vacancy deleted",vac_created:"Vacancy published",
+  no_profile_jobs:"Fill in your profile on the Match tab to get matched vacancies.",fill_profile:"Fill in profile",
+  mine_empty:"No vacancies yet. Press “New vacancy”.",jobs_empty:"Nothing found.",cands_empty:"No matching candidates yet.",
+  e_vac_role:"Choose a role",profile_saved:"Profile saved",go_jobs:"Browse vacancies",
+  hall_title:"Hall map",hall_hint:"Numbers are your recommendations",hall_you:"You",hall_entr:"Entrance",seat_fmt:"Zone {z} · {label} · table {t}",my_seat:"My seat:",seat_table:"table",seat_save:"Save",seat_saved:"Seat saved",th_seat:"Seat",
+  e_not_registered:"Register for the event first",e_no_event:"Choose an event",e_event_name:"Enter a name (3+ characters)",e_event_date:"Pick a date",
+  hero:"Who you should <em>meet</em> at this event",hero_sub:"Fill in the form — in seconds get 5 people, why each one fits, an opening line and a 1:1 meeting time.",
+  form_title:"Profile",form_sub:"Takes 1–2 minutes. Fields marked * are required.",
+  demo:"Quick demo:",f_role:"Role",f_exp:"Experience, yrs",f_goal:"Goal",f_hiring:"Roles you hire for",
+  f_stack:"Stack — press Enter to add",ph_stack:"python, react, figma…",f_interests:"Interests",f_about:"About me",
+  ph_about:"E.g.: Junior Python backend dev, want to work in fintech, built a FastAPI project…",f_langs:"Languages",f_slots:"Free slots for 1:1 meetings",
+  f_visible:"Show my profile to other participants",go:"Find 5 people",clear:"Clear",
+  res_title:"Recommendations",res_empty:"Fill in the form or pick a quick demo — 5 people will appear here.",
+  ms:"ms",found:"Recognized in text:",score:"match",met:"We met",no:"Not a fit",write:"Message",
+  copy:"copy",copied:"Copied",slot:"1:1 meeting",fallback:"close alternative",ice:"Opening line",
+  recalc:"Recalculated using your feedback",booths:"Booths worth visiting",yrs:"yrs experience",
+  saved_met:"Marked: we met",saved_no:"Marked: not a fit — replaced",
+  chats_title:"Chats",chats_sub:"Start with an opening message. Until the other person replies, you can send only one message.",
+  c_empty:"No conversations yet. Press “Message” on a recommendation — the first message is prepared for you.",c_pick:"Pick a conversation",
+  ph_msg:"Message…",c_wait:"Opening message sent. Wait for a reply — then you can keep chatting.",
+  c_first:"This is your opening message — prefilled with an icebreaker, feel free to edit.",c_typing:"typing…",demo_reply:"demo reply",
+  sent:"Sent",e_wait:"Wait for the other person to reply",
+  c_delete:"Delete chat",c_del_title:"Delete chat?",c_del_text:"Conversation with {name}. “For everyone” removes it for both of you, “for me” only for you.",cancel:"Cancel",
+  c_del_all:"Delete for everyone",c_del_me:"Delete for me",c_deleted:"Chat deleted for you",c_deleted_all:"Chat deleted for everyone",
+  st_sent:"Sent",st_delivered:"Delivered",st_read:"Read",
+  hist_title:"History",hist_sub:"Everyone you have marked. Undo a mark to bring the person back into recommendations.",
+  h_all:"All",h_met:"Met",h_no:"Not a fit",h_empty:"Nobody marked yet. Press “We met” or “Not a fit” on a recommendation.",
+  h_undo:"Undo",h_total:"marks in total",undone:"Mark removed",
+  people_title:"Participants",people_sub:"Synthetic profiles (fictional names) plus registered participants.",
+  ph_search:"Search by name, stack, text…",all_goals:"All goals",th_name:"Name",th_role:"Role",th_goal:"Goal",th_stack:"Stack",th_about:"About",
+  dash_title:"Hall interest map",dash_sub:"Who came, what they look for, and where people are missing.",
+  k_total:"participants",k_hire:"hiring",k_seek:"job seekers",k_ment:"mentors / mentees",k_fb:"meetings marked",
+  d_goals:"Participant goals",d_interests:"Popular interests",d_market:"Hiring in the hall by role",d_demand:"hiring",d_supply:"job seekers",d_skills:"Top technologies",
+  need_fields:"Please fill in: ",err:"Server error",
+  footer:"Tanys · Qazaq IT Community · AI for Smart Campus · AI in Engineering Hackathon 2026"}
+};
+
+const PRESETS = [
+ {label:{ru:"Junior ищет работу",kk:"Junior жұмыс іздейді",en:"Junior job seeker"},
+  p:{role:"backend",experience_years:1,goal:"job_seek",stack:["python","fastapi","postgresql","docker"],interests:["fintech","ai"],
+     about:"Junior Python-бэкендер, хочу в финтех. Делал пет-проект на FastAPI и Docker, интересуюсь LLM.",languages:["ru","kk"],slots:["12:00","14:00","15:30","17:00"]}},
+ {label:{ru:"Рекрутер нанимает",kk:"Рекрутер жалдайды",en:"Recruiter hiring"},
+  p:{role:"hr",experience_years:6,goal:"hire",hiring_roles:["frontend","mobile"],stack:["it recruiting","react","flutter"],interests:["career","startups"],
+     about:"Нанимаем React и Flutter разработчиков в продуктовую команду, есть удалёнка.",languages:["ru","en"],slots:["11:00","13:00","16:00"]}},
+ {label:{ru:"Студент ищет ментора",kk:"Студент ментор іздейді",en:"Student seeks mentor"},
+  p:{role:"student",experience_years:0,goal:"find_mentor",stack:["python"],interests:["ai","qazaq_lang"],
+     about:"Машиналық оқытуды үйреніп жүрмін, NLP және қазақ тіліндегі LLM қызықтырады.",languages:["kk","ru"],slots:["13:30","15:00"]}},
+ {label:{ru:"Фаундер ищет CTO",kk:"Фаундер CTO іздейді",en:"Founder seeks CTO"},
+  p:{role:"founder",experience_years:4,goal:"find_cofounder",stack:["sales","fundraising"],interests:["agritech","startups"],
+     about:"Building an AgriTech startup with drones and computer vision, looking for a technical co-founder.",languages:["en","ru"],slots:["11:30","14:30"]}}
+];
+
+let lang = localGet("lang") || "ru";
+let TOKEN = localGet("tok"), ME = null;
+let META = null, LAST = null, PEOPLE = [], HISTORY = [], HFILTER = "all", AUTH_MODE = "login";
+let CHATS = [], PEER = null, DRAFTS = {}, chatTimer = null, convTimer = null, lastMsgCount = -1;
+const S = {goal:null, stack:[], interests:[], hiring:[], spoken:["ru"], slots:[]};
+const $ = s => document.querySelector(s);
+const $$ = s => document.querySelectorAll(s);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+function localGet(k){try{return localStorage.getItem(k)}catch(e){return null}}
+function localSet(k,v){try{v==null?localStorage.removeItem(k):localStorage.setItem(k,v)}catch(e){}}
+const t = k => (I18N[lang][k] ?? k);
+const isMobile = () => matchMedia("(max-width:760px)").matches;
+const EMPTY_SVG = `<svg viewBox="0 0 32 32"><path d="M10 20 Q16 9 22 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="10" cy="20" r="3" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="22" cy="20" r="3" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>`;
+function toast(m){const el=$("#toast");el.textContent=m;el.classList.add("on");clearTimeout(el._t);el._t=setTimeout(()=>el.classList.remove("on"),2000)}
+function initials(n){ return String(n||"?").split(/\s+/).map(w=>w[0]||"").join("").slice(0,2).toUpperCase(); }
+
+async function api(path, body){
+  const h = {"Content-Type":"application/json"};
+  if(TOKEN) h.Authorization = "Bearer " + TOKEN;
+  const r = await fetch(path, body!==undefined ? {method:"POST",headers:h,body:JSON.stringify(body)} : {headers:h});
+  let j = null; try{ j = await r.json(); }catch(_){}
+  if(r.status===401 && !path.startsWith("/api/login") && !path.startsWith("/api/register")){ showAuth(); }
+  if(!r.ok){ const e = new Error((j&&j.error)||r.status); e.status=r.status; throw e; }
+  return j;
+}
+
+/* ================= i18n ================= */
+function applyI18n(){
+  document.documentElement.lang = lang;
+  $$("[data-i]").forEach(el => el.textContent = t(el.dataset.i));
+  $$("[data-ih]").forEach(el => el.innerHTML = t(el.dataset.ih));
+  $$("[data-ph]").forEach(el => el.placeholder = t(el.dataset.ph));
+  $$("[data-t]").forEach(el => el.title = t(el.dataset.t));
+  $$(".lang button").forEach(b => b.classList.toggle("on", b.dataset.l === lang));
+  $("#authGo").textContent = t(AUTH_MODE==="login"?"do_login":"do_register");
+  if(!ME) return;
+  if(META) renderStatic();
+  renderPresets();
+  if(LAST) rerun(); else showEmpty();
+  if(!$("#tab-history").classList.contains("hidden")) loadHistory();
+  if(!$("#tab-events").classList.contains("hidden")) loadEvents();
+  if(!$("#tab-jobs").classList.contains("hidden")) loadJobs();
+  renderEventChip();
+  if(!$("#tab-people").classList.contains("hidden")) renderPeople();
+  if(!$("#tab-dash").classList.contains("hidden")) loadDash();
+  if(!$("#tab-chats").classList.contains("hidden")) { renderChatList(); if(PEER) openChat(PEER.id, true); }
+}
+$$(".lang button").forEach(b => b.onclick = () => { lang=b.dataset.l; localSet("lang",lang); applyI18n(); });
+
+/* ================= auth ================= */
+function showAuth(){
+  TOKEN=null; ME=null; localSet("tok",null); stopPolling();
+  $("#app").classList.add("hidden"); $("#auth").classList.remove("hidden"); applyI18n();
+}
+$$("[data-am]").forEach(b => b.onclick = () => {
+  AUTH_MODE = b.dataset.am;
+  $$("[data-am]").forEach(x=>x.classList.toggle("on",x===b));
+  $("#nameRow").classList.toggle("hidden", AUTH_MODE!=="register");
+  $("#aPass").autocomplete = AUTH_MODE==="register" ? "new-password" : "current-password";
+  $("#authErr").textContent=""; applyI18n();
+});
+$("#authForm").addEventListener("submit", async e => {
+  e.preventDefault();
+  $("#authErr").textContent = ""; $("#authGo").disabled = true;
+  const body = {username:$("#aUser").value.trim().toLowerCase(), password:$("#aPass").value, name:$("#aName").value.trim()};
+  try{
+    const r = await api(AUTH_MODE==="login" ? "/api/login" : "/api/register", body);
+    TOKEN = r.token; localSet("tok", TOKEN); $("#aPass").value="";
+    await enterApp(r.me);
+  }catch(err){ $("#authErr").textContent = t("e_"+err.message) !== "e_"+err.message ? t("e_"+err.message) : t("err"); }
+  $("#authGo").disabled = false;
+});
+$("#logout").onclick = async () => { try{ await api("/api/logout", {}); }catch(_){} resetForm(); LAST=null; showAuth(); };
+
+async function enterApp(me){
+  ME = me;
+  $("#auth").classList.add("hidden"); $("#app").classList.remove("hidden");
+  $("#meName").textContent = me.name; $("#meAva").textContent = initials(me.name);
+  $("#formName").textContent = me.name; $("#formAva").textContent = initials(me.name);
+  if(!META) META = await api("/api/meta");
+  resetForm();
+  if(me.profile){ fillForm(me.profile); $("#visible").checked = me.visible !== false; }
+  applyI18n();
+  if(me.profile) rerun();
+  refreshHistory(); pollChats(); startPolling();
+  renderEventChip();
+  go(ME.active_event ? (location.hash.slice(1) || "match") : "events", true);
+}
+
+/* ================= form ================= */
+function showEmpty(){
+  $("#recs").innerHTML = ME && !ME.active_event
+    ? `<div class="need-ev"><p>${esc(t("ev_need"))}</p><div style="display:flex;gap:8px;justify-content:center;flex-wrap:wrap"><button class="btn" type="button" onclick="go('events')">${esc(t("ev_choose"))}</button><button class="btn ghost" type="button" onclick="go('jobs')">${esc(t("go_jobs"))}</button></div></div>`
+    : `<div class="empty">${EMPTY_SVG}<div>${esc(t("res_empty"))}</div></div>`;
+  $("#resMeta").innerHTML=""; $("#boothCard").classList.add("hidden"); $("#hallMap").classList.add("hidden");
+}
+const evId = () => (ME && ME.active_event) ? ME.active_event.id : null;
+function evError(e){
+  if(e.message==="not_registered" || e.message==="no_event"){ toast(t("e_"+e.message)); go("events"); return true; }
+  return false;
+}
+function chipSet(container, items, selected, onToggle){
+  container.innerHTML = items.map(([id,label]) => `<span class="chip ${selected.includes(id)?"on":""}" data-id="${esc(id)}" role="button" tabindex="0">${esc(label)}</span>`).join("");
+  container.onclick = e => { const c = e.target.closest(".chip"); if(c) onToggle(c.dataset.id); };
+  container.onkeydown = e => { if((e.key==="Enter"||e.key===" ") && e.target.classList.contains("chip")){ e.preventDefault(); onToggle(e.target.dataset.id);} };
+}
+function toggle(arr, id){ const i = arr.indexOf(id); i>=0 ? arr.splice(i,1) : arr.push(id); }
+function renderStatic(){
+  const role = $("#role").value;
+  $("#role").innerHTML = META.roles.map(r => `<option value="${r.id}">${esc(r.label[lang])}</option>`).join("");
+  $("#role").value = role || "backend";
+  $("#skillsList").innerHTML = META.skills.map(s => `<option value="${esc(s)}">`).join("");
+  chipSet($("#goals"), META.goals.map(g=>[g.id,g.label[lang]]), S.goal?[S.goal]:[], id => {S.goal=id; renderStatic();});
+  $("#hireBox").classList.toggle("hidden", S.goal !== "hire");
+  chipSet($("#hiring"), META.roles.filter(r=>!["hr","founder","student"].includes(r.id)).map(r=>[r.id,r.label[lang]]), S.hiring, id=>{toggle(S.hiring,id);renderStatic();});
+  chipSet($("#stack"), S.stack.map(s=>[s, s+"  ×"]), S.stack, id=>{toggle(S.stack,id);renderStatic();});
+  chipSet($("#interests"), META.interests.map(i=>[i.id,i.label[lang]]), S.interests, id=>{toggle(S.interests,id);renderStatic();});
+  chipSet($("#spoken"), Object.entries(META.languages), S.spoken, id=>{toggle(S.spoken,id);renderStatic();});
+  chipSet($("#slots"), META.slots.map(s=>[s,s]), S.slots, id=>{toggle(S.slots,id);renderStatic();});
+  const gsel = $("#fGoal"), gv = gsel.value;
+  gsel.innerHTML = `<option value="">${esc(t("all_goals"))}</option>` + META.goals.map(g=>`<option value="${g.id}">${esc(g.label[lang])}</option>`).join("");
+  gsel.value = gv;
+}
+function renderPresets(){
+  const box = $(".presets");
+  box.querySelectorAll("button").forEach(b=>b.remove());
+  PRESETS.forEach(pr => {
+    const b = document.createElement("button"); b.type="button"; b.textContent = pr.label[lang];
+    b.onclick = () => { fillForm(pr.p); submit(); }; box.appendChild(b);
+  });
+}
+function fillForm(p){
+  $("#role").value=p.role; $("#exp").value=p.experience_years||0; $("#about").value=p.about||"";
+  S.goal=p.goal; S.stack=[...(p.stack||[])]; S.interests=[...(p.interests||[])]; S.hiring=[...(p.hiring_roles||[])];
+  S.spoken=[...(p.languages||["ru"])]; S.slots=[...(p.slots||[])];
+  if(META) renderStatic();
+}
+function resetForm(){
+  $("#form").reset(); $("#visible").checked = true;
+  Object.assign(S,{goal:null,stack:[],interests:[],hiring:[],spoken:["ru"],slots:[]});
+  if(META) renderStatic();
+}
+$("#stackInput").addEventListener("keydown", e => { if(e.key==="Enter" || e.key===","){ e.preventDefault(); addStack(); } });
+$("#stackInput").addEventListener("change", addStack);
+function addStack(){
+  const el=$("#stackInput");
+  el.value.split(",").map(s=>s.trim().toLowerCase()).filter(Boolean).forEach(s=>{ if(!S.stack.includes(s)) S.stack.push(s); });
+  el.value=""; renderStatic();
+}
+function profile(){
+  return {role:$("#role").value, experience_years:+$("#exp").value||0, goal:S.goal,
+          stack:S.stack, interests:S.interests, hiring_roles:S.hiring, about:$("#about").value, languages:S.spoken, slots:S.slots};
+}
+function missing(){
+  const m=[], about=$("#about").value.trim();
+  if(!S.goal) m.push(t("f_goal"));
+  if(!S.stack.length && !about) m.push(t("f_stack").split(" — ")[0]);
+  if(!S.interests.length && !about) m.push(t("f_interests"));
+  if(!about) m.push(t("f_about"));
+  return m;
+}
+$("#form").addEventListener("submit", e => { e.preventDefault(); submit(); });
+$("#clear").onclick = () => { resetForm(); LAST=null; showEmpty(); };
+
+async function submit(){
+  if($("#stackInput").value.trim()) addStack();
+  const m = missing();
+  if(m.length){ toast(t("need_fields") + m.join(", ")); return; }
+  if(!evId()){   // no event: save the profile (used by the job board) and suggest an event
+    try{ const r = await api("/api/profile", {profile:profile(), visible:$("#visible").checked}); ME = Object.assign(ME, r.me); toast(t("profile_saved")); }catch(_){ toast(t("err")); }
+    showEmpty(); return;
+  }
+  $("#go").disabled = true;
+  try{
+    const res = await api("/api/recommend", {profile:profile(), lang, visible:$("#visible").checked, event_id:evId()});
+    LAST = res; renderRecs(res); refreshHistory();
+    if(innerWidth<920) $("#results").scrollIntoView({behavior:"smooth"});
+  }catch(e){ if(e.status!==401 && !evError(e)) toast(t("err")); }
+  $("#go").disabled = false;
+}
+async function rerun(){
+  if(!S.goal) return;
+  if(!evId()){ LAST=null; showEmpty(); return; }
+  try{ const res = await api("/api/recommend",{profile:profile(),lang,visible:$("#visible").checked,event_id:evId()}); LAST=res; renderRecs(res);}catch(e){}
+}
+
+function renderRecs(res, note){
+  const ex = res.extracted || {};
+  const iLabel = id => (META.interests.find(i=>i.id===id)||{label:{}}).label[lang] || id;
+  const extra = [...(ex.skills||[]).filter(s=>!S.stack.includes(s)), ...(ex.interests||[]).filter(i=>!S.interests.includes(i)).map(iLabel)];
+  $("#resMeta").innerHTML = (res.event ? `<span class="pill">${esc(res.event.name)}</span>` : "") +
+    `<span class="pill good">${res.elapsed_ms} ${esc(t("ms"))}</span>` +
+    (note ? `<span class="pill">${esc(note)}</span>` : "") +
+    (extra.length ? `<span>${esc(t("found"))}</span> ${extra.map(x=>`<span class="tag hit">${esc(x)}</span>`).join(" ")}` : "");
+  const recs = res.recommendations;
+  if(!recs.length){ $("#recs").innerHTML = `<div class="empty">—</div>`; return; }
+  $("#recs").innerHTML = recs.map((r,i) => `
+    <article class="rec" data-id="${esc(r.id)}">
+      <div class="rec-top">
+        <div class="num">${i+1}</div>
+        <div class="ava">${esc(initials(r.name))}</div>
+        <div style="min-width:0">
+          <div class="rec-name">${esc(r.name)}</div>
+          <div class="rec-role">${esc(r.role_label)} · ${r.experience_years} ${esc(t("yrs"))}${r.company && r.company!=="—" ? " · "+esc(r.company):""}</div>
+          <div style="margin-top:5px"><span class="pill">${esc(r.goal_label)}</span> ${r.fallback?`<span class="pill plain">${esc(t("fallback"))}</span>`:""}</div>
+        </div>
+        <div class="score"><b>${r.score}%</b><div class="meter"><i style="width:${r.score}%"></i></div><small>${esc(t("score"))}</small></div>
+      </div>
+      <div class="body">
+        <div class="why">${esc(r.explanation)}</div>
+        <div class="ice"><span><em>${esc(t("ice"))}</em>${esc(r.icebreaker)}</span><button class="copy" type="button" data-copy="${esc(r.icebreaker)}">${esc(t("copy"))}</button></div>
+        <div class="tags">${r.stack.map(s=>`<span class="tag ${r.shared_skills.includes(s)?"hit":""}">${esc(s)}</span>`).join("")}</div>
+        <div class="rec-foot">
+          ${r.seat ? seatPill(r.seat, i+1) : ""}
+          ${r.meeting_slot ? `<span class="pill good">${esc(t("slot"))} · ${esc(r.meeting_slot)}</span>` : ""}
+          <span class="spacer"></span>
+          <button class="fb primary" type="button" data-write="${esc(r.id)}" data-draft="${esc(r.icebreaker)}">${esc(t("write"))}</button>
+          <button class="fb" type="button" data-fb="met">✓ ${esc(t("met"))}</button>
+          <button class="fb" type="button" data-fb="no">✕ ${esc(t("no"))}</button>
+        </div>
+      </div>
+    </article>`).join("");
+  const booths = res.booths || [];
+  $("#boothCard").classList.toggle("hidden", !booths.length);
+  $("#booths").innerHTML = booths.map(b=>`<div class="booth"><b>${esc(b.name)}</b>${esc(b.why)}</div>`).join("");
+  renderHall(res);
+}
+function zoneLabel(z){ const zz = (META.zones||[]).find(x=>x.id===z); return zz ? zz.label[lang] : z; }
+function seatText(s){ return t("seat_fmt").replace("{z}", s.zone).replace("{label}", zoneLabel(s.zone)).replace("{t}", s.table); }
+function seatPill(s, n){ return `<span class="seat" title="${esc(seatText(s))}">${n?`<span class="sn">${n}</span>`:`<svg><use href="#i-pin"/></svg>`}${esc(seatText(s))}</span>`; }
+function renderHall(res){
+  const box = $("#hallMap");
+  if(!res || !res.event || !res.my_seat || !(META.zones||[]).length){ box.classList.add("hidden"); return; }
+  const by = {}; (META.zones).forEach(z => by[z.id] = []);
+  res.recommendations.forEach((r,i) => { if(r.seat && by[r.seat.zone]) by[r.seat.zone].push(`<span class="hdot" title="${esc(r.name)} · ${esc(seatText(r.seat))}">${i+1}</span>`); });
+  const mine = res.my_seat.zone;
+  if(by[mine]) by[mine].unshift(`<span class="hdot me">${esc(t("hall_you"))} · ${res.my_seat.table}</span>`);
+  box.innerHTML = `<div class="hall-head"><b>${esc(t("hall_title"))} · ${esc(res.event.name)}</b><span>${esc(t("hall_hint"))}</span></div>
+    <div class="hall">${META.zones.map(z=>`<div class="zone ${z.id===mine?"mine":""}"><div class="zl"><b>${z.id}</b>${esc(z.label[lang])}</div><div class="zdots">${by[z.id].join("")}</div></div>`).join("")}</div>
+    <div class="hall-entr">↓ ${esc(t("hall_entr"))} ↓</div>`;
+  box.classList.remove("hidden");
+}
+$("#recs").addEventListener("click", async e => {
+  const cp = e.target.closest("[data-copy]");
+  if(cp){ try{ await navigator.clipboard.writeText(cp.dataset.copy); }catch(_){} toast(t("copied")); return; }
+  const wr = e.target.closest("[data-write]");
+  if(wr){ startChat(wr.dataset.write, wr.dataset.draft); return; }
+  const fb = e.target.closest("[data-fb]");
+  if(!fb) return;
+  const id = fb.closest(".rec").dataset.id, type = fb.dataset.fb;
+  try{
+    const res = await api("/api/feedback", {target_id:id, type, lang, event_id:evId()});
+    LAST = res; HISTORY = res.history || HISTORY; updateBadges();
+    renderRecs(res, t("recalc")); toast(t(type==="met"?"saved_met":"saved_no"));
+  }catch(_){ toast(t("err")); }
+});
+
+/* ================= chats ================= */
+function startChat(pid, draft){
+  if(draft && !DRAFTS[pid]) DRAFTS[pid] = draft;
+  go("chats"); openChat(pid);
+}
+// Browsers often lack Kazakh locale data ("M11"), so Kazakh month names are built in.
+const KK_M = ["қаңтар","ақпан","наурыз","сәуір","мамыр","маусым","шілде","тамыз","қыркүйек","қазан","қараша","желтоқсан"];
+const LOC = () => lang==="en" ? "en-GB" : "ru-RU";
+function hhmm(d){ return String(d.getHours()).padStart(2,"0") + ":" + String(d.getMinutes()).padStart(2,"0"); }
+function monShort(d){ return lang==="kk" ? KK_M[d.getMonth()].slice(0,3) : d.toLocaleDateString(LOC(),{month:"short"}).replace(".",""); }
+function dayMon(d){ return lang==="kk" ? `${d.getDate()} ${KK_M[d.getMonth()]}` : d.toLocaleDateString(LOC(),{day:"numeric",month:"long"}); }
+function fmtClock(ts){ return hhmm(new Date(ts*1000)); }
+async function pollChats(){
+  if(!TOKEN) return;
+  try{ const r = await api("/api/chats?lang="+lang); CHATS = r.chats; updateBadges(r.unread); if(!$("#tab-chats").classList.contains("hidden")) renderChatList(); }catch(_){}
+}
+function renderChatList(){
+  if(!CHATS.length){ $("#chatList").innerHTML = `<div class="empty">${EMPTY_SVG}<div>${esc(t("c_empty"))}</div></div>`; }
+  else $("#chatList").innerHTML = CHATS.map(c=>`
+    <div class="chat-item ${PEER&&PEER.id===c.peer.id?"on":""}" data-peer="${esc(c.peer.id)}">
+      <div class="ava">${esc(initials(c.peer.name))}</div>
+      <div class="meta2"><div class="rec-name">${esc(c.peer.name)}</div>
+        ${c.typing ? `<div class="last typing-l">${esc(t("c_typing"))}</div>`
+                   : `<div class="last">${c.last.from===ME.id?ticks(c.last.status):""}${esc(c.last.text)}</div>`}</div>
+      <div style="display:flex;flex-direction:column;align-items:flex-end;gap:4px"><span class="time">${esc(fmtClock(c.last.ts))}</span>${c.unread?`<span class="badge">${c.unread}</span>`:""}</div>
+    </div>`).join("");
+  if(!PEER){ $("#convEmpty").classList.remove("hidden"); $("#convEmpty").textContent = t("c_pick"); }
+}
+$("#chatList").addEventListener("click", e => { const it = e.target.closest("[data-peer]"); if(it) openChat(it.dataset.peer); });
+$("#convBack").onclick = closeChat;
+$("#convDelete").onclick = () => {
+  if(!PEER) return;
+  $("#delText").textContent = t("c_del_text").replace("{name}", PEER.name);
+  $("#delModal").classList.remove("hidden"); $("#delCancel").focus();
+};
+$("#delCancel").onclick = () => $("#delModal").classList.add("hidden");
+$("#delModal").onclick = e => { if(e.target.id==="delModal") $("#delModal").classList.add("hidden"); };
+addEventListener("keydown", e => { if(e.key==="Escape") $("#delModal").classList.add("hidden"); });
+async function deleteChat(scope){
+  $("#delModal").classList.add("hidden");
+  if(!PEER) return;
+  const pid = PEER.id;
+  try{
+    await api("/api/chat/delete", {with:pid, scope});
+    delete DRAFTS[pid]; closeChat(); await pollChats(); renderChatList(); toast(t(scope==="all"?"c_deleted_all":"c_deleted"));
+  }catch(_){ toast(t("err")); }
+}
+$("#delOk").onclick = () => deleteChat("me");
+$("#delAll").onclick = () => deleteChat("all");
+
+const TICK1 = `<svg viewBox="0 0 17 11"><path d="M4.5 5.5l3 3 6-7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+const TICK2 = `<svg viewBox="0 0 17 11"><path d="M1 5.5l3 3 6-7M7 7.5l1 1 6-7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+function ticks(status){
+  if(!status) return "";
+  const title = t("st_"+status);
+  return `<span class="tick ${status==="read"?"read":""}" title="${esc(title)}" aria-label="${esc(title)}">${status==="sent"?TICK1:TICK2}</span>`;
+}
+const DOTS = `<span class="dots"><i></i><i></i><i></i></span>`;
+let lastTypingPing = 0;
+function pingTyping(){
+  if(!PEER) return;
+  const now = Date.now();
+  if(now - lastTypingPing < 1500) return;
+  lastTypingPing = now;
+  api("/api/chat/typing", {to:PEER.id}).catch(()=>{});
+}
+function closeChat(){ PEER=null; clearInterval(convTimer); $("#conv").classList.add("closed"); setConvVisible(false); renderChatList(); }
+function setConvVisible(on){
+  ["#convHead","#msgs","#compose"].forEach(s=>$(s).classList.toggle("hidden",!on));
+  $("#convEmpty").classList.toggle("hidden", on);
+  if(!on){ $("#waitNotice").classList.add("hidden"); $("#firstHint").classList.add("hidden"); }
+}
+async function openChat(pid, silent){
+  let r;
+  try{ r = await api(`/api/chat?with=${encodeURIComponent(pid)}&lang=${lang}`); }catch(_){ toast(t("err")); return; }
+  const changed = !PEER || PEER.id !== pid;
+  PEER = r.peer; $("#conv").classList.remove("closed"); setConvVisible(true);
+  $("#convAva").textContent = initials(r.peer.name); $("#convName").textContent = r.peer.name;
+  $("#convRole").textContent = [r.peer.role_label, r.peer.goal_label].filter(Boolean).join(" · ");
+  if(changed){ lastMsgCount=-1; $("#msgText").value = r.messages.length ? "" : (DRAFTS[pid] || ""); }
+  renderMessages(r);
+  clearInterval(convTimer); convTimer = setInterval(()=>refreshConv(), 1500);
+  if(!silent && !isMobile()) $("#msgText").focus();
+  pollChats();
+}
+async function refreshConv(){
+  if(!PEER || $("#tab-chats").classList.contains("hidden")) return;
+  try{ const r = await api(`/api/chat?with=${encodeURIComponent(PEER.id)}&lang=${lang}`); renderMessages(r); }catch(_){}
+}
+function renderMessages(r){
+  const box = $("#msgs");
+  const atBottom = box.scrollHeight - box.scrollTop - box.clientHeight < 60;
+  box.innerHTML = r.messages.map(m=>`<div class="msg ${m.from===ME.id?"me":""}">${esc(m.text)}<small>${m.demo?`<span class="demo">${esc(t("demo_reply"))}</span>`:""}${esc(fmtClock(m.ts))}${m.from===ME.id?ticks(m.status):""}</small></div>`).join("")
+    + (r.typing ? `<div class="typing">${DOTS}<span>${esc(r.peer.name.split(" ")[0])} ${esc(t("c_typing"))}</span></div>` : "");
+  $("#convRole").innerHTML = r.typing ? `<span style="color:var(--accent)">${esc(t("c_typing"))}</span>`
+                                     : esc([r.peer.role_label, r.peer.goal_label].filter(Boolean).join(" · "));
+  if(r.messages.length !== lastMsgCount || atBottom) box.scrollTop = box.scrollHeight;
+  if(r.messages.length !== lastMsgCount && lastMsgCount !== -1) pollChats();
+  lastMsgCount = r.messages.length;
+  $("#compose").classList.toggle("hidden", !r.can_send);
+  $("#waitNotice").classList.toggle("hidden", r.can_send);
+  $("#waitNotice").textContent = t("c_wait");
+  $("#firstHint").classList.toggle("hidden", !(r.can_send && !r.messages.length));
+  $("#firstHint").textContent = t("c_first");
+}
+$("#compose").addEventListener("submit", async e => {
+  e.preventDefault();
+  const text = $("#msgText").value.trim(); if(!text || !PEER) return;
+  $("#sendBtn").disabled = true;
+  try{
+    await api("/api/chat/send", {to:PEER.id, text, lang});
+    $("#msgText").value=""; delete DRAFTS[PEER.id]; await refreshConv(); pollChats();
+  }catch(err){ toast(err.message==="wait_reply" ? t("e_wait") : t("err")); }
+  $("#sendBtn").disabled = false;
+});
+$("#msgText").addEventListener("keydown", e => { if(e.key==="Enter" && !e.shiftKey && !isMobile()){ e.preventDefault(); $("#compose").requestSubmit(); } });
+$("#msgText").addEventListener("input", e => { if(PEER){ DRAFTS[PEER.id]=e.target.value; if(e.target.value.trim()) pingTyping(); } e.target.style.height="auto"; e.target.style.height=Math.min(140,e.target.scrollHeight)+"px"; });
+
+function startPolling(){ stopPolling(); chatTimer = setInterval(pollChats, 4000); }
+function stopPolling(){ clearInterval(chatTimer); clearInterval(convTimer); }
+
+/* ================= history ================= */
+function updateBadges(unread){
+  $$('[data-badge="history"]').forEach(b=>{ b.textContent = HISTORY.length; b.classList.toggle("hidden", !HISTORY.length); });
+  if(unread!==undefined) $$('[data-badge="chats"]').forEach(b=>{ b.textContent = unread; b.classList.toggle("hidden", !unread); });
+}
+async function refreshHistory(){
+  try{ const r = await api("/api/history",{lang}); HISTORY = r.history; updateBadges(); return r; }catch(e){ return null; }
+}
+async function loadHistory(){ await refreshHistory(); renderHistory(); }
+function fmtTime(ts){
+  if(!ts) return "";
+  const d = new Date(ts*1000);
+  return hhmm(d) + " · " + (lang==="kk" ? `${d.getDate()} ${monShort(d)}` : d.toLocaleDateString(LOC(),{day:"numeric",month:"short"}));
+}
+function renderHistory(){
+  const met = HISTORY.filter(h=>h.type==="met").length, no = HISTORY.length - met;
+  $("#histSum").innerHTML = [[HISTORY.length,"h_total"],[met,"h_met"],[no,"h_no"]].map(([v,k])=>`<div><b>${v}</b><span>${esc(t(k))}</span></div>`).join("");
+  $("#histFilter").innerHTML = HISTORY.length ? [["all","h_all"],["met","h_met"],["no","h_no"]].map(([k,l])=>
+     `<span class="chip ${HFILTER===k?"on":""}" data-hf="${k}" role="button" tabindex="0">${esc(t(l))}</span>`).join("") : "";
+  const list = HISTORY.filter(h => HFILTER==="all" || h.type===HFILTER);
+  if(!list.length){ $("#histList").innerHTML = `<div class="empty">${EMPTY_SVG}<div>${esc(t("h_empty"))}</div></div>`; return; }
+  $("#histList").innerHTML = list.map(h=>`
+    <div class="hist-item">
+      <div class="ava">${esc(initials(h.name))}</div>
+      <div style="flex:1;min-width:180px">
+        <div class="rec-name">${esc(h.name)}</div>
+        <div class="rec-role">${esc(h.role_label)} · ${h.experience_years} ${esc(t("yrs"))} · ${esc(h.goal_label)}</div>
+        <div class="tags">${h.stack.slice(0,5).map(s=>`<span class="tag">${esc(s)}</span>`).join("")}</div>
+      </div>
+      <span class="mark ${h.type}">${h.type==="met"?"✓ "+esc(t("met")):"✕ "+esc(t("no"))}</span>
+      <span class="when">${esc(fmtTime(h.ts))}</span>
+      <button class="btn sm" type="button" data-write="${esc(h.id)}">${esc(t("write"))}</button>
+      <button class="btn ghost sm" type="button" data-undo="${esc(h.id)}">${esc(t("h_undo"))}</button>
+    </div>`).join("");
+}
+$("#histFilter").addEventListener("click", e => { const c=e.target.closest("[data-hf]"); if(c){ HFILTER=c.dataset.hf; renderHistory(); } });
+$("#histList").addEventListener("click", async e => {
+  const w = e.target.closest("[data-write]"); if(w){ startChat(w.dataset.write); return; }
+  const u = e.target.closest("[data-undo]"); if(!u) return;
+  try{
+    const res = await api("/api/feedback",{target_id:u.dataset.undo,type:"undo",lang,event_id:evId()});
+    HISTORY = res.history; LAST = res; updateBadges(); renderHistory(); renderRecs(res, t("recalc")); toast(t("undone"));
+  }catch(_){ toast(t("err")); }
+});
+
+/* ================= tabs ================= */
+function go(tab, noScroll){
+  if(!["events","match","jobs","chats","history","people","dash"].includes(tab)) tab="match";
+  $$("[data-tab]").forEach(x=>x.classList.toggle("on", x.dataset.tab===tab));
+  ["events","match","jobs","chats","history","people","dash"].forEach(n => $("#tab-"+n).classList.toggle("hidden", n!==tab));
+  if(tab==="events") loadEvents();
+  if(tab==="jobs") loadJobs();
+  if(tab==="match" && !LAST) showEmpty();
+  if(history.replaceState) history.replaceState(null,"","#"+tab);
+  if(tab==="chats"){ pollChats().then(renderChatList); if(!PEER) setConvVisible(false); }
+  else { if(isMobile()) $("#conv").classList.add("closed"); }
+  if(tab==="history") loadHistory();
+  if(tab==="people") loadPeople();
+  if(tab==="dash") loadDash();
+  if(!noScroll) scrollTo({top:0});
+}
+$$("[data-tab]").forEach(b => b.onclick = () => go(b.dataset.tab));
+
+async function loadPeople(){ PEOPLE = await api("/api/profiles" + (evId() ? "?event="+encodeURIComponent(evId()) : "")); renderPeople(); }
+
+/* ================= jobs (no event needed) ================= */
+let JV = "match", JOBS = [], OPEN_CANDS = {};
+const fmtLabel = f => t("f_"+f);
+function salText(n){ return n ? t("sal_from").replace("{n}", Number(n).toLocaleString("ru-RU").replace(/,/g," ")) : ""; }
+function jobsFilters(){
+  const rv = $("#jRole").value, fv = $("#jFormat").value;
+  $("#jRole").innerHTML = `<option value="">${esc(t("all_roles"))}</option>` + META.roles.filter(r=>!["hr","founder","student"].includes(r.id)).map(r=>`<option value="${r.id}">${esc(r.label[lang])}</option>`).join("");
+  $("#jFormat").innerHTML = `<option value="">${esc(t("all_formats"))}</option>` + ["office","hybrid","remote"].map(f=>`<option value="${f}">${esc(fmtLabel(f))}</option>`).join("");
+  $("#vRole").innerHTML = META.roles.filter(r=>!["hr","founder","student"].includes(r.id)).map(r=>`<option value="${r.id}">${esc(r.label[lang])}</option>`).join("");
+  $("#vFormat").innerHTML = ["office","hybrid","remote"].map(f=>`<option value="${f}">${esc(fmtLabel(f))}</option>`).join("");
+  $("#jRole").value = rv; $("#jFormat").value = fv;
+}
+async function loadJobs(){
+  jobsFilters();
+  $$("#jobsSeg button").forEach(b=>b.classList.toggle("on", b.dataset.jv===JV));
+  $("#jobsBar").classList.toggle("hidden", JV==="mine");
+  try{
+    if(JV==="match"){
+      if(!ME.profile){ JOBS=null; }
+      else JOBS = (await api("/api/jobs/match?lang="+lang)).matches;
+    } else if(JV==="all") JOBS = (await api("/api/jobs?lang="+lang)).vacancies;
+    else JOBS = (await api("/api/jobs/mine?lang="+lang)).vacancies;
+  }catch(e){ JOBS = e.message==="no_profile" ? null : []; }
+  renderJobs();
+}
+function renderJobs(){
+  const box = $("#jobsList");
+  if(JOBS===null){ box.innerHTML = `<div class="need-ev"><p>${esc(t("no_profile_jobs"))}</p><button class="btn" type="button" onclick="go('match')">${esc(t("fill_profile"))}</button></div>`; return; }
+  const q = $("#jq").value.trim().toLowerCase(), rf = $("#jRole").value, ff = $("#jFormat").value;
+  const list = JV==="mine" ? JOBS : JOBS.filter(v => (!rf || v.role===rf) && (!ff || v.format===ff) &&
+     (!q || [v.title, v.company, v.city, v.role_label, v.stack.join(" "), v.description].join(" ").toLowerCase().includes(q)));
+  if(!list.length){ box.innerHTML = `<div class="empty">${EMPTY_SVG}<div>${esc(t(JV==="mine"?"mine_empty":"jobs_empty"))}</div></div>`; return; }
+  box.innerHTML = `<div class="vacs">${list.map(vacCard).join("")}</div>`;
+}
+function vacCard(v){
+  const hits = new Set(v.shared_skills||[]);
+  const sal = salText(v.salary_from);
+  let foot;
+  if(v.own){
+    foot = `<span class="who">${v.applications} ${esc(t("apps_n"))}</span>
+      <button class="btn sm" type="button" data-cands>${esc(t(OPEN_CANDS[v.id]?"cands_hide":"cands"))}</button>
+      ${String(v.id).startsWith("v-")?`<button class="btn ghost sm" type="button" data-vdel>${esc(t("vac_delete"))}</button>`:""}`;
+  } else {
+    foot = `<span class="who">${esc(t("posted_by"))} ${esc(v.owner.name)}</span>
+      ${v.applied ? `<button class="btn ghost sm" type="button" disabled>✓ ${esc(t("applied"))}</button>`
+                  : `<button class="btn sm" type="button" data-apply>${esc(t("apply"))}</button>`}
+      <button class="btn ghost sm" type="button" data-write="${esc(v.owner.id)}">${esc(t(v.applied?"open_chat":"write"))}</button>`;
+  }
+  const apps = v.own && v.applicants && v.applicants.length ? `<div class="cands"><b style="font-size:13px">${esc(t("applicants"))}</b>${v.applicants.map(a=>`
+      <div class="cand"><div class="ava">${esc(initials(a.name))}</div><div style="flex:1;min-width:0"><div class="rec-name">${esc(a.name)}</div><div class="rec-role">${esc([a.role_label,a.goal_label].filter(Boolean).join(" · "))}</div></div>
+      <button class="btn ghost sm" type="button" data-write="${esc(a.id)}">${esc(t("write"))}</button></div>`).join("")}</div>` : "";
+  const cands = v.own && OPEN_CANDS[v.id] ? `<div class="cands">${OPEN_CANDS[v.id].length ? OPEN_CANDS[v.id].map(c=>`
+      <div class="cand"><div class="ava">${esc(initials(c.name))}</div><div style="flex:1;min-width:0"><div class="rec-name">${esc(c.name)} <span class="pill" style="margin-left:4px">${c.score}%</span></div>
+      <div class="rec-role">${esc(c.role_label)} · ${c.experience_years} ${esc(t("yrs"))}</div><p class="why">${esc(c.explanation)}</p></div>
+      <button class="btn sm" type="button" data-write="${esc(c.id)}">${esc(t("write"))}</button></div>`).join("") : `<div class="empty" style="padding:16px">${esc(t("cands_empty"))}</div>`}</div>` : "";
+  return `<article class="vac" data-vac="${esc(v.id)}">
+    <div class="vac-top">
+      <div style="min-width:0;flex:1"><div class="vac-title">${esc(v.title)}</div>
+        <div class="vac-co">${esc([v.company, v.city, fmtLabel(v.format)].filter(Boolean).join(" · "))}</div></div>
+      ${sal?`<div class="vac-sal">${esc(sal)}</div>`:""}
+    </div>
+    <div style="display:flex;gap:6px;flex-wrap:wrap"><span class="pill plain">${esc(v.level[0].toUpperCase()+v.level.slice(1))}</span><span class="pill plain">${esc(v.role_label)}</span>${v.score!==undefined?`<span class="pill">${v.score}% ${esc(t("score"))}</span>`:""}</div>
+    ${v.explanation?`<div class="vac-why">${esc(v.explanation)}</div>`:""}
+    <div class="tags" style="margin:0">${v.stack.map(s=>`<span class="tag ${hits.has(s)?"hit":""}">${esc(s)}</span>`).join("")}</div>
+    ${v.description?`<div class="vac-desc">${esc(v.description)}</div>`:""}
+    <div class="vac-foot">${foot}</div>${apps}${cands}
+  </article>`;
+}
+$("#jobsSeg").addEventListener("click", e => { const b = e.target.closest("[data-jv]"); if(b){ JV = b.dataset.jv; loadJobs(); } });
+["#jq","#jRole","#jFormat"].forEach(s => $(s).addEventListener(s==="#jq"?"input":"change", renderJobs));
+$("#jobsList").addEventListener("click", async e => {
+  const w = e.target.closest("[data-write]"); if(w){ startChat(w.dataset.write); return; }
+  const card = e.target.closest("[data-vac]"); if(!card) return;
+  const vid = card.dataset.vac;
+  if(e.target.closest("[data-apply]")){
+    try{
+      const r = await api("/api/jobs/apply", {id:vid, lang});
+      const i = JOBS.findIndex(x=>x.id===vid); if(i>=0) JOBS[i] = Object.assign(JOBS[i], {applied:true, applications:r.vacancy.applications});
+      renderJobs(); toast(t("applied_toast")); pollChats();
+    }catch(_){ toast(t("err")); }
+  } else if(e.target.closest("[data-cands]")){
+    if(OPEN_CANDS[vid]) delete OPEN_CANDS[vid];
+    else { try{ OPEN_CANDS[vid] = (await api(`/api/jobs/candidates?id=${encodeURIComponent(vid)}&lang=${lang}`)).candidates; }catch(_){ toast(t("err")); return; } }
+    renderJobs();
+  } else if(e.target.closest("[data-vdel]")){
+    try{ await api("/api/jobs/delete", {id:vid}); toast(t("vac_deleted")); loadJobs(); }catch(_){ toast(t("err")); }
+  }
+});
+$("#vacNewBtn").onclick = () => { jobsFilters(); $("#vacForm").classList.toggle("hidden"); if(!$("#vacForm").classList.contains("hidden")) $("#vTitle").focus(); };
+$("#vacCancel").onclick = () => $("#vacForm").classList.add("hidden");
+$("#vacForm").addEventListener("submit", async e => {
+  e.preventDefault();
+  try{
+    const r = await api("/api/jobs/create", {title:$("#vTitle").value, role:$("#vRole").value, level:$("#vLevel").value, format:$("#vFormat").value,
+      city:$("#vCity").value, salary_from:+$("#vSalary").value||null, company:$("#vCompany").value, stack:$("#vStack").value, description:$("#vDesc").value, lang});
+    $("#vacForm").reset(); $("#vacForm").classList.add("hidden"); toast(t("vac_created"));
+    JV = "mine"; await loadJobs();
+    OPEN_CANDS[r.vacancy.id] = (await api(`/api/jobs/candidates?id=${encodeURIComponent(r.vacancy.id)}&lang=${lang}`)).candidates; renderJobs();
+  }catch(err){ toast(t("e_"+err.message)!=="e_"+err.message ? t("e_"+err.message) : t("err")); }
+});
+
+/* ================= events ================= */
+let EVENTS = [];
+function renderEventChip(){
+  const ev = ME && ME.active_event;
+  $("#evChip").classList.toggle("hidden", !ev);
+  $("#evLine").classList.toggle("hidden", !ev);
+  if(ev){
+    $("#evChipName").textContent = ev.name; $("#evChip").title = ev.name;
+    $("#evLine").innerHTML = `<svg><use href="#i-cal"/></svg>${esc(t("ev_at"))} ${esc(ev.name)}`;
+  }
+}
+function fmtEvDate(e){
+  const d = new Date(e.date+"T12:00:00");
+  const end = e.date_end ? new Date(e.date_end+"T12:00:00") : null;
+  return {day:d.getDate(), mon:monShort(d),
+          full: dayMon(d) + (end ? " – " + dayMon(end) : "") + ", " + d.getFullYear()};
+}
+async function loadEvents(){
+  try{ EVENTS = (await api("/api/events?lang="+lang)).events; }catch(_){ return; }
+  renderEvents();
+}
+function renderEvents(){
+  $("#evType").innerHTML = ["meetup","conference","hackathon"].map(x=>`<option value="${x}">${esc(t("t_"+x))}</option>`).join("");
+  $("#evList").innerHTML = EVENTS.map(e => { const d = fmtEvDate(e); return `
+    <article class="ev ${e.active?"active":""}" data-ev="${esc(e.id)}">
+      <div class="ev-top">
+        <div class="ev-date"><small>${esc(d.mon)}</small><b>${d.day}</b></div>
+        <div style="min-width:0;flex:1">
+          <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:4px"><span class="pill plain">${esc(t("t_"+e.type))}</span>${e.active?`<span class="pill">${esc(t("ev_current"))}</span>`:""}${e.registered&&!e.active?`<span class="pill good">${esc(t("ev_registered"))}</span>`:""}</div>
+          <div class="ev-name">${esc(e.name)}</div>
+        </div>
+      </div>
+      <div class="ev-meta"><span><svg><use href="#i-cal"/></svg> ${esc(d.full)}</span>${e.city||e.place?`<span><svg><use href="#i-pin"/></svg> ${esc([e.city,e.place].filter(Boolean).join(", "))}</span>`:""}<span>${e.participants} ${esc(t("ev_count"))}</span></div>
+      ${e.description?`<div class="ev-desc">${esc(e.description)}</div>`:""}
+      ${e.registered && e.my_seat ? `<div class="seat-edit"><svg width="14" height="14" style="color:var(--accent)"><use href="#i-pin"/></svg>${esc(t("my_seat"))}
+        <select data-seatzone>${(META.zones||[]).map(z=>`<option value="${z.id}" ${z.id===e.my_seat.zone?"selected":""}>${z.id} · ${esc(z.label[lang])}</option>`).join("")}</select>
+        <span>${esc(t("seat_table"))}</span><input type="number" min="1" max="${META.tables||30}" value="${e.my_seat.table}" data-seattable inputmode="numeric">
+        <button class="btn ghost sm" type="button" data-seatsave>${esc(t("seat_save"))}</button></div>` : ""}
+      <div class="ev-foot">
+        ${e.registered
+          ? (e.active ? `<button class="btn sm" type="button" data-evgo>${esc(t("ev_open"))}</button>`
+                      : `<button class="btn sm" type="button" data-evact>${esc(t("ev_open"))}</button>`)
+            + `<button class="btn ghost sm" type="button" data-evpeople>${esc(t("ev_people"))}</button><span class="spacer"></span><button class="btn ghost sm" type="button" data-evleave>${esc(t("ev_leave"))}</button>`
+          : `<button class="btn sm" type="button" data-evjoin>${esc(t("ev_join"))}</button>`}
+      </div>
+    </article>`; }).join("");
+}
+async function evAction(path, eid, msgKey){
+  try{
+    const r = await api(path, {event_id:eid, lang});
+    ME = Object.assign(ME, r.me); renderEventChip();
+    if(msgKey) toast(t(msgKey).replace("{name}", r.event.name));
+    LAST = null; await loadEvents(); return r;
+  }catch(e){ toast(t("err")); return null; }
+}
+$("#evList").addEventListener("click", async e => {
+  const card = e.target.closest("[data-ev]"); if(!card) return;
+  const eid = card.dataset.ev;
+  if(e.target.closest("[data-seatsave]")){
+    try{
+      await api("/api/events/seat", {event_id:eid, zone:card.querySelector("[data-seatzone]").value, table:+card.querySelector("[data-seattable]").value});
+      toast(t("seat_saved")); LAST=null; loadEvents();
+    }catch(_){ toast(t("err")); }
+    return;
+  }
+  if(e.target.closest("[data-seatzone],[data-seattable]")) return;
+  if(e.target.closest("[data-evjoin]")){ if(await evAction("/api/events/join", eid, "ev_joined")) { go("match"); rerun(); } }
+  else if(e.target.closest("[data-evact]")){ if(await evAction("/api/events/active", eid, "ev_switched")) { go("match"); rerun(); } }
+  else if(e.target.closest("[data-evgo]")){ go("match"); if(!LAST) rerun(); }
+  else if(e.target.closest("[data-evpeople]")){ if(!card.classList.contains("active")) await evAction("/api/events/active", eid); go("people"); }
+  else if(e.target.closest("[data-evleave]")){ await evAction("/api/events/leave", eid, "ev_left"); showEmpty(); }
+});
+$("#evNewBtn").onclick = () => { $("#evForm").classList.toggle("hidden"); if(!$("#evForm").classList.contains("hidden")){ renderEvents(); $("#evName").focus(); } };
+$("#evCancel").onclick = () => $("#evForm").classList.add("hidden");
+$("#evForm").addEventListener("submit", async e => {
+  e.preventDefault();
+  try{
+    const r = await api("/api/events/create", {name:$("#evName").value, type:$("#evType").value, date:$("#evDate").value,
+      city:$("#evCity").value, place:$("#evPlace").value, description:$("#evDesc").value, lang});
+    ME = Object.assign(ME, r.me); renderEventChip(); $("#evForm").reset(); $("#evForm").classList.add("hidden");
+    toast(t("ev_created")); LAST=null; loadEvents();
+  }catch(err){ toast(t("e_"+err.message)!=="e_"+err.message ? t("e_"+err.message) : t("err")); }
+});
+$("#q").oninput = renderPeople; $("#fGoal").onchange = renderPeople;
+function renderPeople(){
+  const q = $("#q").value.toLowerCase(), g = $("#fGoal").value;
+  const rl = id => (META.roles.find(r=>r.id===id)||{label:{}}).label[lang]||id;
+  const gl = id => (META.goals.find(x=>x.id===id)||{label:{}}).label[lang]||id;
+  const rows = PEOPLE.filter(p => p.id!==ME.id && (!g || p.goal===g) && (!q || (p.name+" "+p.stack.join(" ")+" "+p.about+" "+rl(p.role)).toLowerCase().includes(q)));
+  $("#ptable").innerHTML = rows.slice(0,300).map(p=>`<tr><td><b>${esc(p.name)}</b><br><span class="rec-role">${p.experience_years} ${esc(t("yrs"))}</span>${p.seat?`<div style="margin-top:4px">${seatPill(p.seat)}</div>`:""}</td>
+    <td>${esc(rl(p.role))}</td><td><span class="pill">${esc(gl(p.goal))}</span></td><td>${p.stack.map(s=>`<span class="tag">${esc(s)}</span>`).join(" ")}</td><td>${esc(p.about)}</td>
+    <td><button class="btn ghost sm" type="button" data-write="${esc(p.id)}">${esc(t("write"))}</button></td></tr>`).join("");
+}
+$("#ptable").addEventListener("click", e => { const w=e.target.closest("[data-write]"); if(w) startChat(w.dataset.write); });
+
+function hbars(rows){
+  const max = Math.max(1,...rows.map(r=>r[1]));
+  return rows.map(([l,n])=>`<div class="hb"><span>${esc(l)}</span><div class="tr"><div class="fl" style="width:${(n/max*100).toFixed(1)}%"></div></div><span class="n">${n}</span></div>`).join("");
+}
+async function loadDash(){
+  const s = await api("/api/stats" + (evId() ? "?event="+encodeURIComponent(evId()) : ""));
+  $("#tab-dash .hero p").textContent = evId() ? ME.active_event.name : t("dash_sub");
+  const rl = id => (META.roles.find(r=>r.id===id)||{label:{}}).label[lang]||id;
+  const gl = id => (META.goals.find(x=>x.id===id)||{label:{}}).label[lang]||id;
+  const il = id => (META.interests.find(x=>x.id===id)||{label:{}}).label[lang]||id;
+  const g = Object.fromEntries(s.goals);
+  $("#kpis").innerHTML = [[s.total,"k_total"],[g.hire||0,"k_hire"],[g.job_seek||0,"k_seek"],[`${s.mentors} / ${s.mentees}`,"k_ment"],[s.feedback.met,"k_fb"]]
+    .map(([v,k])=>`<div class="kpi"><b>${esc(v)}</b><span>${esc(t(k))}</span></div>`).join("");
+  $("#dGoals").innerHTML = hbars(s.goals.map(([k,n])=>[gl(k),n]));
+  const maxI = Math.max(...s.interests.map(x=>x[1]));
+  $("#dCloud").innerHTML = s.interests.map(([k,n])=>`<span style="font-size:${12+Math.round(n/maxI*13)}px;opacity:${.5+.5*n/maxI}">${esc(il(k))}</span>`).join("");
+  $("#dInter").innerHTML = hbars(s.interests.slice(0,6).map(([k,n])=>[il(k),n]));
+  const dm = Object.fromEntries(s.hiring_demand), sp = Object.fromEntries(s.job_supply);
+  const roles = [...new Set([...Object.keys(dm), ...Object.keys(sp)])].sort((a,b)=>(dm[b]||0)+(sp[b]||0)-(dm[a]||0)-(sp[a]||0));
+  const mx = Math.max(1,...Object.values(dm),...Object.values(sp));
+  $("#dMarket").innerHTML = roles.map(r=>`<div class="mrow"><span>${esc(rl(r))}<br><small>${dm[r]||0} / ${sp[r]||0}</small></span>
+     <div class="bars"><div class="b" style="width:${(dm[r]||0)/mx*100}%;background:var(--accent)"></div><div class="b" style="width:${(sp[r]||0)/mx*100}%;background:var(--accent-line)"></div></div></div>`).join("");
+  $("#dSkills").innerHTML = hbars(s.skills);
+}
+
+/* ================= boot ================= */
+if("serviceWorker" in navigator) addEventListener("load", () => navigator.serviceWorker.register("/sw.js").catch(()=>{}));
+(async function init(){
+  if(TOKEN){
+    try{ const me = await api("/api/me"); await enterApp(me); return; }catch(_){}
+  }
+  showAuth();
+})();
+</script>
+</body>
+</html>

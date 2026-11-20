@@ -1,0 +1,6591 @@
+[
+ {
+  "id": "p001",
+  "name": "Арман Әбдіров",
+  "role": "backend",
+  "stack": [
+   "rest api",
+   "django",
+   "spring"
+  ],
+  "experience_years": 9,
+  "interests": [
+   "ai",
+   "ecommerce",
+   "fintech"
+  ],
+  "about": "Backend-разработчик с опытом 9 лет. Работаю с rest api, django, spring. Интересуюсь темами: ИИ и ML, E-commerce, Финтех. Готов(а) менторить начинающих: код-ревью, карьера, подготовка к собеседованиям.",
+  "goal": "be_mentor",
+  "hiring_roles": [],
+  "company": "логистическая компания",
+  "languages": [
+   "en",
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "14:00",
+   "16:00",
+   "16:30",
+   "18:00"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p002",
+  "name": "Ерасыл Жұмабеков",
+  "role": "founder",
+  "stack": [
+   "sales",
+   "fundraising",
+   "business development",
+   "marketing"
+  ],
+  "experience_years": 3,
+  "interests": [
+   "startups",
+   "healthtech",
+   "gamedev"
+  ],
+  "about": "Фаундер / бизнес, тәжірибем 3 жыл. sales, fundraising, business development құралдарымен жұмыс істеймін. Қызығатын тақырыптарым: Стартаптар, HealthTech, Геймдев. Тәжірибе алмасқанды ұнатамын, sales, fundraising, business development туралы айтып бере аламын.",
+  "goal": "exchange",
+  "hiring_roles": [],
+  "company": "продуктовый стартап",
+  "languages": [
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "11:30",
+   "12:30",
+   "13:00",
+   "14:00",
+   "15:00",
+   "15:30",
+   "18:00"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p003",
+  "name": "Сабина Смирнова",
+  "role": "analyst",
+  "stack": [
+   "tableau",
+   "power bi",
+   "a/b testing"
+  ],
+  "experience_years": 6,
+  "interests": [
+   "fintech",
+   "product",
+   "govtech",
+   "opensource"
+  ],
+  "about": "Data analyst with 6 years of experience. I work with tableau, power bi, a/b testing. Interested in: Fintech, Product thinking, GovTech, Open source. Happy to mentor juniors: code review, career advice, interview prep.",
+  "goal": "be_mentor",
+  "hiring_roles": [],
+  "company": "AgriTech-стартап",
+  "languages": [
+   "en",
+   "ru"
+  ],
+  "slots": [
+   "12:30",
+   "13:30",
+   "15:00",
+   "16:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p004",
+  "name": "Әлия Жақсылықова",
+  "role": "product",
+  "stack": [
+   "jira",
+   "product management",
+   "a/b testing"
+  ],
+  "experience_years": 10,
+  "interests": [
+   "fintech",
+   "product",
+   "edtech"
+  ],
+  "about": "Product / Project manager with 10 years of experience. I work with jira, product management, a/b testing. Interested in: Fintech, Product thinking, EdTech. Happy to mentor juniors: code review, career advice, interview prep.",
+  "goal": "be_mentor",
+  "hiring_roles": [],
+  "company": "telecom-оператор",
+  "languages": [
+   "en",
+   "ru"
+  ],
+  "slots": [
+   "12:00",
+   "14:00",
+   "14:30",
+   "16:00",
+   "18:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p005",
+  "name": "Жандос Ахметов",
+  "role": "mobile",
+  "stack": [
+   "swift",
+   "firebase",
+   "react native"
+  ],
+  "experience_years": 10,
+  "interests": [
+   "mobile",
+   "startups",
+   "healthtech"
+  ],
+  "about": "Mobile-разработчик с опытом 10 лет. Работаю с swift, firebase, react native. Интересуюсь темами: Мобильные приложения, Стартапы, HealthTech. Делаю стартап в сфере Мобильные приложения, ищу кофаундера-бизнес/продакт.",
+  "goal": "find_cofounder",
+  "hiring_roles": [],
+  "company": "GameDev-студия",
+  "languages": [
+   "en",
+   "ru"
+  ],
+  "slots": [
+   "14:00",
+   "14:30",
+   "15:30",
+   "17:00"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p006",
+  "name": "Руслан Пак",
+  "role": "data_ml",
+  "stack": [
+   "tensorflow",
+   "computer vision",
+   "python",
+   "llm"
+  ],
+  "experience_years": 6,
+  "interests": [
+   "agritech",
+   "llm",
+   "ai"
+  ],
+  "about": "ML / Data Scientist с опытом 6 лет. Работаю с tensorflow, computer vision, python. Интересуюсь темами: AgriTech, LLM и агенты, ИИ и ML. Делаю стартап в сфере AgriTech, ищу кофаундера-бизнес/продакт.",
+  "goal": "find_cofounder",
+  "hiring_roles": [],
+  "company": "IT-интегратор",
+  "languages": [
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "11:00",
+   "12:00",
+   "13:30",
+   "14:00",
+   "15:00",
+   "16:00",
+   "17:00",
+   "18:00"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p007",
+  "name": "Артём Талғатов",
+  "role": "founder",
+  "stack": [
+   "pitching",
+   "business development",
+   "marketing"
+  ],
+  "experience_years": 5,
+  "interests": [
+   "startups",
+   "govtech",
+   "fintech",
+   "product"
+  ],
+  "about": "Фаундер / бизнес с опытом 5 лет. Работаю с pitching, business development, marketing. Интересуюсь темами: Стартапы, GovTech, Финтех, Продуктовое мышление. Люблю обмениваться опытом, могу рассказать про pitching, business development, marketing и послушать про ваши кейсы.",
+  "goal": "exchange",
+  "hiring_roles": [],
+  "company": "госсектор",
+  "languages": [
+   "en",
+   "ru"
+  ],
+  "slots": [
+   "12:30",
+   "13:00",
+   "14:00",
+   "15:00",
+   "16:30",
+   "17:00",
+   "17:30",
+   "18:00"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p008",
+  "name": "Лаура Иванова",
+  "role": "data_ml",
+  "stack": [
+   "mlops",
+   "pandas",
+   "scikit-learn",
+   "python",
+   "nlp"
+  ],
+  "experience_years": 1,
+  "interests": [
+   "llm",
+   "ai"
+  ],
+  "about": "ML / Data Scientist с опытом 1 год. Работаю с mlops, pandas, scikit-learn. Интересуюсь темами: LLM и агенты, ИИ и ML. Ищу работу или стажировку, где можно расти в ML / Data Scientist.",
+  "goal": "job_seek",
+  "hiring_roles": [],
+  "company": "госсектор",
+  "languages": [
+   "en",
+   "ru"
+  ],
+  "slots": [
+   "12:30",
+   "14:30",
+   "15:00",
+   "16:00",
+   "18:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p009",
+  "name": "Елена Жұмабекова",
+  "role": "founder",
+  "stack": [
+   "marketing",
+   "sales",
+   "mlops",
+   "sql",
+   "javascript"
+  ],
+  "experience_years": 11,
+  "interests": [
+   "healthtech",
+   "startups",
+   "govtech",
+   "cybersecurity"
+  ],
+  "about": "Фаундер / бизнес с опытом 11 лет. Работаю с marketing, sales, mlops. Интересуюсь темами: HealthTech, Стартапы, GovTech, Кибербезопасность. Нанимаю в команду: ML / Data Scientist, Frontend-разработчик. Ищу мотивированных людей.",
+  "goal": "hire",
+  "hiring_roles": [
+   "data_ml",
+   "frontend"
+  ],
+  "company": "IT-интегратор",
+  "languages": [
+   "en",
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "11:30",
+   "12:00",
+   "14:30",
+   "15:00",
+   "17:00"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p010",
+  "name": "Жансая Тен",
+  "role": "backend",
+  "stack": [
+   "postgresql",
+   "go",
+   "python",
+   "fastapi"
+  ],
+  "experience_years": 3,
+  "interests": [
+   "cloud",
+   "ecommerce",
+   "opensource"
+  ],
+  "about": "Backend-разработчик с опытом 3 года. Работаю с postgresql, go, python. Интересуюсь темами: Облака и DevOps, E-commerce, Open Source. Делаю стартап в сфере Облака и DevOps, ищу кофаундера-бизнес/продакт.",
+  "goal": "find_cofounder",
+  "hiring_roles": [],
+  "company": "госсектор",
+  "languages": [
+   "en",
+   "ru"
+  ],
+  "slots": [
+   "11:00",
+   "12:00",
+   "12:30",
+   "13:00",
+   "15:00",
+   "15:30",
+   "17:30",
+   "18:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p011",
+  "name": "Мирас Бекмұратов",
+  "role": "student",
+  "stack": [
+   "python",
+   "c++",
+   "html",
+   "java",
+   "javascript"
+  ],
+  "experience_years": 1,
+  "interests": [
+   "gamedev",
+   "career"
+  ],
+  "about": "Студент, изучаю python, c++, html. Участвую в хакатонах. Интересуюсь темами: Геймдев, Карьера в IT. Хочу найти ментора, который поможет вырасти до следующего грейда.",
+  "goal": "find_mentor",
+  "hiring_roles": [],
+  "company": "—",
+  "languages": [
+   "en",
+   "ru"
+  ],
+  "slots": [
+   "12:00",
+   "14:00",
+   "15:30",
+   "16:00"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p012",
+  "name": "Меруерт Ермекова",
+  "role": "devops",
+  "stack": [
+   "ci/cd",
+   "terraform",
+   "aws"
+  ],
+  "experience_years": 8,
+  "interests": [
+   "cloud",
+   "opensource"
+  ],
+  "about": "DevOps-инженер с опытом 8 лет. Работаю с ci/cd, terraform, aws. Интересуюсь темами: Облака и DevOps, Open Source. Готов(а) менторить начинающих: код-ревью, карьера, подготовка к собеседованиям.",
+  "goal": "be_mentor",
+  "hiring_roles": [],
+  "company": "фриланс",
+  "languages": [
+   "en",
+   "ru"
+  ],
+  "slots": [
+   "11:30",
+   "12:00",
+   "12:30",
+   "13:00",
+   "13:30",
+   "14:00",
+   "15:00",
+   "16:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p013",
+  "name": "Інжу Сейітова",
+  "role": "founder",
+  "stack": [
+   "sales",
+   "business development",
+   "marketing",
+   "fundraising",
+   "pitching"
+  ],
+  "experience_years": 9,
+  "interests": [
+   "ai",
+   "govtech",
+   "cloud"
+  ],
+  "about": "Фаундер / бизнес с опытом 9 лет. Работаю с sales, business development, marketing. Интересуюсь темами: ИИ и ML, GovTech, Облака и DevOps. Люблю обмениваться опытом, могу рассказать про sales, business development, marketing и послушать про ваши кейсы.",
+  "goal": "exchange",
+  "hiring_roles": [],
+  "company": "продуктовый стартап",
+  "languages": [
+   "ru"
+  ],
+  "slots": [
+   "11:00",
+   "13:00",
+   "14:30",
+   "15:00",
+   "18:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p014",
+  "name": "Дамир Нұрланов",
+  "role": "frontend",
+  "stack": [
+   "html",
+   "next.js",
+   "javascript",
+   "css"
+  ],
+  "experience_years": 9,
+  "interests": [
+   "opensource",
+   "design"
+  ],
+  "about": "Frontend-разработчик с опытом 9 лет. Работаю с html, next.js, javascript. Интересуюсь темами: Open Source, Дизайн и UX. Нанимаю в команду: Frontend-разработчик, Mobile-разработчик. Ищу мотивированных людей.",
+  "goal": "hire",
+  "hiring_roles": [
+   "frontend",
+   "mobile"
+  ],
+  "company": "аутсорс-студия",
+  "languages": [
+   "en",
+   "ru"
+  ],
+  "slots": [
+   "11:00",
+   "13:30",
+   "15:30",
+   "17:00"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p015",
+  "name": "Дана Тоқтарова",
+  "role": "mobile",
+  "stack": [
+   "swift",
+   "dart",
+   "react native"
+  ],
+  "experience_years": 10,
+  "interests": [
+   "design",
+   "fintech"
+  ],
+  "about": "Mobile-әзірлеуші, тәжірибем 10 жыл. swift, dart, react native құралдарымен жұмыс істеймін. Қызығатын тақырыптарым: Дизайн және UX, Финтех. Дизайн және UX саласында стартап жасап жатырмын, бизнес/продакт серіктес іздеймін.",
+  "goal": "find_cofounder",
+  "hiring_roles": [],
+  "company": "банк",
+  "languages": [
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "11:30",
+   "12:00",
+   "15:00",
+   "16:30",
+   "17:00"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p016",
+  "name": "Томирис Тен",
+  "role": "design",
+  "stack": [
+   "ui/ux",
+   "figma",
+   "prototyping"
+  ],
+  "experience_years": 6,
+  "interests": [
+   "mobile",
+   "edtech",
+   "fintech"
+  ],
+  "about": "UI/UX-дизайнер с опытом 6 лет. Работаю с ui/ux, figma, prototyping. Интересуюсь темами: Мобильные приложения, EdTech, Финтех. Делаю стартап в сфере Мобильные приложения, ищу кофаундера-технаря (CTO).",
+  "goal": "find_cofounder",
+  "hiring_roles": [],
+  "company": "e-commerce платформа",
+  "languages": [
+   "en",
+   "ru"
+  ],
+  "slots": [
+   "11:00",
+   "11:30",
+   "13:00",
+   "13:30",
+   "15:00",
+   "16:00",
+   "17:00",
+   "17:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p017",
+  "name": "Дамир Байжанов",
+  "role": "hr",
+  "stack": [
+   "it recruiting",
+   "sourcing",
+   "ci/cd",
+   "nlp",
+   "tensorflow"
+  ],
+  "experience_years": 11,
+  "interests": [
+   "edtech",
+   "startups",
+   "hackathons"
+  ],
+  "about": "IT-рекрутер / HR, тәжірибем 11 жыл. it recruiting, sourcing, ci/cd құралдарымен жұмыс істеймін. Қызығатын тақырыптарым: EdTech, Стартаптар, Хакатондар. Командаға маман іздеймін: DevOps-инженер, ML / Data Scientist.",
+  "goal": "hire",
+  "hiring_roles": [
+   "devops",
+   "data_ml"
+  ],
+  "company": "GameDev-студия",
+  "languages": [
+   "en",
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "13:00",
+   "13:30",
+   "14:00",
+   "15:30",
+   "16:00",
+   "17:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p018",
+  "name": "Салтанат Тоқтарова",
+  "role": "product",
+  "stack": [
+   "scrum",
+   "product management",
+   "a/b testing",
+   "jira"
+  ],
+  "experience_years": 10,
+  "interests": [
+   "edtech",
+   "fintech"
+  ],
+  "about": "Product / Project менеджер, тәжірибем 10 жыл. scrum, product management, a/b testing құралдарымен жұмыс істеймін. Қызығатын тақырыптарым: EdTech, Финтех. EdTech саласында стартап жасап жатырмын, техникалық (CTO) серіктес іздеймін.",
+  "goal": "find_cofounder",
+  "hiring_roles": [],
+  "company": "GameDev-студия",
+  "languages": [
+   "en",
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "11:30",
+   "13:00",
+   "13:30",
+   "15:00",
+   "15:30",
+   "16:00",
+   "18:00"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p019",
+  "name": "Әли Жақсылықов",
+  "role": "devops",
+  "stack": [
+   "ansible",
+   "ci/cd",
+   "docker"
+  ],
+  "experience_years": 7,
+  "interests": [
+   "opensource",
+   "cloud",
+   "cybersecurity"
+  ],
+  "about": "DevOps-инженер с опытом 7 лет. Работаю с ansible, ci/cd, docker. Интересуюсь темами: Open Source, Облака и DevOps, Кибербезопасность. Нанимаю в команду: DevOps-инженер, Backend-разработчик. Ищу мотивированных людей.",
+  "goal": "hire",
+  "hiring_roles": [
+   "devops",
+   "backend"
+  ],
+  "company": "банк",
+  "languages": [
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "12:00",
+   "12:30",
+   "17:00",
+   "17:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p020",
+  "name": "Ильяс Ермеков",
+  "role": "frontend",
+  "stack": [
+   "css",
+   "html",
+   "vue",
+   "next.js"
+  ],
+  "experience_years": 8,
+  "interests": [
+   "mobile",
+   "edtech",
+   "design"
+  ],
+  "about": "Frontend-разработчик с опытом 8 лет. Работаю с css, html, vue. Интересуюсь темами: Мобильные приложения, EdTech, Дизайн и UX. Люблю обмениваться опытом, могу рассказать про css, html, vue и послушать про ваши кейсы.",
+  "goal": "exchange",
+  "hiring_roles": [],
+  "company": "банк",
+  "languages": [
+   "en",
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "14:30",
+   "15:00",
+   "17:00",
+   "18:00",
+   "18:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p021",
+  "name": "Жандос Тоқтаров",
+  "role": "hr",
+  "stack": [
+   "sourcing",
+   "employer branding",
+   "postgresql",
+   "playwright",
+   "redis"
+  ],
+  "experience_years": 13,
+  "interests": [
+   "career",
+   "startups"
+  ],
+  "about": "IT-рекрутер / HR с опытом 13 лет. Работаю с sourcing, employer branding, postgresql. Интересуюсь темами: Карьера в IT, Стартапы. Нанимаю в команду: QA-инженер, Backend-разработчик, Frontend-разработчик. Ищу мотивированных людей.",
+  "goal": "hire",
+  "hiring_roles": [
+   "qa",
+   "backend",
+   "frontend"
+  ],
+  "company": "госсектор",
+  "languages": [
+   "en",
+   "ru"
+  ],
+  "slots": [
+   "11:00",
+   "13:00",
+   "13:30",
+   "14:00",
+   "14:30",
+   "15:00",
+   "16:00",
+   "17:00"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p022",
+  "name": "Томирис Бекмұратова",
+  "role": "qa",
+  "stack": [
+   "rest api",
+   "playwright",
+   "pytest",
+   "java"
+  ],
+  "experience_years": 5,
+  "interests": [
+   "fintech",
+   "opensource"
+  ],
+  "about": "QA-инженер с опытом 5 лет. Работаю с rest api, playwright, pytest. Интересуюсь темами: Финтех, Open Source. Ищу работу или стажировку, где можно расти в QA-инженер.",
+  "goal": "job_seek",
+  "hiring_roles": [],
+  "company": "госсектор",
+  "languages": [
+   "ru"
+  ],
+  "slots": [
+   "12:00",
+   "14:30",
+   "17:30",
+   "18:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p023",
+  "name": "Ернар Нұрланов",
+  "role": "product",
+  "stack": [
+   "a/b testing",
+   "product management",
+   "html",
+   "css",
+   "figma"
+  ],
+  "experience_years": 9,
+  "interests": [
+   "fintech",
+   "startups"
+  ],
+  "about": "Product / Project менеджер, тәжірибем 9 жыл. a/b testing, product management, html құралдарымен жұмыс істеймін. Қызығатын тақырыптарым: Финтех, Стартаптар. Командаға маман іздеймін: Backend-әзірлеуші, Frontend-әзірлеуші.",
+  "goal": "hire",
+  "hiring_roles": [
+   "backend",
+   "frontend"
+  ],
+  "company": "логистическая компания",
+  "languages": [
+   "en",
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "13:00",
+   "14:00",
+   "14:30",
+   "16:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p024",
+  "name": "Максим Талғатов",
+  "role": "data_ml",
+  "stack": [
+   "scikit-learn",
+   "nlp",
+   "mlops",
+   "llm"
+  ],
+  "experience_years": 2,
+  "interests": [
+   "ai",
+   "agritech"
+  ],
+  "about": "ML / Data Scientist, тәжірибем 2 жыл. scikit-learn, nlp, mlops құралдарымен жұмыс істеймін. Қызығатын тақырыптарым: ЖИ және ML, AgriTech. ЖИ және ML саласында стартап жасап жатырмын, бизнес/продакт серіктес іздеймін.",
+  "goal": "find_cofounder",
+  "hiring_roles": [],
+  "company": "GameDev-студия",
+  "languages": [
+   "en",
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "11:00",
+   "12:30",
+   "13:30",
+   "15:30",
+   "17:00",
+   "18:00"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p025",
+  "name": "Мади Байжанов",
+  "role": "product",
+  "stack": [
+   "customer development",
+   "sql",
+   "sql",
+   "kubernetes",
+   "llm"
+  ],
+  "experience_years": 12,
+  "interests": [
+   "data",
+   "fintech"
+  ],
+  "about": "Product / Project Manager с опытом 12 лет. Работаю с customer development, sql, sql. Интересуюсь темами: Данные и аналитика, Финтех. Нанимаю в команду: UI/UX-дизайнер, ML / Data Scientist, DevOps-инженер. Ищу мотивированных людей.",
+  "goal": "hire",
+  "hiring_roles": [
+   "design",
+   "data_ml",
+   "devops"
+  ],
+  "company": "аутсорс-студия",
+  "languages": [
+   "ru"
+  ],
+  "slots": [
+   "12:30",
+   "14:30",
+   "15:00",
+   "18:00"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p026",
+  "name": "Аружан Цой",
+  "role": "student",
+  "stack": [
+   "java",
+   "html",
+   "sql"
+  ],
+  "experience_years": 0,
+  "interests": [
+   "robotics",
+   "ai",
+   "career"
+  ],
+  "about": "Студент, изучаю java, html, sql. Участвую в хакатонах. Интересуюсь темами: Робототехника и IoT, ИИ и ML, Карьера в IT. Ищу работу или стажировку, где можно расти в java.",
+  "goal": "job_seek",
+  "hiring_roles": [],
+  "company": "—",
+  "languages": [
+   "en",
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "12:30",
+   "14:30",
+   "15:00",
+   "16:00",
+   "16:30",
+   "17:00",
+   "18:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p027",
+  "name": "Игорь Талғатов",
+  "role": "data_ml",
+  "stack": [
+   "computer vision",
+   "mlops",
+   "llm",
+   "pandas"
+  ],
+  "experience_years": 2,
+  "interests": [
+   "data",
+   "healthtech",
+   "qazaq_lang",
+   "startups"
+  ],
+  "about": "ML / Data Scientist, тәжірибем 2 жыл. computer vision, mlops, llm құралдарымен жұмыс істеймін. Қызығатын тақырыптарым: Деректер және аналитика, HealthTech, Қазақ тіліндегі IT, Стартаптар. Келесі деңгейге өсуге көмектесетін ментор іздеймін.",
+  "goal": "find_mentor",
+  "hiring_roles": [],
+  "company": "фриланс",
+  "languages": [
+   "en",
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "12:30",
+   "13:30",
+   "16:30",
+   "18:00"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p028",
+  "name": "Асель Әбдірова",
+  "role": "data_ml",
+  "stack": [
+   "tensorflow",
+   "sql",
+   "python",
+   "llm"
+  ],
+  "experience_years": 8,
+  "interests": [
+   "data",
+   "ai"
+  ],
+  "about": "ML / Data Scientist с опытом 8 лет. Работаю с tensorflow, sql, python. Интересуюсь темами: Данные и аналитика, ИИ и ML. Нанимаю в команду: ML / Data Scientist, Backend-разработчик. Ищу мотивированных людей.",
+  "goal": "hire",
+  "hiring_roles": [
+   "data_ml",
+   "backend"
+  ],
+  "company": "HealthTech-стартап",
+  "languages": [
+   "en",
+   "ru"
+  ],
+  "slots": [
+   "11:00",
+   "12:30",
+   "13:00",
+   "14:30",
+   "15:30",
+   "16:00",
+   "17:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p029",
+  "name": "Ольга Ким",
+  "role": "student",
+  "stack": [
+   "sql",
+   "python",
+   "c++"
+  ],
+  "experience_years": 0,
+  "interests": [
+   "robotics",
+   "ai",
+   "startups"
+  ],
+  "about": "Студент, изучаю sql, python, c++. Участвую в хакатонах. Интересуюсь темами: Робототехника и IoT, ИИ и ML, Стартапы. Хочу найти ментора, который поможет вырасти до следующего грейда.",
+  "goal": "find_mentor",
+  "hiring_roles": [],
+  "company": "—",
+  "languages": [
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "13:00",
+   "14:00",
+   "14:30",
+   "15:00",
+   "16:30",
+   "17:00",
+   "18:00",
+   "18:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p030",
+  "name": "Азамат Цой",
+  "role": "data_ml",
+  "stack": [
+   "tensorflow",
+   "pandas",
+   "scikit-learn"
+  ],
+  "experience_years": 4,
+  "interests": [
+   "llm",
+   "ai"
+  ],
+  "about": "ML / Data Scientist с опытом 4 года. Работаю с tensorflow, pandas, scikit-learn. Интересуюсь темами: LLM и агенты, ИИ и ML. Люблю обмениваться опытом, могу рассказать про tensorflow, pandas, scikit-learn и послушать про ваши кейсы.",
+  "goal": "exchange",
+  "hiring_roles": [],
+  "company": "IT-интегратор",
+  "languages": [
+   "en",
+   "ru"
+  ],
+  "slots": [
+   "13:00",
+   "14:30",
+   "16:30",
+   "18:00"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p031",
+  "name": "Дана Сапарова",
+  "role": "analyst",
+  "stack": [
+   "python",
+   "pandas",
+   "a/b testing",
+   "power bi",
+   "sql"
+  ],
+  "experience_years": 8,
+  "interests": [
+   "data",
+   "fintech"
+  ],
+  "about": "Аналитик данных с опытом 8 лет. Работаю с python, pandas, a/b testing. Интересуюсь темами: Данные и аналитика, Финтех. Нанимаю в команду: Аналитик данных, Product / Project Manager. Ищу мотивированных людей.",
+  "goal": "hire",
+  "hiring_roles": [
+   "analyst",
+   "product"
+  ],
+  "company": "фриланс",
+  "languages": [
+   "en",
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "13:00",
+   "14:30",
+   "15:00",
+   "16:30",
+   "17:00",
+   "17:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p032",
+  "name": "Мирас Қуанышов",
+  "role": "data_ml",
+  "stack": [
+   "scikit-learn",
+   "python",
+   "sql",
+   "computer vision",
+   "mlops"
+  ],
+  "experience_years": 8,
+  "interests": [
+   "healthtech",
+   "agritech"
+  ],
+  "about": "ML / Data Scientist with 8 years of experience. I work with scikit-learn, python, sql. Interested in: HealthTech, AgriTech. Hiring for my team: ML / Data Scientist, Backend developer.",
+  "goal": "hire",
+  "hiring_roles": [
+   "data_ml",
+   "backend"
+  ],
+  "company": "telecom-оператор",
+  "languages": [
+   "en",
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "11:30",
+   "12:00",
+   "13:30",
+   "14:00",
+   "14:30",
+   "16:30",
+   "17:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p033",
+  "name": "Дана Жақсылықова",
+  "role": "qa",
+  "stack": [
+   "postman",
+   "rest api",
+   "java"
+  ],
+  "experience_years": 13,
+  "interests": [
+   "career",
+   "opensource"
+  ],
+  "about": "QA-инженер с опытом 13 лет. Работаю с postman, rest api, java. Интересуюсь темами: Карьера в IT, Open Source. Готов(а) менторить начинающих: код-ревью, карьера, подготовка к собеседованиям.",
+  "goal": "be_mentor",
+  "hiring_roles": [],
+  "company": "EdTech-стартап",
+  "languages": [
+   "en",
+   "ru"
+  ],
+  "slots": [
+   "14:30",
+   "15:30",
+   "16:00",
+   "16:30",
+   "17:00"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p034",
+  "name": "Елена Цой",
+  "role": "security",
+  "stack": [
+   "python",
+   "linux",
+   "owasp",
+   "siem",
+   "pentest"
+  ],
+  "experience_years": 8,
+  "interests": [
+   "cybersecurity",
+   "hackathons",
+   "govtech"
+  ],
+  "about": "Специалист по ИБ с опытом 8 лет. Работаю с python, linux, owasp. Интересуюсь темами: Кибербезопасность, Хакатоны, GovTech. Люблю обмениваться опытом, могу рассказать про python, linux, owasp и послушать про ваши кейсы.",
+  "goal": "exchange",
+  "hiring_roles": [],
+  "company": "IT-интегратор",
+  "languages": [
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "13:00",
+   "14:00",
+   "14:30",
+   "15:00",
+   "15:30",
+   "16:00",
+   "16:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p035",
+  "name": "Жандос Сапаров",
+  "role": "founder",
+  "stack": [
+   "marketing",
+   "sales",
+   "pitching",
+   "fundraising"
+  ],
+  "experience_years": 7,
+  "interests": [
+   "agritech",
+   "ai"
+  ],
+  "about": "Founder / business with 7 years of experience. I work with marketing, sales, pitching. Interested in: AgriTech, AI & ML. Happy to mentor juniors: code review, career advice, interview prep.",
+  "goal": "be_mentor",
+  "hiring_roles": [],
+  "company": "HealthTech-стартап",
+  "languages": [
+   "en",
+   "ru"
+  ],
+  "slots": [
+   "13:30",
+   "14:30",
+   "15:00",
+   "17:00",
+   "18:00"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p036",
+  "name": "Динара Есенова",
+  "role": "student",
+  "stack": [
+   "javascript",
+   "python",
+   "java"
+  ],
+  "experience_years": 0,
+  "interests": [
+   "edtech",
+   "gamedev",
+   "robotics"
+  ],
+  "about": "Студентпін, javascript, python, java үйреніп жүрмін. Хакатондарға қатысамын. Қызығатын тақырыптарым: EdTech, Геймдев, Робототехника және IoT. javascript саласында өсуге болатын жұмыс немесе тағылымдама іздеймін.",
+  "goal": "job_seek",
+  "hiring_roles": [],
+  "company": "—",
+  "languages": [
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "11:00",
+   "12:00",
+   "15:00",
+   "15:30",
+   "18:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p037",
+  "name": "Карина Тоқтарова",
+  "role": "security",
+  "stack": [
+   "owasp",
+   "linux",
+   "pentest",
+   "python"
+  ],
+  "experience_years": 0,
+  "interests": [
+   "govtech",
+   "hackathons",
+   "cloud"
+  ],
+  "about": "Ақпараттық қауіпсіздік маманы, тәжірибем 0 жыл. owasp, linux, pentest құралдарымен жұмыс істеймін. Қызығатын тақырыптарым: GovTech, Хакатондар, Бұлт және DevOps. Ақпараттық қауіпсіздік маманы саласында өсуге болатын жұмыс немесе тағылымдама іздеймін.",
+  "goal": "job_seek",
+  "hiring_roles": [],
+  "company": "AgriTech-стартап",
+  "languages": [
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "11:00",
+   "11:30",
+   "13:30",
+   "14:30",
+   "15:00",
+   "16:00",
+   "16:30",
+   "17:00"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p038",
+  "name": "Арман Иванов",
+  "role": "frontend",
+  "stack": [
+   "next.js",
+   "javascript",
+   "html",
+   "react",
+   "css"
+  ],
+  "experience_years": 1,
+  "interests": [
+   "ecommerce",
+   "mobile",
+   "opensource",
+   "career"
+  ],
+  "about": "Frontend-разработчик с опытом 1 год. Работаю с next.js, javascript, html. Интересуюсь темами: E-commerce, Мобильные приложения, Open Source, Карьера в IT. Ищу работу или стажировку, где можно расти в Frontend-разработчик.",
+  "goal": "job_seek",
+  "hiring_roles": [],
+  "company": "EdTech-стартап",
+  "languages": [
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "11:30",
+   "12:00",
+   "13:30",
+   "14:00",
+   "15:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p039",
+  "name": "Сабина Иванова",
+  "role": "product",
+  "stack": [
+   "product management",
+   "sql",
+   "a/b testing",
+   "scrum",
+   "customer development"
+  ],
+  "experience_years": 2,
+  "interests": [
+   "edtech",
+   "fintech"
+  ],
+  "about": "Product / Project Manager с опытом 2 года. Работаю с product management, sql, a/b testing. Интересуюсь темами: EdTech, Финтех. Ищу работу или стажировку, где можно расти в Product / Project Manager.",
+  "goal": "job_seek",
+  "hiring_roles": [],
+  "company": "telecom-оператор",
+  "languages": [
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "12:30",
+   "13:00",
+   "14:00",
+   "14:30",
+   "17:30",
+   "18:00"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p040",
+  "name": "Меруерт Пак",
+  "role": "analyst",
+  "stack": [
+   "tableau",
+   "power bi",
+   "sql",
+   "excel",
+   "pandas"
+  ],
+  "experience_years": 1,
+  "interests": [
+   "product",
+   "fintech",
+   "govtech"
+  ],
+  "about": "Data analyst with 1 year of experience. I work with tableau, power bi, sql. Interested in: Product thinking, Fintech, GovTech. I enjoy sharing experience — can talk about tableau, power bi, sql and learn from your cases.",
+  "goal": "exchange",
+  "hiring_roles": [],
+  "company": "AgriTech-стартап",
+  "languages": [
+   "en",
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "11:00",
+   "11:30",
+   "13:00",
+   "16:00",
+   "17:00",
+   "18:00"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p041",
+  "name": "Даулет Жақсылықов",
+  "role": "analyst",
+  "stack": [
+   "python",
+   "a/b testing",
+   "excel"
+  ],
+  "experience_years": 3,
+  "interests": [
+   "govtech",
+   "product",
+   "data"
+  ],
+  "about": "Дерек талдаушы, тәжірибем 3 жыл. python, a/b testing, excel құралдарымен жұмыс істеймін. Қызығатын тақырыптарым: GovTech, Өнімдік ойлау, Деректер және аналитика. Дерек талдаушы саласында өсуге болатын жұмыс немесе тағылымдама іздеймін.",
+  "goal": "job_seek",
+  "hiring_roles": [],
+  "company": "аутсорс-студия",
+  "languages": [
+   "en",
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "11:30",
+   "12:00",
+   "12:30",
+   "14:30",
+   "16:00",
+   "18:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p042",
+  "name": "Бекзат Ким",
+  "role": "qa",
+  "stack": [
+   "playwright",
+   "postman",
+   "java"
+  ],
+  "experience_years": 0,
+  "interests": [
+   "fintech",
+   "career",
+   "opensource"
+  ],
+  "about": "QA-инженер с опытом 0 лет. Работаю с playwright, postman, java. Интересуюсь темами: Финтех, Карьера в IT, Open Source. Ищу работу или стажировку, где можно расти в QA-инженер.",
+  "goal": "job_seek",
+  "hiring_roles": [],
+  "company": "telecom-оператор",
+  "languages": [
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "11:30",
+   "12:30",
+   "13:00",
+   "14:30",
+   "15:30",
+   "16:00",
+   "18:00",
+   "18:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p043",
+  "name": "Темірлан Омаров",
+  "role": "frontend",
+  "stack": [
+   "react",
+   "vue",
+   "html",
+   "figma",
+   "css"
+  ],
+  "experience_years": 2,
+  "interests": [
+   "edtech",
+   "design"
+  ],
+  "about": "Frontend-разработчик с опытом 2 года. Работаю с react, vue, html. Интересуюсь темами: EdTech, Дизайн и UX. Люблю обмениваться опытом, могу рассказать про react, vue, html и послушать про ваши кейсы.",
+  "goal": "exchange",
+  "hiring_roles": [],
+  "company": "университет",
+  "languages": [
+   "ru"
+  ],
+  "slots": [
+   "11:30",
+   "12:30",
+   "13:30",
+   "14:30",
+   "16:30",
+   "18:00"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p044",
+  "name": "Арман Серіков",
+  "role": "product",
+  "stack": [
+   "jira",
+   "product management",
+   "sql",
+   "scrum"
+  ],
+  "experience_years": 6,
+  "interests": [
+   "data",
+   "product",
+   "cybersecurity"
+  ],
+  "about": "Product / Project Manager с опытом 6 лет. Работаю с jira, product management, sql. Интересуюсь темами: Данные и аналитика, Продуктовое мышление, Кибербезопасность. Люблю обмениваться опытом, могу рассказать про jira, product management, sql и послушать про ваши кейсы.",
+  "goal": "exchange",
+  "hiring_roles": [],
+  "company": "логистическая компания",
+  "languages": [
+   "en",
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "11:30",
+   "12:30",
+   "14:00",
+   "15:00",
+   "15:30",
+   "16:00",
+   "17:00",
+   "17:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p045",
+  "name": "Игорь Ли",
+  "role": "backend",
+  "stack": [
+   "fastapi",
+   "spring",
+   "redis"
+  ],
+  "experience_years": 5,
+  "interests": [
+   "cloud",
+   "ai",
+   "gamedev"
+  ],
+  "about": "Backend developer with 5 years of experience. I work with fastapi, spring, redis. Interested in: Cloud & DevOps, AI & ML, Game dev. I enjoy sharing experience — can talk about fastapi, spring, redis and learn from your cases.",
+  "goal": "exchange",
+  "hiring_roles": [],
+  "company": "логистическая компания",
+  "languages": [
+   "en",
+   "ru"
+  ],
+  "slots": [
+   "11:00",
+   "12:00",
+   "13:00",
+   "14:00",
+   "18:00",
+   "18:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p046",
+  "name": "Ольга Жақсылықова",
+  "role": "analyst",
+  "stack": [
+   "excel",
+   "sql",
+   "a/b testing"
+  ],
+  "experience_years": 6,
+  "interests": [
+   "ecommerce",
+   "data",
+   "govtech"
+  ],
+  "about": "Аналитик данных с опытом 6 лет. Работаю с excel, sql, a/b testing. Интересуюсь темами: E-commerce, Данные и аналитика, GovTech. Нанимаю в команду: Аналитик данных, Product / Project Manager. Ищу мотивированных людей.",
+  "goal": "hire",
+  "hiring_roles": [
+   "analyst",
+   "product"
+  ],
+  "company": "AgriTech-стартап",
+  "languages": [
+   "en",
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "11:30",
+   "12:00",
+   "13:30",
+   "15:30",
+   "17:30",
+   "18:00",
+   "18:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p047",
+  "name": "Максим Жұмабеков",
+  "role": "analyst",
+  "stack": [
+   "excel",
+   "tableau",
+   "sql",
+   "a/b testing",
+   "power bi"
+  ],
+  "experience_years": 13,
+  "interests": [
+   "ecommerce",
+   "govtech"
+  ],
+  "about": "Аналитик данных с опытом 13 лет. Работаю с excel, tableau, sql. Интересуюсь темами: E-commerce, GovTech. Нанимаю в команду: Аналитик данных, Product / Project Manager. Ищу мотивированных людей.",
+  "goal": "hire",
+  "hiring_roles": [
+   "analyst",
+   "product"
+  ],
+  "company": "финтех-компания",
+  "languages": [
+   "en",
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "12:30",
+   "13:00",
+   "13:30",
+   "14:00",
+   "16:00",
+   "17:00",
+   "18:00"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p048",
+  "name": "Алина Қуанышова",
+  "role": "frontend",
+  "stack": [
+   "css",
+   "html",
+   "typescript",
+   "next.js",
+   "javascript"
+  ],
+  "experience_years": 7,
+  "interests": [
+   "design",
+   "edtech",
+   "opensource"
+  ],
+  "about": "Frontend-разработчик с опытом 7 лет. Работаю с css, html, typescript. Интересуюсь темами: Дизайн и UX, EdTech, Open Source. Люблю обмениваться опытом, могу рассказать про css, html, typescript и послушать про ваши кейсы.",
+  "goal": "exchange",
+  "hiring_roles": [],
+  "company": "банк",
+  "languages": [
+   "en",
+   "ru"
+  ],
+  "slots": [
+   "13:00",
+   "13:30",
+   "15:30",
+   "18:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p049",
+  "name": "Мадина Ахметова",
+  "role": "devops",
+  "stack": [
+   "terraform",
+   "grafana",
+   "ansible",
+   "ci/cd"
+  ],
+  "experience_years": 9,
+  "interests": [
+   "cybersecurity",
+   "opensource"
+  ],
+  "about": "DevOps-инженер с опытом 9 лет. Работаю с terraform, grafana, ansible. Интересуюсь темами: Кибербезопасность, Open Source. Люблю обмениваться опытом, могу рассказать про terraform, grafana, ansible и послушать про ваши кейсы.",
+  "goal": "exchange",
+  "hiring_roles": [],
+  "company": "финтех-компания",
+  "languages": [
+   "en",
+   "ru"
+  ],
+  "slots": [
+   "11:00",
+   "12:00",
+   "15:30",
+   "16:00",
+   "16:30",
+   "17:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p050",
+  "name": "Бекзат Нұрланов",
+  "role": "backend",
+  "stack": [
+   "fastapi",
+   "docker",
+   "redis",
+   "kafka"
+  ],
+  "experience_years": 7,
+  "interests": [
+   "cloud",
+   "opensource",
+   "robotics"
+  ],
+  "about": "Backend-разработчик с опытом 7 лет. Работаю с fastapi, docker, redis. Интересуюсь темами: Облака и DevOps, Open Source, Робототехника и IoT. Делаю стартап в сфере Облака и DevOps, ищу кофаундера-бизнес/продакт.",
+  "goal": "find_cofounder",
+  "hiring_roles": [],
+  "company": "telecom-оператор",
+  "languages": [
+   "en",
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "12:30",
+   "13:00",
+   "14:00",
+   "14:30",
+   "15:30",
+   "17:30",
+   "18:00"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p051",
+  "name": "Сабина Тоқтарова",
+  "role": "design",
+  "stack": [
+   "figma",
+   "ui/ux",
+   "user research",
+   "design systems"
+  ],
+  "experience_years": 12,
+  "interests": [
+   "product",
+   "edtech"
+  ],
+  "about": "UI/UX-дизайнер с опытом 12 лет. Работаю с figma, ui/ux, user research. Интересуюсь темами: Продуктовое мышление, EdTech. Готов(а) менторить начинающих: код-ревью, карьера, подготовка к собеседованиям.",
+  "goal": "be_mentor",
+  "hiring_roles": [],
+  "company": "университет",
+  "languages": [
+   "ru"
+  ],
+  "slots": [
+   "11:00",
+   "11:30",
+   "14:00",
+   "14:30",
+   "16:00",
+   "16:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p052",
+  "name": "Виктория Ли",
+  "role": "product",
+  "stack": [
+   "product management",
+   "sql",
+   "customer development",
+   "jira",
+   "scrum"
+  ],
+  "experience_years": 10,
+  "interests": [
+   "data",
+   "edtech",
+   "fintech"
+  ],
+  "about": "Product / Project Manager с опытом 10 лет. Работаю с product management, sql, customer development. Интересуюсь темами: Данные и аналитика, EdTech, Финтех. Готов(а) менторить начинающих: код-ревью, карьера, подготовка к собеседованиям.",
+  "goal": "be_mentor",
+  "hiring_roles": [],
+  "company": "фриланс",
+  "languages": [
+   "en",
+   "ru"
+  ],
+  "slots": [
+   "11:00",
+   "12:00",
+   "13:30",
+   "14:30",
+   "15:30",
+   "17:00",
+   "18:00"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p053",
+  "name": "Мадина Смирнова",
+  "role": "frontend",
+  "stack": [
+   "css",
+   "typescript",
+   "react",
+   "html",
+   "javascript"
+  ],
+  "experience_years": 3,
+  "interests": [
+   "mobile",
+   "opensource"
+  ],
+  "about": "Frontend developer with 3 years of experience. I work with css, typescript, react. Interested in: Mobile apps, Open source. Looking for a mentor to help me reach the next level.",
+  "goal": "find_mentor",
+  "hiring_roles": [],
+  "company": "финтех-компания",
+  "languages": [
+   "en",
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "11:30",
+   "12:00",
+   "12:30",
+   "13:00",
+   "14:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p054",
+  "name": "Салтанат Смирнова",
+  "role": "student",
+  "stack": [
+   "sql",
+   "javascript",
+   "java",
+   "html",
+   "c++"
+  ],
+  "experience_years": 1,
+  "interests": [
+   "gamedev",
+   "career"
+  ],
+  "about": "Студент, изучаю sql, javascript, java. Участвую в хакатонах. Интересуюсь темами: Геймдев, Карьера в IT. Ищу работу или стажировку, где можно расти в sql.",
+  "goal": "job_seek",
+  "hiring_roles": [],
+  "company": "—",
+  "languages": [
+   "ru"
+  ],
+  "slots": [
+   "11:00",
+   "11:30",
+   "13:00",
+   "13:30",
+   "14:30",
+   "15:00",
+   "16:00",
+   "18:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p055",
+  "name": "Ерлан Есенов",
+  "role": "frontend",
+  "stack": [
+   "figma",
+   "next.js",
+   "html",
+   "javascript"
+  ],
+  "experience_years": 10,
+  "interests": [
+   "mobile",
+   "opensource",
+   "edtech"
+  ],
+  "about": "Frontend-әзірлеуші, тәжірибем 10 жыл. figma, next.js, html құралдарымен жұмыс істеймін. Қызығатын тақырыптарым: Мобильді қосымшалар, Open Source, EdTech. Тәжірибе алмасқанды ұнатамын, figma, next.js, html туралы айтып бере аламын.",
+  "goal": "exchange",
+  "hiring_roles": [],
+  "company": "госсектор",
+  "languages": [
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "11:30",
+   "12:30",
+   "13:30",
+   "15:00",
+   "16:30",
+   "17:00",
+   "17:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p056",
+  "name": "Дмитрий Серіков",
+  "role": "design",
+  "stack": [
+   "user research",
+   "design systems",
+   "ui/ux",
+   "figma"
+  ],
+  "experience_years": 1,
+  "interests": [
+   "design",
+   "edtech",
+   "startups"
+  ],
+  "about": "UI/UX-дизайнер с опытом 1 год. Работаю с user research, design systems, ui/ux. Интересуюсь темами: Дизайн и UX, EdTech, Стартапы. Хочу найти ментора, который поможет вырасти до следующего грейда.",
+  "goal": "find_mentor",
+  "hiring_roles": [],
+  "company": "фриланс",
+  "languages": [
+   "en",
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "11:30",
+   "12:00",
+   "13:00",
+   "13:30",
+   "15:30",
+   "16:00",
+   "18:00",
+   "18:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p057",
+  "name": "Бекзат Жақсылықов",
+  "role": "founder",
+  "stack": [
+   "sales",
+   "fundraising",
+   "pitching",
+   "business development",
+   "marketing"
+  ],
+  "experience_years": 5,
+  "interests": [
+   "startups",
+   "agritech",
+   "govtech",
+   "ecommerce"
+  ],
+  "about": "Фаундер / бизнес, тәжірибем 5 жыл. sales, fundraising, pitching құралдарымен жұмыс істеймін. Қызығатын тақырыптарым: Стартаптар, AgriTech, GovTech, E-commerce. Стартаптар саласында стартап жасап жатырмын, техникалық (CTO) серіктес іздеймін.",
+  "goal": "find_cofounder",
+  "hiring_roles": [],
+  "company": "HealthTech-стартап",
+  "languages": [
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "11:30",
+   "12:00",
+   "13:00",
+   "14:30",
+   "18:00"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p058",
+  "name": "Нәзира Бекмұратова",
+  "role": "founder",
+  "stack": [
+   "fundraising",
+   "marketing",
+   "business development",
+   "sales",
+   "pitching"
+  ],
+  "experience_years": 6,
+  "interests": [
+   "ai",
+   "healthtech",
+   "gamedev"
+  ],
+  "about": "Founder / business with 6 years of experience. I work with fundraising, marketing, business development. Interested in: AI & ML, HealthTech, Game dev. Building a startup in AI & ML, looking for a technical (CTO) co-founder.",
+  "goal": "find_cofounder",
+  "hiring_roles": [],
+  "company": "аутсорс-студия",
+  "languages": [
+   "en",
+   "ru"
+  ],
+  "slots": [
+   "12:30",
+   "14:30",
+   "15:00",
+   "15:30",
+   "16:30",
+   "17:00",
+   "18:00"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p059",
+  "name": "Меруерт Серікова",
+  "role": "design",
+  "stack": [
+   "user research",
+   "design systems",
+   "figma",
+   "prototyping"
+  ],
+  "experience_years": 12,
+  "interests": [
+   "edtech",
+   "design"
+  ],
+  "about": "UI/UX-дизайнер с опытом 12 лет. Работаю с user research, design systems, figma. Интересуюсь темами: EdTech, Дизайн и UX. Готов(а) менторить начинающих: код-ревью, карьера, подготовка к собеседованиям.",
+  "goal": "be_mentor",
+  "hiring_roles": [],
+  "company": "HealthTech-стартап",
+  "languages": [
+   "en",
+   "ru"
+  ],
+  "slots": [
+   "11:30",
+   "12:30",
+   "13:00",
+   "17:00"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p060",
+  "name": "Руслан Ахметов",
+  "role": "data_ml",
+  "stack": [
+   "nlp",
+   "python",
+   "scikit-learn"
+  ],
+  "experience_years": 3,
+  "interests": [
+   "llm",
+   "healthtech",
+   "ai"
+  ],
+  "about": "ML / Data Scientist with 3 years of experience. I work with nlp, python, scikit-learn. Interested in: LLMs & agents, HealthTech, AI & ML. Looking for a mentor to help me reach the next level.",
+  "goal": "find_mentor",
+  "hiring_roles": [],
+  "company": "IT-интегратор",
+  "languages": [
+   "en",
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "11:00",
+   "12:00",
+   "13:00",
+   "14:30",
+   "18:00",
+   "18:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p061",
+  "name": "Артём Тоқтаров",
+  "role": "analyst",
+  "stack": [
+   "pandas",
+   "excel",
+   "a/b testing",
+   "tableau",
+   "sql"
+  ],
+  "experience_years": 2,
+  "interests": [
+   "fintech",
+   "product",
+   "data"
+  ],
+  "about": "Data analyst with 2 years of experience. I work with pandas, excel, a/b testing. Interested in: Fintech, Product thinking, Data & analytics. Looking for a job or internship where I can grow in Data analyst.",
+  "goal": "job_seek",
+  "hiring_roles": [],
+  "company": "AgriTech-стартап",
+  "languages": [
+   "en",
+   "ru"
+  ],
+  "slots": [
+   "12:30",
+   "14:30",
+   "15:30",
+   "17:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p062",
+  "name": "Аружан Жұмабекова",
+  "role": "qa",
+  "stack": [
+   "java",
+   "playwright",
+   "pytest"
+  ],
+  "experience_years": 0,
+  "interests": [
+   "fintech",
+   "career"
+  ],
+  "about": "QA-инженер, тәжірибем 0 жыл. java, playwright, pytest құралдарымен жұмыс істеймін. Қызығатын тақырыптарым: Финтех, IT-дағы мансап. QA-инженер саласында өсуге болатын жұмыс немесе тағылымдама іздеймін.",
+  "goal": "job_seek",
+  "hiring_roles": [],
+  "company": "аутсорс-студия",
+  "languages": [
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "11:00",
+   "13:30",
+   "14:00",
+   "14:30",
+   "16:00",
+   "17:30",
+   "18:00",
+   "18:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p063",
+  "name": "Айгерім Сапарова",
+  "role": "data_ml",
+  "stack": [
+   "tensorflow",
+   "python",
+   "llm",
+   "sql"
+  ],
+  "experience_years": 14,
+  "interests": [
+   "qazaq_lang",
+   "llm",
+   "healthtech"
+  ],
+  "about": "ML / Data Scientist, тәжірибем 14 жыл. tensorflow, python, llm құралдарымен жұмыс істеймін. Қызығатын тақырыптарым: Қазақ тіліндегі IT, LLM және агенттер, HealthTech. Командаға маман іздеймін: ML / Data Scientist, Backend-әзірлеуші.",
+  "goal": "hire",
+  "hiring_roles": [
+   "data_ml",
+   "backend"
+  ],
+  "company": "IT-интегратор",
+  "languages": [
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "11:00",
+   "12:30",
+   "13:00",
+   "18:00"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p064",
+  "name": "Мирас Пак",
+  "role": "product",
+  "stack": [
+   "customer development",
+   "jira",
+   "pandas",
+   "mlops",
+   "grafana"
+  ],
+  "experience_years": 13,
+  "interests": [
+   "product",
+   "fintech",
+   "startups",
+   "gamedev"
+  ],
+  "about": "Product / Project Manager с опытом 13 лет. Работаю с customer development, jira, pandas. Интересуюсь темами: Продуктовое мышление, Финтех, Стартапы, Геймдев. Нанимаю в команду: QA-инженер, DevOps-инженер, ML / Data Scientist. Ищу мотивированных людей.",
+  "goal": "hire",
+  "hiring_roles": [
+   "qa",
+   "devops",
+   "data_ml"
+  ],
+  "company": "GameDev-студия",
+  "languages": [
+   "en",
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "11:30",
+   "12:00",
+   "14:00",
+   "15:00",
+   "16:30",
+   "17:00",
+   "17:30",
+   "18:00"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p065",
+  "name": "Ерлан Цой",
+  "role": "founder",
+  "stack": [
+   "marketing",
+   "sales",
+   "aws",
+   "spring",
+   "rest api"
+  ],
+  "experience_years": 14,
+  "interests": [
+   "ai",
+   "agritech"
+  ],
+  "about": "Фаундер / бизнес, тәжірибем 14 жыл. marketing, sales, aws құралдарымен жұмыс істеймін. Қызығатын тақырыптарым: ЖИ және ML, AgriTech. Командаға маман іздеймін: Дерек талдаушы, DevOps-инженер, Backend-әзірлеуші.",
+  "goal": "hire",
+  "hiring_roles": [
+   "analyst",
+   "devops",
+   "backend"
+  ],
+  "company": "логистическая компания",
+  "languages": [
+   "en",
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "11:00",
+   "12:00",
+   "15:30",
+   "16:00",
+   "17:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p066",
+  "name": "Нурбол Әбдіров",
+  "role": "devops",
+  "stack": [
+   "aws",
+   "linux",
+   "terraform"
+  ],
+  "experience_years": 11,
+  "interests": [
+   "opensource",
+   "cybersecurity",
+   "cloud"
+  ],
+  "about": "DevOps engineer with 11 years of experience. I work with aws, linux, terraform. Interested in: Open source, Cybersecurity, Cloud & DevOps. Happy to mentor juniors: code review, career advice, interview prep.",
+  "goal": "be_mentor",
+  "hiring_roles": [],
+  "company": "логистическая компания",
+  "languages": [
+   "en",
+   "ru"
+  ],
+  "slots": [
+   "11:00",
+   "11:30",
+   "12:00",
+   "14:30",
+   "16:30",
+   "18:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p067",
+  "name": "Аяжан Нұрланова",
+  "role": "founder",
+  "stack": [
+   "marketing",
+   "fundraising",
+   "kubernetes",
+   "vue",
+   "linux"
+  ],
+  "experience_years": 8,
+  "interests": [
+   "healthtech",
+   "fintech"
+  ],
+  "about": "Founder / business with 8 years of experience. I work with marketing, fundraising, kubernetes. Interested in: HealthTech, Fintech. Hiring for my team: Frontend developer, QA engineer, DevOps engineer.",
+  "goal": "hire",
+  "hiring_roles": [
+   "frontend",
+   "qa",
+   "devops"
+  ],
+  "company": "банк",
+  "languages": [
+   "en",
+   "ru"
+  ],
+  "slots": [
+   "12:00",
+   "15:30",
+   "16:00",
+   "16:30",
+   "17:00",
+   "17:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p068",
+  "name": "Карина Серікова",
+  "role": "backend",
+  "stack": [
+   "node.js",
+   "docker",
+   "java",
+   "spring",
+   "fastapi"
+  ],
+  "experience_years": 8,
+  "interests": [
+   "cloud",
+   "fintech"
+  ],
+  "about": "Backend-разработчик с опытом 8 лет. Работаю с node.js, docker, java. Интересуюсь темами: Облака и DevOps, Финтех. Делаю стартап в сфере Облака и DevOps, ищу кофаундера-бизнес/продакт.",
+  "goal": "find_cofounder",
+  "hiring_roles": [],
+  "company": "IT-интегратор",
+  "languages": [
+   "en",
+   "ru"
+  ],
+  "slots": [
+   "11:30",
+   "12:00",
+   "13:30",
+   "15:30",
+   "17:00",
+   "17:30",
+   "18:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p069",
+  "name": "Камила Жұмабекова",
+  "role": "gamedev",
+  "stack": [
+   "c++",
+   "unity",
+   "blender"
+  ],
+  "experience_years": 10,
+  "interests": [
+   "edtech",
+   "gamedev",
+   "startups"
+  ],
+  "about": "GameDev-разработчик с опытом 10 лет. Работаю с c++, unity, blender. Интересуюсь темами: EdTech, Геймдев, Стартапы. Люблю обмениваться опытом, могу рассказать про c++, unity, blender и послушать про ваши кейсы.",
+  "goal": "exchange",
+  "hiring_roles": [],
+  "company": "университет",
+  "languages": [
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "12:00",
+   "12:30",
+   "13:00",
+   "15:00",
+   "16:00",
+   "18:00"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p070",
+  "name": "Камила Байжанова",
+  "role": "design",
+  "stack": [
+   "design systems",
+   "prototyping",
+   "user research",
+   "figma",
+   "ui/ux"
+  ],
+  "experience_years": 14,
+  "interests": [
+   "design",
+   "edtech"
+  ],
+  "about": "UI/UX-дизайнер с опытом 14 лет. Работаю с design systems, prototyping, user research. Интересуюсь темами: Дизайн и UX, EdTech. Готов(а) менторить начинающих: код-ревью, карьера, подготовка к собеседованиям.",
+  "goal": "be_mentor",
+  "hiring_roles": [],
+  "company": "telecom-оператор",
+  "languages": [
+   "en",
+   "ru"
+  ],
+  "slots": [
+   "15:00",
+   "16:00",
+   "18:00",
+   "18:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p071",
+  "name": "Динара Тоқтарова",
+  "role": "student",
+  "stack": [
+   "javascript",
+   "html",
+   "c++",
+   "sql"
+  ],
+  "experience_years": 0,
+  "interests": [
+   "ai",
+   "edtech"
+  ],
+  "about": "Студент, изучаю javascript, html, c++. Участвую в хакатонах. Интересуюсь темами: ИИ и ML, EdTech. Хочу найти ментора, который поможет вырасти до следующего грейда.",
+  "goal": "find_mentor",
+  "hiring_roles": [],
+  "company": "—",
+  "languages": [
+   "ru"
+  ],
+  "slots": [
+   "11:30",
+   "13:30",
+   "15:00",
+   "16:30",
+   "18:00"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p072",
+  "name": "Ерлан Ли",
+  "role": "backend",
+  "stack": [
+   "go",
+   "postgresql",
+   "fastapi",
+   "docker",
+   "spring"
+  ],
+  "experience_years": 2,
+  "interests": [
+   "opensource",
+   "ecommerce"
+  ],
+  "about": "Backend developer with 2 years of experience. I work with go, postgresql, fastapi. Interested in: Open source, E-commerce. Looking for a job or internship where I can grow in Backend developer.",
+  "goal": "job_seek",
+  "hiring_roles": [],
+  "company": "фриланс",
+  "languages": [
+   "en",
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "11:00",
+   "11:30",
+   "12:30",
+   "14:00",
+   "14:30",
+   "15:00",
+   "16:00"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p073",
+  "name": "Динара Сапарова",
+  "role": "product",
+  "stack": [
+   "product management",
+   "sql",
+   "jira"
+  ],
+  "experience_years": 8,
+  "interests": [
+   "fintech",
+   "edtech",
+   "startups",
+   "llm"
+  ],
+  "about": "Product / Project Manager с опытом 8 лет. Работаю с product management, sql, jira. Интересуюсь темами: Финтех, EdTech, Стартапы, LLM и агенты. Люблю обмениваться опытом, могу рассказать про product management, sql, jira и послушать про ваши кейсы.",
+  "goal": "exchange",
+  "hiring_roles": [],
+  "company": "университет",
+  "languages": [
+   "en",
+   "ru"
+  ],
+  "slots": [
+   "11:30",
+   "13:00",
+   "14:00",
+   "14:30",
+   "15:00",
+   "15:30",
+   "17:00",
+   "18:00"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p074",
+  "name": "Салтанат Қуанышова",
+  "role": "founder",
+  "stack": [
+   "marketing",
+   "business development",
+   "pitching",
+   "sales",
+   "fundraising"
+  ],
+  "experience_years": 3,
+  "interests": [
+   "healthtech",
+   "govtech",
+   "ai",
+   "career"
+  ],
+  "about": "Фаундер / бизнес с опытом 3 года. Работаю с marketing, business development, pitching. Интересуюсь темами: HealthTech, GovTech, ИИ и ML, Карьера в IT. Люблю обмениваться опытом, могу рассказать про marketing, business development, pitching и послушать про ваши кейсы.",
+  "goal": "exchange",
+  "hiring_roles": [],
+  "company": "AgriTech-стартап",
+  "languages": [
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "13:00",
+   "13:30",
+   "14:00",
+   "15:30",
+   "16:30",
+   "17:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p075",
+  "name": "Айгерім Петрова",
+  "role": "security",
+  "stack": [
+   "pentest",
+   "siem",
+   "network security",
+   "python",
+   "owasp"
+  ],
+  "experience_years": 5,
+  "interests": [
+   "govtech",
+   "hackathons",
+   "cybersecurity"
+  ],
+  "about": "Специалист по ИБ с опытом 5 лет. Работаю с pentest, siem, network security. Интересуюсь темами: GovTech, Хакатоны, Кибербезопасность. Готов(а) менторить начинающих: код-ревью, карьера, подготовка к собеседованиям.",
+  "goal": "be_mentor",
+  "hiring_roles": [],
+  "company": "IT-интегратор",
+  "languages": [
+   "en",
+   "ru"
+  ],
+  "slots": [
+   "11:00",
+   "11:30",
+   "12:00",
+   "12:30",
+   "15:30",
+   "16:00",
+   "17:00",
+   "17:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p076",
+  "name": "Әлия Ермекова",
+  "role": "student",
+  "stack": [
+   "c++",
+   "sql",
+   "html",
+   "java",
+   "javascript"
+  ],
+  "experience_years": 1,
+  "interests": [
+   "robotics",
+   "gamedev",
+   "ai"
+  ],
+  "about": "Студентпін, c++, sql, html үйреніп жүрмін. Хакатондарға қатысамын. Қызығатын тақырыптарым: Робототехника және IoT, Геймдев, ЖИ және ML. Келесі деңгейге өсуге көмектесетін ментор іздеймін.",
+  "goal": "find_mentor",
+  "hiring_roles": [],
+  "company": "—",
+  "languages": [
+   "en",
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "13:00",
+   "14:30",
+   "16:00",
+   "16:30",
+   "17:00",
+   "17:30",
+   "18:00",
+   "18:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p077",
+  "name": "Меруерт Қуанышова",
+  "role": "analyst",
+  "stack": [
+   "pandas",
+   "tableau",
+   "power bi",
+   "a/b testing",
+   "python"
+  ],
+  "experience_years": 2,
+  "interests": [
+   "product",
+   "data",
+   "govtech"
+  ],
+  "about": "Дерек талдаушы, тәжірибем 2 жыл. pandas, tableau, power bi құралдарымен жұмыс істеймін. Қызығатын тақырыптарым: Өнімдік ойлау, Деректер және аналитика, GovTech. Дерек талдаушы саласында өсуге болатын жұмыс немесе тағылымдама іздеймін.",
+  "goal": "job_seek",
+  "hiring_roles": [],
+  "company": "банк",
+  "languages": [
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "11:00",
+   "11:30",
+   "13:00",
+   "16:30",
+   "18:00",
+   "18:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p078",
+  "name": "Лаура Қуанышова",
+  "role": "gamedev",
+  "stack": [
+   "unreal engine",
+   "c#",
+   "unity",
+   "blender",
+   "c++"
+  ],
+  "experience_years": 2,
+  "interests": [
+   "design",
+   "edtech"
+  ],
+  "about": "Game developer with 2 years of experience. I work with unreal engine, c#, unity. Interested in: Design & UX, EdTech. Looking for a job or internship where I can grow in Game developer.",
+  "goal": "job_seek",
+  "hiring_roles": [],
+  "company": "госсектор",
+  "languages": [
+   "en",
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "11:00",
+   "12:00",
+   "13:00",
+   "15:00"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p079",
+  "name": "Зарина Ермекова",
+  "role": "analyst",
+  "stack": [
+   "a/b testing",
+   "sql",
+   "excel"
+  ],
+  "experience_years": 10,
+  "interests": [
+   "govtech",
+   "data"
+  ],
+  "about": "Аналитик данных с опытом 10 лет. Работаю с a/b testing, sql, excel. Интересуюсь темами: GovTech, Данные и аналитика. Готов(а) менторить начинающих: код-ревью, карьера, подготовка к собеседованиям.",
+  "goal": "be_mentor",
+  "hiring_roles": [],
+  "company": "IT-интегратор",
+  "languages": [
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "11:30",
+   "14:00",
+   "14:30",
+   "17:00",
+   "17:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p080",
+  "name": "Дамир Смирнов",
+  "role": "analyst",
+  "stack": [
+   "power bi",
+   "tableau",
+   "excel",
+   "pandas"
+  ],
+  "experience_years": 1,
+  "interests": [
+   "govtech",
+   "ecommerce",
+   "edtech"
+  ],
+  "about": "Data analyst with 1 year of experience. I work with power bi, tableau, excel. Interested in: GovTech, E-commerce, EdTech. Looking for a job or internship where I can grow in Data analyst.",
+  "goal": "job_seek",
+  "hiring_roles": [],
+  "company": "IT-интегратор",
+  "languages": [
+   "en",
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "11:00",
+   "13:00",
+   "13:30",
+   "15:30",
+   "16:30",
+   "18:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p081",
+  "name": "Дмитрий Нұрланов",
+  "role": "qa",
+  "stack": [
+   "selenium",
+   "pytest",
+   "java",
+   "playwright",
+   "postman"
+  ],
+  "experience_years": 2,
+  "interests": [
+   "opensource",
+   "career"
+  ],
+  "about": "QA-инженер с опытом 2 года. Работаю с selenium, pytest, java. Интересуюсь темами: Open Source, Карьера в IT. Хочу найти ментора, который поможет вырасти до следующего грейда.",
+  "goal": "find_mentor",
+  "hiring_roles": [],
+  "company": "госсектор",
+  "languages": [
+   "en",
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "11:00",
+   "13:00",
+   "15:30",
+   "16:30",
+   "18:00",
+   "18:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p082",
+  "name": "Елена Бекмұратова",
+  "role": "product",
+  "stack": [
+   "a/b testing",
+   "product management",
+   "python",
+   "selenium",
+   "grafana"
+  ],
+  "experience_years": 13,
+  "interests": [
+   "startups",
+   "edtech",
+   "robotics"
+  ],
+  "about": "Product / Project manager with 13 years of experience. I work with a/b testing, product management, python. Interested in: Startups, EdTech, Robotics & IoT. Hiring for my team: QA engineer, DevOps engineer, Data analyst.",
+  "goal": "hire",
+  "hiring_roles": [
+   "qa",
+   "devops",
+   "analyst"
+  ],
+  "company": "фриланс",
+  "languages": [
+   "en",
+   "ru"
+  ],
+  "slots": [
+   "11:30",
+   "12:00",
+   "13:30",
+   "14:30",
+   "15:00",
+   "15:30",
+   "16:30",
+   "18:00"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p083",
+  "name": "Ерлан Жұмабеков",
+  "role": "mobile",
+  "stack": [
+   "kotlin",
+   "swift",
+   "react native",
+   "dart"
+  ],
+  "experience_years": 2,
+  "interests": [
+   "mobile",
+   "ecommerce",
+   "startups"
+  ],
+  "about": "Mobile developer with 2 years of experience. I work with kotlin, swift, react native. Interested in: Mobile apps, E-commerce, Startups. Looking for a mentor to help me reach the next level.",
+  "goal": "find_mentor",
+  "hiring_roles": [],
+  "company": "университет",
+  "languages": [
+   "en",
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "11:00",
+   "12:30",
+   "13:00",
+   "14:00",
+   "15:30",
+   "16:30",
+   "17:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p084",
+  "name": "Игорь Ахметов",
+  "role": "frontend",
+  "stack": [
+   "react",
+   "html",
+   "typescript",
+   "vue"
+  ],
+  "experience_years": 8,
+  "interests": [
+   "edtech",
+   "mobile",
+   "opensource"
+  ],
+  "about": "Frontend-разработчик с опытом 8 лет. Работаю с react, html, typescript. Интересуюсь темами: EdTech, Мобильные приложения, Open Source. Люблю обмениваться опытом, могу рассказать про react, html, typescript и послушать про ваши кейсы.",
+  "goal": "exchange",
+  "hiring_roles": [],
+  "company": "логистическая компания",
+  "languages": [
+   "ru"
+  ],
+  "slots": [
+   "11:30",
+   "12:00",
+   "13:00",
+   "13:30",
+   "14:00",
+   "15:00",
+   "16:00",
+   "17:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p085",
+  "name": "Дмитрий Тоқтаров",
+  "role": "analyst",
+  "stack": [
+   "tableau",
+   "excel",
+   "a/b testing",
+   "python",
+   "sql"
+  ],
+  "experience_years": 5,
+  "interests": [
+   "product",
+   "fintech",
+   "ecommerce",
+   "edtech"
+  ],
+  "about": "Дерек талдаушы, тәжірибем 5 жыл. tableau, excel, a/b testing құралдарымен жұмыс істеймін. Қызығатын тақырыптарым: Өнімдік ойлау, Финтех, E-commerce, EdTech. Дерек талдаушы саласында өсуге болатын жұмыс немесе тағылымдама іздеймін.",
+  "goal": "job_seek",
+  "hiring_roles": [],
+  "company": "AgriTech-стартап",
+  "languages": [
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "11:00",
+   "11:30",
+   "12:30",
+   "14:30",
+   "15:30",
+   "17:00",
+   "18:00",
+   "18:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p086",
+  "name": "Елена Қасымова",
+  "role": "security",
+  "stack": [
+   "linux",
+   "python",
+   "network security"
+  ],
+  "experience_years": 2,
+  "interests": [
+   "govtech",
+   "hackathons"
+  ],
+  "about": "Специалист по ИБ с опытом 2 года. Работаю с linux, python, network security. Интересуюсь темами: GovTech, Хакатоны. Ищу работу или стажировку, где можно расти в Специалист по ИБ.",
+  "goal": "job_seek",
+  "hiring_roles": [],
+  "company": "GameDev-студия",
+  "languages": [
+   "en",
+   "ru"
+  ],
+  "slots": [
+   "12:30",
+   "13:00",
+   "14:00",
+   "15:00",
+   "16:00",
+   "18:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p087",
+  "name": "Жандос Байжанов",
+  "role": "gamedev",
+  "stack": [
+   "c++",
+   "unreal engine",
+   "blender",
+   "c#"
+  ],
+  "experience_years": 12,
+  "interests": [
+   "design",
+   "robotics",
+   "edtech",
+   "hackathons"
+  ],
+  "about": "GameDev-разработчик с опытом 12 лет. Работаю с c++, unreal engine, blender. Интересуюсь темами: Дизайн и UX, Робототехника и IoT, EdTech, Хакатоны. Готов(а) менторить начинающих: код-ревью, карьера, подготовка к собеседованиям.",
+  "goal": "be_mentor",
+  "hiring_roles": [],
+  "company": "банк",
+  "languages": [
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "11:00",
+   "13:00",
+   "14:00",
+   "14:30",
+   "15:00",
+   "17:00"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p088",
+  "name": "Дамир Тоқтаров",
+  "role": "hr",
+  "stack": [
+   "it recruiting",
+   "hr analytics",
+   "next.js",
+   "javascript",
+   "css"
+  ],
+  "experience_years": 6,
+  "interests": [
+   "startups",
+   "career",
+   "edtech",
+   "agritech"
+  ],
+  "about": "IT recruiter / HR with 6 years of experience. I work with it recruiting, hr analytics, next.js. Interested in: Startups, IT career, EdTech, AgriTech. Hiring for my team: UI/UX designer, Frontend developer.",
+  "goal": "hire",
+  "hiring_roles": [
+   "design",
+   "frontend"
+  ],
+  "company": "университет",
+  "languages": [
+   "en",
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "12:30",
+   "16:30",
+   "18:00",
+   "18:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p089",
+  "name": "Нұрлан Сапаров",
+  "role": "hr",
+  "stack": [
+   "hr analytics",
+   "sourcing",
+   "python",
+   "dart",
+   "selenium"
+  ],
+  "experience_years": 11,
+  "interests": [
+   "startups",
+   "career",
+   "edtech"
+  ],
+  "about": "IT-рекрутер / HR с опытом 11 лет. Работаю с hr analytics, sourcing, python. Интересуюсь темами: Стартапы, Карьера в IT, EdTech. Нанимаю в команду: ML / Data Scientist, Mobile-разработчик, QA-инженер. Ищу мотивированных людей.",
+  "goal": "hire",
+  "hiring_roles": [
+   "data_ml",
+   "mobile",
+   "qa"
+  ],
+  "company": "банк",
+  "languages": [
+   "ru"
+  ],
+  "slots": [
+   "15:00",
+   "15:30",
+   "17:30",
+   "18:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p090",
+  "name": "Максим Ким",
+  "role": "devops",
+  "stack": [
+   "linux",
+   "aws",
+   "terraform",
+   "ansible",
+   "ci/cd"
+  ],
+  "experience_years": 12,
+  "interests": [
+   "cybersecurity",
+   "opensource",
+   "hackathons"
+  ],
+  "about": "DevOps-инженер, тәжірибем 12 жыл. linux, aws, terraform құралдарымен жұмыс істеймін. Қызығатын тақырыптарым: Киберқауіпсіздік, Open Source, Хакатондар. Командаға маман іздеймін: DevOps-инженер, Ақпараттық қауіпсіздік маманы.",
+  "goal": "hire",
+  "hiring_roles": [
+   "devops",
+   "security"
+  ],
+  "company": "e-commerce платформа",
+  "languages": [
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "11:30",
+   "17:30",
+   "18:00",
+   "18:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p091",
+  "name": "Нұрлан Ли",
+  "role": "product",
+  "stack": [
+   "product management",
+   "jira",
+   "sql"
+  ],
+  "experience_years": 2,
+  "interests": [
+   "product",
+   "edtech",
+   "fintech"
+  ],
+  "about": "Product / Project Manager с опытом 2 года. Работаю с product management, jira, sql. Интересуюсь темами: Продуктовое мышление, EdTech, Финтех. Ищу работу или стажировку, где можно расти в Product / Project Manager.",
+  "goal": "job_seek",
+  "hiring_roles": [],
+  "company": "логистическая компания",
+  "languages": [
+   "en",
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "11:00",
+   "13:00",
+   "15:00",
+   "16:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p092",
+  "name": "Артём Жұмабеков",
+  "role": "mobile",
+  "stack": [
+   "swift",
+   "dart",
+   "firebase",
+   "flutter",
+   "react native"
+  ],
+  "experience_years": 2,
+  "interests": [
+   "fintech",
+   "ecommerce",
+   "mobile"
+  ],
+  "about": "Mobile developer with 2 years of experience. I work with swift, dart, firebase. Interested in: Fintech, E-commerce, Mobile apps. I enjoy sharing experience — can talk about swift, dart, firebase and learn from your cases.",
+  "goal": "exchange",
+  "hiring_roles": [],
+  "company": "e-commerce платформа",
+  "languages": [
+   "en",
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "11:30",
+   "15:30",
+   "16:00",
+   "17:30",
+   "18:00"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p093",
+  "name": "Ерлан Әбдіров",
+  "role": "mobile",
+  "stack": [
+   "dart",
+   "swift",
+   "kotlin"
+  ],
+  "experience_years": 12,
+  "interests": [
+   "ecommerce",
+   "fintech",
+   "startups"
+  ],
+  "about": "Mobile-разработчик с опытом 12 лет. Работаю с dart, swift, kotlin. Интересуюсь темами: E-commerce, Финтех, Стартапы. Нанимаю в команду: Mobile-разработчик, Backend-разработчик. Ищу мотивированных людей.",
+  "goal": "hire",
+  "hiring_roles": [
+   "mobile",
+   "backend"
+  ],
+  "company": "IT-интегратор",
+  "languages": [
+   "ru"
+  ],
+  "slots": [
+   "14:00",
+   "15:30",
+   "16:30",
+   "17:30",
+   "18:00"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p094",
+  "name": "Інжу Жұмабекова",
+  "role": "product",
+  "stack": [
+   "product management",
+   "jira",
+   "scrum",
+   "a/b testing"
+  ],
+  "experience_years": 0,
+  "interests": [
+   "product",
+   "fintech",
+   "data"
+  ],
+  "about": "Product / Project Manager с опытом 0 лет. Работаю с product management, jira, scrum. Интересуюсь темами: Продуктовое мышление, Финтех, Данные и аналитика. Хочу найти ментора, который поможет вырасти до следующего грейда.",
+  "goal": "find_mentor",
+  "hiring_roles": [],
+  "company": "аутсорс-студия",
+  "languages": [
+   "ru"
+  ],
+  "slots": [
+   "11:30",
+   "12:00",
+   "13:30",
+   "14:00",
+   "15:00",
+   "16:00",
+   "16:30",
+   "17:00"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p095",
+  "name": "Томирис Смирнова",
+  "role": "design",
+  "stack": [
+   "figma",
+   "prototyping",
+   "ui/ux",
+   "user research"
+  ],
+  "experience_years": 14,
+  "interests": [
+   "edtech",
+   "mobile"
+  ],
+  "about": "UI/UX-дизайнер с опытом 14 лет. Работаю с figma, prototyping, ui/ux. Интересуюсь темами: EdTech, Мобильные приложения. Готов(а) менторить начинающих: код-ревью, карьера, подготовка к собеседованиям.",
+  "goal": "be_mentor",
+  "hiring_roles": [],
+  "company": "EdTech-стартап",
+  "languages": [
+   "ru"
+  ],
+  "slots": [
+   "12:30",
+   "15:30",
+   "16:30",
+   "17:00"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p096",
+  "name": "Ольга Байжанова",
+  "role": "frontend",
+  "stack": [
+   "next.js",
+   "vue",
+   "react"
+  ],
+  "experience_years": 6,
+  "interests": [
+   "design",
+   "opensource",
+   "mobile"
+  ],
+  "about": "Frontend-разработчик с опытом 6 лет. Работаю с next.js, vue, react. Интересуюсь темами: Дизайн и UX, Open Source, Мобильные приложения. Делаю стартап в сфере Дизайн и UX, ищу кофаундера-бизнес/продакт.",
+  "goal": "find_cofounder",
+  "hiring_roles": [],
+  "company": "продуктовый стартап",
+  "languages": [
+   "en",
+   "ru"
+  ],
+  "slots": [
+   "11:00",
+   "11:30",
+   "13:30",
+   "15:00"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p097",
+  "name": "Азамат Пак",
+  "role": "product",
+  "stack": [
+   "jira",
+   "scrum",
+   "prototyping",
+   "javascript",
+   "vue"
+  ],
+  "experience_years": 6,
+  "interests": [
+   "startups",
+   "fintech",
+   "product"
+  ],
+  "about": "Product / Project менеджер, тәжірибем 6 жыл. jira, scrum, prototyping құралдарымен жұмыс істеймін. Қызығатын тақырыптарым: Стартаптар, Финтех, Өнімдік ойлау. Командаға маман іздеймін: Frontend-әзірлеуші, UI/UX-дизайнер.",
+  "goal": "hire",
+  "hiring_roles": [
+   "frontend",
+   "design"
+  ],
+  "company": "продуктовый стартап",
+  "languages": [
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "12:30",
+   "14:30",
+   "15:00",
+   "15:30",
+   "16:00",
+   "16:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p098",
+  "name": "Мади Сапаров",
+  "role": "devops",
+  "stack": [
+   "ansible",
+   "aws",
+   "terraform",
+   "ci/cd"
+  ],
+  "experience_years": 10,
+  "interests": [
+   "opensource",
+   "cybersecurity"
+  ],
+  "about": "DevOps-инженер с опытом 10 лет. Работаю с ansible, aws, terraform. Интересуюсь темами: Open Source, Кибербезопасность. Люблю обмениваться опытом, могу рассказать про ansible, aws, terraform и послушать про ваши кейсы.",
+  "goal": "exchange",
+  "hiring_roles": [],
+  "company": "e-commerce платформа",
+  "languages": [
+   "en",
+   "ru"
+  ],
+  "slots": [
+   "13:00",
+   "13:30",
+   "16:30",
+   "17:00",
+   "18:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p099",
+  "name": "Руслан Жақсылықов",
+  "role": "product",
+  "stack": [
+   "jira",
+   "scrum",
+   "linux",
+   "ci/cd",
+   "pytest"
+  ],
+  "experience_years": 10,
+  "interests": [
+   "startups",
+   "edtech",
+   "data"
+  ],
+  "about": "Product / Project Manager с опытом 10 лет. Работаю с jira, scrum, linux. Интересуюсь темами: Стартапы, EdTech, Данные и аналитика. Нанимаю в команду: QA-инженер, DevOps-инженер. Ищу мотивированных людей.",
+  "goal": "hire",
+  "hiring_roles": [
+   "qa",
+   "devops"
+  ],
+  "company": "университет",
+  "languages": [
+   "en",
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "11:30",
+   "14:00",
+   "14:30",
+   "17:00",
+   "17:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p100",
+  "name": "Әли Иванов",
+  "role": "hr",
+  "stack": [
+   "it recruiting",
+   "employer branding",
+   "hr analytics",
+   "sourcing"
+  ],
+  "experience_years": 7,
+  "interests": [
+   "edtech",
+   "career"
+  ],
+  "about": "IT-рекрутер / HR с опытом 7 лет. Работаю с it recruiting, employer branding, hr analytics. Интересуюсь темами: EdTech, Карьера в IT. Люблю обмениваться опытом, могу рассказать про it recruiting, employer branding, hr analytics и послушать про ваши кейсы.",
+  "goal": "exchange",
+  "hiring_roles": [],
+  "company": "банк",
+  "languages": [
+   "ru"
+  ],
+  "slots": [
+   "11:00",
+   "11:30",
+   "12:30",
+   "13:00",
+   "17:30",
+   "18:00"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p101",
+  "name": "Ерасыл Есенов",
+  "role": "qa",
+  "stack": [
+   "rest api",
+   "java",
+   "pytest",
+   "playwright",
+   "selenium"
+  ],
+  "experience_years": 3,
+  "interests": [
+   "opensource",
+   "career",
+   "fintech"
+  ],
+  "about": "QA-инженер, тәжірибем 3 жыл. rest api, java, pytest құралдарымен жұмыс істеймін. Қызығатын тақырыптарым: Open Source, IT-дағы мансап, Финтех. Келесі деңгейге өсуге көмектесетін ментор іздеймін.",
+  "goal": "find_mentor",
+  "hiring_roles": [],
+  "company": "AgriTech-стартап",
+  "languages": [
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "12:30",
+   "13:00",
+   "13:30",
+   "14:30",
+   "16:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p102",
+  "name": "Зарина Бекмұратова",
+  "role": "frontend",
+  "stack": [
+   "typescript",
+   "javascript",
+   "react",
+   "html",
+   "figma"
+  ],
+  "experience_years": 2,
+  "interests": [
+   "mobile",
+   "opensource"
+  ],
+  "about": "Frontend-разработчик с опытом 2 года. Работаю с typescript, javascript, react. Интересуюсь темами: Мобильные приложения, Open Source. Делаю стартап в сфере Мобильные приложения, ищу кофаундера-бизнес/продакт.",
+  "goal": "find_cofounder",
+  "hiring_roles": [],
+  "company": "госсектор",
+  "languages": [
+   "en",
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "12:00",
+   "14:00",
+   "14:30",
+   "16:00",
+   "16:30",
+   "17:00",
+   "17:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p103",
+  "name": "Мади Цой",
+  "role": "qa",
+  "stack": [
+   "postman",
+   "selenium",
+   "java"
+  ],
+  "experience_years": 5,
+  "interests": [
+   "career",
+   "fintech",
+   "edtech"
+  ],
+  "about": "QA-инженер, тәжірибем 5 жыл. postman, selenium, java құралдарымен жұмыс істеймін. Қызығатын тақырыптарым: IT-дағы мансап, Финтех, EdTech. Жаңадан бастағандарға менторлық жасауға дайынмын: код-ревью, мансап, сұхбатқа дайындық.",
+  "goal": "be_mentor",
+  "hiring_roles": [],
+  "company": "аутсорс-студия",
+  "languages": [
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "11:30",
+   "13:30",
+   "14:00",
+   "15:30",
+   "16:00",
+   "17:00",
+   "17:30",
+   "18:00"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p104",
+  "name": "Меруерт Омарова",
+  "role": "analyst",
+  "stack": [
+   "python",
+   "excel",
+   "tableau",
+   "pandas",
+   "power bi"
+  ],
+  "experience_years": 1,
+  "interests": [
+   "govtech",
+   "ecommerce"
+  ],
+  "about": "Аналитик данных с опытом 1 год. Работаю с python, excel, tableau. Интересуюсь темами: GovTech, E-commerce. Ищу работу или стажировку, где можно расти в Аналитик данных.",
+  "goal": "job_seek",
+  "hiring_roles": [],
+  "company": "продуктовый стартап",
+  "languages": [
+   "en",
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "12:00",
+   "13:00",
+   "13:30",
+   "14:30",
+   "17:00"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p105",
+  "name": "Бекзат Әбдіров",
+  "role": "data_ml",
+  "stack": [
+   "computer vision",
+   "nlp",
+   "scikit-learn",
+   "pandas",
+   "llm"
+  ],
+  "experience_years": 3,
+  "interests": [
+   "healthtech",
+   "llm",
+   "ai"
+  ],
+  "about": "ML / Data Scientist with 3 years of experience. I work with computer vision, nlp, scikit-learn. Interested in: HealthTech, LLMs & agents, AI & ML. Looking for a mentor to help me reach the next level.",
+  "goal": "find_mentor",
+  "hiring_roles": [],
+  "company": "логистическая компания",
+  "languages": [
+   "en",
+   "ru"
+  ],
+  "slots": [
+   "12:30",
+   "13:00",
+   "15:00",
+   "18:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p106",
+  "name": "Айым Мұратова",
+  "role": "devops",
+  "stack": [
+   "terraform",
+   "ansible",
+   "docker",
+   "kubernetes"
+  ],
+  "experience_years": 0,
+  "interests": [
+   "cloud",
+   "opensource",
+   "cybersecurity",
+   "fintech"
+  ],
+  "about": "DevOps-инженер, тәжірибем 0 жыл. terraform, ansible, docker құралдарымен жұмыс істеймін. Қызығатын тақырыптарым: Бұлт және DevOps, Open Source, Киберқауіпсіздік, Финтех. Келесі деңгейге өсуге көмектесетін ментор іздеймін.",
+  "goal": "find_mentor",
+  "hiring_roles": [],
+  "company": "EdTech-стартап",
+  "languages": [
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "14:00",
+   "15:30",
+   "16:30",
+   "17:00",
+   "17:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p107",
+  "name": "Ильяс Серіков",
+  "role": "data_ml",
+  "stack": [
+   "llm",
+   "mlops",
+   "sql",
+   "computer vision",
+   "nlp"
+  ],
+  "experience_years": 8,
+  "interests": [
+   "data",
+   "qazaq_lang",
+   "opensource"
+  ],
+  "about": "ML / Data Scientist with 8 years of experience. I work with llm, mlops, sql. Interested in: Data & analytics, Tech in Kazakh language, Open source. Happy to mentor juniors: code review, career advice, interview prep.",
+  "goal": "be_mentor",
+  "hiring_roles": [],
+  "company": "AgriTech-стартап",
+  "languages": [
+   "en",
+   "ru"
+  ],
+  "slots": [
+   "13:00",
+   "14:00",
+   "17:00",
+   "18:00"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p108",
+  "name": "Абылай Қуанышов",
+  "role": "data_ml",
+  "stack": [
+   "nlp",
+   "computer vision",
+   "tensorflow"
+  ],
+  "experience_years": 3,
+  "interests": [
+   "qazaq_lang",
+   "healthtech",
+   "agritech"
+  ],
+  "about": "ML / Data Scientist, тәжірибем 3 жыл. nlp, computer vision, tensorflow құралдарымен жұмыс істеймін. Қызығатын тақырыптарым: Қазақ тіліндегі IT, HealthTech, AgriTech. Тәжірибе алмасқанды ұнатамын, nlp, computer vision, tensorflow туралы айтып бере аламын.",
+  "goal": "exchange",
+  "hiring_roles": [],
+  "company": "аутсорс-студия",
+  "languages": [
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "13:00",
+   "15:00",
+   "16:30",
+   "17:00"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p109",
+  "name": "Нәзира Ахметова",
+  "role": "founder",
+  "stack": [
+   "sales",
+   "business development",
+   "pitching",
+   "fundraising"
+  ],
+  "experience_years": 6,
+  "interests": [
+   "healthtech",
+   "fintech"
+  ],
+  "about": "Фаундер / бизнес, тәжірибем 6 жыл. sales, business development, pitching құралдарымен жұмыс істеймін. Қызығатын тақырыптарым: HealthTech, Финтех. Жаңадан бастағандарға менторлық жасауға дайынмын: код-ревью, мансап, сұхбатқа дайындық.",
+  "goal": "be_mentor",
+  "hiring_roles": [],
+  "company": "финтех-компания",
+  "languages": [
+   "en",
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "11:00",
+   "13:00",
+   "13:30",
+   "14:30",
+   "15:30",
+   "16:00",
+   "17:30",
+   "18:00"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p110",
+  "name": "Айдар Жұмабеков",
+  "role": "mobile",
+  "stack": [
+   "swift",
+   "dart",
+   "flutter",
+   "kotlin"
+  ],
+  "experience_years": 8,
+  "interests": [
+   "mobile",
+   "fintech",
+   "design",
+   "qazaq_lang"
+  ],
+  "about": "Mobile-разработчик с опытом 8 лет. Работаю с swift, dart, flutter. Интересуюсь темами: Мобильные приложения, Финтех, Дизайн и UX, IT на казахском языке. Люблю обмениваться опытом, могу рассказать про swift, dart, flutter и послушать про ваши кейсы.",
+  "goal": "exchange",
+  "hiring_roles": [],
+  "company": "EdTech-стартап",
+  "languages": [
+   "en",
+   "ru"
+  ],
+  "slots": [
+   "11:30",
+   "12:30",
+   "14:00",
+   "15:30",
+   "16:30",
+   "17:00",
+   "18:00"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p111",
+  "name": "Санжар Тен",
+  "role": "gamedev",
+  "stack": [
+   "unreal engine",
+   "unity",
+   "c#",
+   "c++",
+   "blender"
+  ],
+  "experience_years": 12,
+  "interests": [
+   "design",
+   "robotics",
+   "edtech"
+  ],
+  "about": "GameDev-разработчик с опытом 12 лет. Работаю с unreal engine, unity, c#. Интересуюсь темами: Дизайн и UX, Робототехника и IoT, EdTech. Готов(а) менторить начинающих: код-ревью, карьера, подготовка к собеседованиям.",
+  "goal": "be_mentor",
+  "hiring_roles": [],
+  "company": "продуктовый стартап",
+  "languages": [
+   "en",
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "12:00",
+   "13:00",
+   "14:00",
+   "16:00",
+   "17:00",
+   "17:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p112",
+  "name": "Ольга Петрова",
+  "role": "mobile",
+  "stack": [
+   "dart",
+   "swift",
+   "react native"
+  ],
+  "experience_years": 12,
+  "interests": [
+   "design",
+   "mobile",
+   "ecommerce",
+   "edtech"
+  ],
+  "about": "Mobile-разработчик с опытом 12 лет. Работаю с dart, swift, react native. Интересуюсь темами: Дизайн и UX, Мобильные приложения, E-commerce, EdTech. Готов(а) менторить начинающих: код-ревью, карьера, подготовка к собеседованиям.",
+  "goal": "be_mentor",
+  "hiring_roles": [],
+  "company": "telecom-оператор",
+  "languages": [
+   "en",
+   "ru"
+  ],
+  "slots": [
+   "11:30",
+   "12:00",
+   "12:30",
+   "13:00",
+   "16:00",
+   "17:00",
+   "18:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p113",
+  "name": "Салтанат Омарова",
+  "role": "founder",
+  "stack": [
+   "pitching",
+   "fundraising",
+   "sales",
+   "marketing",
+   "business development"
+  ],
+  "experience_years": 5,
+  "interests": [
+   "fintech",
+   "healthtech"
+  ],
+  "about": "Фаундер / бизнес с опытом 5 лет. Работаю с pitching, fundraising, sales. Интересуюсь темами: Финтех, HealthTech. Делаю стартап в сфере Финтех, ищу кофаундера-технаря (CTO).",
+  "goal": "find_cofounder",
+  "hiring_roles": [],
+  "company": "университет",
+  "languages": [
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "11:00",
+   "12:00",
+   "13:30",
+   "18:00"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p114",
+  "name": "Ильяс Ким",
+  "role": "security",
+  "stack": [
+   "pentest",
+   "network security",
+   "linux"
+  ],
+  "experience_years": 6,
+  "interests": [
+   "cybersecurity",
+   "cloud"
+  ],
+  "about": "Специалист по ИБ с опытом 6 лет. Работаю с pentest, network security, linux. Интересуюсь темами: Кибербезопасность, Облака и DevOps. Готов(а) менторить начинающих: код-ревью, карьера, подготовка к собеседованиям.",
+  "goal": "be_mentor",
+  "hiring_roles": [],
+  "company": "университет",
+  "languages": [
+   "en",
+   "ru"
+  ],
+  "slots": [
+   "11:30",
+   "14:00",
+   "15:00",
+   "16:00",
+   "16:30",
+   "17:30",
+   "18:00"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p115",
+  "name": "Бекзат Цой",
+  "role": "founder",
+  "stack": [
+   "pitching",
+   "business development",
+   "fundraising",
+   "sales"
+  ],
+  "experience_years": 3,
+  "interests": [
+   "startups",
+   "fintech",
+   "data"
+  ],
+  "about": "Фаундер / бизнес с опытом 3 года. Работаю с pitching, business development, fundraising. Интересуюсь темами: Стартапы, Финтех, Данные и аналитика. Люблю обмениваться опытом, могу рассказать про pitching, business development, fundraising и послушать про ваши кейсы.",
+  "goal": "exchange",
+  "hiring_roles": [],
+  "company": "AgriTech-стартап",
+  "languages": [
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "15:30",
+   "16:00",
+   "16:30",
+   "18:00"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p116",
+  "name": "Томирис Иванова",
+  "role": "security",
+  "stack": [
+   "network security",
+   "linux",
+   "owasp",
+   "pentest",
+   "python"
+  ],
+  "experience_years": 3,
+  "interests": [
+   "cybersecurity",
+   "cloud"
+  ],
+  "about": "Специалист по ИБ с опытом 3 года. Работаю с network security, linux, owasp. Интересуюсь темами: Кибербезопасность, Облака и DevOps. Ищу работу или стажировку, где можно расти в Специалист по ИБ.",
+  "goal": "job_seek",
+  "hiring_roles": [],
+  "company": "GameDev-студия",
+  "languages": [
+   "en",
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "11:00",
+   "12:00",
+   "13:30",
+   "14:30",
+   "15:00",
+   "17:30",
+   "18:00",
+   "18:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p117",
+  "name": "Мади Талғатов",
+  "role": "backend",
+  "stack": [
+   "postgresql",
+   "python",
+   "java"
+  ],
+  "experience_years": 9,
+  "interests": [
+   "ecommerce",
+   "opensource",
+   "cloud"
+  ],
+  "about": "Backend-разработчик с опытом 9 лет. Работаю с postgresql, python, java. Интересуюсь темами: E-commerce, Open Source, Облака и DevOps. Делаю стартап в сфере E-commerce, ищу кофаундера-бизнес/продакт.",
+  "goal": "find_cofounder",
+  "hiring_roles": [],
+  "company": "GameDev-студия",
+  "languages": [
+   "en",
+   "ru"
+  ],
+  "slots": [
+   "12:30",
+   "13:00",
+   "13:30",
+   "14:00",
+   "14:30",
+   "16:30",
+   "18:00"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p118",
+  "name": "Олжас Жақсылықов",
+  "role": "mobile",
+  "stack": [
+   "react native",
+   "kotlin",
+   "dart"
+  ],
+  "experience_years": 4,
+  "interests": [
+   "fintech",
+   "startups",
+   "mobile"
+  ],
+  "about": "Mobile developer with 4 years of experience. I work with react native, kotlin, dart. Interested in: Fintech, Startups, Mobile apps. I enjoy sharing experience — can talk about react native, kotlin, dart and learn from your cases.",
+  "goal": "exchange",
+  "hiring_roles": [],
+  "company": "логистическая компания",
+  "languages": [
+   "en",
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "12:30",
+   "13:30",
+   "14:30",
+   "15:30",
+   "16:30",
+   "17:30",
+   "18:00",
+   "18:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p119",
+  "name": "Санжар Жұмабеков",
+  "role": "product",
+  "stack": [
+   "jira",
+   "scrum",
+   "a/b testing"
+  ],
+  "experience_years": 1,
+  "interests": [
+   "fintech",
+   "product"
+  ],
+  "about": "Product / Project manager with 1 year of experience. I work with jira, scrum, a/b testing. Interested in: Fintech, Product thinking. Building a startup in Fintech, looking for a technical (CTO) co-founder.",
+  "goal": "find_cofounder",
+  "hiring_roles": [],
+  "company": "продуктовый стартап",
+  "languages": [
+   "en",
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "12:30",
+   "14:00",
+   "14:30",
+   "15:00",
+   "18:00",
+   "18:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p120",
+  "name": "Игорь Есенов",
+  "role": "gamedev",
+  "stack": [
+   "c++",
+   "unity",
+   "unreal engine",
+   "blender"
+  ],
+  "experience_years": 7,
+  "interests": [
+   "robotics",
+   "gamedev"
+  ],
+  "about": "GameDev-әзірлеуші, тәжірибем 7 жыл. c++, unity, unreal engine құралдарымен жұмыс істеймін. Қызығатын тақырыптарым: Робототехника және IoT, Геймдев. Тәжірибе алмасқанды ұнатамын, c++, unity, unreal engine туралы айтып бере аламын.",
+  "goal": "exchange",
+  "hiring_roles": [],
+  "company": "telecom-оператор",
+  "languages": [
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "13:00",
+   "13:30",
+   "14:00",
+   "14:30",
+   "18:00"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p121",
+  "name": "Нұрлан Петров",
+  "role": "data_ml",
+  "stack": [
+   "pytorch",
+   "tensorflow",
+   "scikit-learn",
+   "computer vision",
+   "pandas"
+  ],
+  "experience_years": 1,
+  "interests": [
+   "data",
+   "healthtech",
+   "ai"
+  ],
+  "about": "ML / Data Scientist, тәжірибем 1 жыл. pytorch, tensorflow, scikit-learn құралдарымен жұмыс істеймін. Қызығатын тақырыптарым: Деректер және аналитика, HealthTech, ЖИ және ML. ML / Data Scientist саласында өсуге болатын жұмыс немесе тағылымдама іздеймін.",
+  "goal": "job_seek",
+  "hiring_roles": [],
+  "company": "продуктовый стартап",
+  "languages": [
+   "en",
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "11:30",
+   "12:00",
+   "13:00",
+   "17:00",
+   "17:30",
+   "18:00"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p122",
+  "name": "Арман Ли",
+  "role": "student",
+  "stack": [
+   "c++",
+   "java",
+   "javascript",
+   "sql",
+   "python"
+  ],
+  "experience_years": 0,
+  "interests": [
+   "ai",
+   "hackathons",
+   "career"
+  ],
+  "about": "Студент, изучаю c++, java, javascript. Участвую в хакатонах. Интересуюсь темами: ИИ и ML, Хакатоны, Карьера в IT. Ищу работу или стажировку, где можно расти в c++.",
+  "goal": "job_seek",
+  "hiring_roles": [],
+  "company": "—",
+  "languages": [
+   "en",
+   "ru"
+  ],
+  "slots": [
+   "11:00",
+   "11:30",
+   "12:00",
+   "14:30",
+   "15:30",
+   "17:00",
+   "18:00",
+   "18:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p123",
+  "name": "Асель Есенова",
+  "role": "data_ml",
+  "stack": [
+   "python",
+   "pytorch",
+   "pandas"
+  ],
+  "experience_years": 14,
+  "interests": [
+   "llm",
+   "ai",
+   "data",
+   "design"
+  ],
+  "about": "ML / Data Scientist, тәжірибем 14 жыл. python, pytorch, pandas құралдарымен жұмыс істеймін. Қызығатын тақырыптарым: LLM және агенттер, ЖИ және ML, Деректер және аналитика, Дизайн және UX. Командаға маман іздеймін: ML / Data Scientist, Дерек талдаушы.",
+  "goal": "hire",
+  "hiring_roles": [
+   "data_ml",
+   "analyst"
+  ],
+  "company": "IT-интегратор",
+  "languages": [
+   "en",
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "11:00",
+   "12:00",
+   "13:30",
+   "14:00",
+   "16:00",
+   "17:30",
+   "18:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p124",
+  "name": "Анна Байжанова",
+  "role": "design",
+  "stack": [
+   "user research",
+   "design systems",
+   "figma",
+   "prototyping"
+  ],
+  "experience_years": 2,
+  "interests": [
+   "mobile",
+   "product",
+   "startups",
+   "career"
+  ],
+  "about": "UI/UX-дизайнер, тәжірибем 2 жыл. user research, design systems, figma құралдарымен жұмыс істеймін. Қызығатын тақырыптарым: Мобильді қосымшалар, Өнімдік ойлау, Стартаптар, IT-дағы мансап. UI/UX-дизайнер саласында өсуге болатын жұмыс немесе тағылымдама іздеймін.",
+  "goal": "job_seek",
+  "hiring_roles": [],
+  "company": "telecom-оператор",
+  "languages": [
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "11:00",
+   "13:30",
+   "14:00",
+   "14:30",
+   "15:00",
+   "16:00",
+   "16:30",
+   "17:00"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p125",
+  "name": "Лаура Қасымова",
+  "role": "devops",
+  "stack": [
+   "docker",
+   "grafana",
+   "terraform",
+   "ci/cd"
+  ],
+  "experience_years": 2,
+  "interests": [
+   "cybersecurity",
+   "cloud",
+   "opensource",
+   "qazaq_lang"
+  ],
+  "about": "DevOps-инженер с опытом 2 года. Работаю с docker, grafana, terraform. Интересуюсь темами: Кибербезопасность, Облака и DevOps, Open Source, IT на казахском языке. Ищу работу или стажировку, где можно расти в DevOps-инженер.",
+  "goal": "job_seek",
+  "hiring_roles": [],
+  "company": "EdTech-стартап",
+  "languages": [
+   "en",
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "14:30",
+   "15:30",
+   "17:00",
+   "17:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p126",
+  "name": "Гүлназ Тен",
+  "role": "devops",
+  "stack": [
+   "linux",
+   "ci/cd",
+   "grafana"
+  ],
+  "experience_years": 3,
+  "interests": [
+   "cybersecurity",
+   "cloud"
+  ],
+  "about": "DevOps engineer with 3 years of experience. I work with linux, ci/cd, grafana. Interested in: Cybersecurity, Cloud & DevOps. Looking for a job or internship where I can grow in DevOps engineer.",
+  "goal": "job_seek",
+  "hiring_roles": [],
+  "company": "банк",
+  "languages": [
+   "en",
+   "ru"
+  ],
+  "slots": [
+   "11:00",
+   "11:30",
+   "12:00",
+   "12:30",
+   "14:30",
+   "15:30",
+   "17:00",
+   "18:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p127",
+  "name": "Руслан Қасымов",
+  "role": "frontend",
+  "stack": [
+   "javascript",
+   "figma",
+   "typescript",
+   "next.js"
+  ],
+  "experience_years": 3,
+  "interests": [
+   "design",
+   "ecommerce"
+  ],
+  "about": "Frontend developer with 3 years of experience. I work with javascript, figma, typescript. Interested in: Design & UX, E-commerce. Building a startup in Design & UX, looking for a business/product co-founder.",
+  "goal": "find_cofounder",
+  "hiring_roles": [],
+  "company": "AgriTech-стартап",
+  "languages": [
+   "en",
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "12:00",
+   "12:30",
+   "13:00",
+   "13:30",
+   "14:00",
+   "16:30",
+   "18:00"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p128",
+  "name": "Жансая Жұмабекова",
+  "role": "hr",
+  "stack": [
+   "sourcing",
+   "employer branding",
+   "hr analytics"
+  ],
+  "experience_years": 10,
+  "interests": [
+   "career",
+   "edtech",
+   "startups"
+  ],
+  "about": "IT-рекрутер / HR, тәжірибем 10 жыл. sourcing, employer branding, hr analytics құралдарымен жұмыс істеймін. Қызығатын тақырыптарым: IT-дағы мансап, EdTech, Стартаптар. Тәжірибе алмасқанды ұнатамын, sourcing, employer branding, hr analytics туралы айтып бере аламын.",
+  "goal": "exchange",
+  "hiring_roles": [],
+  "company": "HealthTech-стартап",
+  "languages": [
+   "en",
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "11:30",
+   "12:00",
+   "12:30",
+   "13:30",
+   "15:30",
+   "16:30",
+   "17:30",
+   "18:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p129",
+  "name": "Салтанат Иванова",
+  "role": "frontend",
+  "stack": [
+   "vue",
+   "css",
+   "javascript"
+  ],
+  "experience_years": 8,
+  "interests": [
+   "ecommerce",
+   "design",
+   "mobile"
+  ],
+  "about": "Frontend-разработчик с опытом 8 лет. Работаю с vue, css, javascript. Интересуюсь темами: E-commerce, Дизайн и UX, Мобильные приложения. Делаю стартап в сфере E-commerce, ищу кофаундера-бизнес/продакт.",
+  "goal": "find_cofounder",
+  "hiring_roles": [],
+  "company": "GameDev-студия",
+  "languages": [
+   "en",
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "13:30",
+   "14:00",
+   "14:30",
+   "15:00",
+   "17:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p130",
+  "name": "Алихан Қасымов",
+  "role": "backend",
+  "stack": [
+   "redis",
+   "python",
+   "docker"
+  ],
+  "experience_years": 3,
+  "interests": [
+   "cloud",
+   "ai",
+   "opensource",
+   "mobile"
+  ],
+  "about": "Backend-разработчик с опытом 3 года. Работаю с redis, python, docker. Интересуюсь темами: Облака и DevOps, ИИ и ML, Open Source, Мобильные приложения. Делаю стартап в сфере Облака и DevOps, ищу кофаундера-бизнес/продакт.",
+  "goal": "find_cofounder",
+  "hiring_roles": [],
+  "company": "фриланс",
+  "languages": [
+   "en",
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "14:30",
+   "15:30",
+   "16:00",
+   "18:00"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p131",
+  "name": "Карина Қуанышова",
+  "role": "mobile",
+  "stack": [
+   "swift",
+   "react native",
+   "flutter"
+  ],
+  "experience_years": 1,
+  "interests": [
+   "fintech",
+   "design",
+   "mobile",
+   "agritech"
+  ],
+  "about": "Mobile-разработчик с опытом 1 год. Работаю с swift, react native, flutter. Интересуюсь темами: Финтех, Дизайн и UX, Мобильные приложения, AgriTech. Люблю обмениваться опытом, могу рассказать про swift, react native, flutter и послушать про ваши кейсы.",
+  "goal": "exchange",
+  "hiring_roles": [],
+  "company": "банк",
+  "languages": [
+   "en",
+   "ru"
+  ],
+  "slots": [
+   "11:00",
+   "11:30",
+   "14:00",
+   "16:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p132",
+  "name": "Салтанат Сейітова",
+  "role": "data_ml",
+  "stack": [
+   "computer vision",
+   "pytorch",
+   "sql"
+  ],
+  "experience_years": 1,
+  "interests": [
+   "healthtech",
+   "qazaq_lang",
+   "data",
+   "hackathons"
+  ],
+  "about": "ML / Data Scientist, тәжірибем 1 жыл. computer vision, pytorch, sql құралдарымен жұмыс істеймін. Қызығатын тақырыптарым: HealthTech, Қазақ тіліндегі IT, Деректер және аналитика, Хакатондар. ML / Data Scientist саласында өсуге болатын жұмыс немесе тағылымдама іздеймін.",
+  "goal": "job_seek",
+  "hiring_roles": [],
+  "company": "EdTech-стартап",
+  "languages": [
+   "en",
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "11:00",
+   "12:00",
+   "13:00",
+   "14:30",
+   "16:00",
+   "16:30",
+   "17:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p133",
+  "name": "Асель Бекмұратова",
+  "role": "founder",
+  "stack": [
+   "marketing",
+   "fundraising",
+   "sales",
+   "business development",
+   "pitching"
+  ],
+  "experience_years": 2,
+  "interests": [
+   "govtech",
+   "healthtech",
+   "fintech"
+  ],
+  "about": "Фаундер / бизнес, тәжірибем 2 жыл. marketing, fundraising, sales құралдарымен жұмыс істеймін. Қызығатын тақырыптарым: GovTech, HealthTech, Финтех. GovTech саласында стартап жасап жатырмын, техникалық (CTO) серіктес іздеймін.",
+  "goal": "find_cofounder",
+  "hiring_roles": [],
+  "company": "EdTech-стартап",
+  "languages": [
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "11:30",
+   "13:00",
+   "14:30",
+   "17:00"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p134",
+  "name": "Бекзат Серіков",
+  "role": "frontend",
+  "stack": [
+   "react",
+   "html",
+   "next.js",
+   "figma",
+   "css"
+  ],
+  "experience_years": 4,
+  "interests": [
+   "design",
+   "edtech"
+  ],
+  "about": "Frontend-разработчик с опытом 4 года. Работаю с react, html, next.js. Интересуюсь темами: Дизайн и UX, EdTech. Ищу работу или стажировку, где можно расти в Frontend-разработчик.",
+  "goal": "job_seek",
+  "hiring_roles": [],
+  "company": "фриланс",
+  "languages": [
+   "ru"
+  ],
+  "slots": [
+   "11:00",
+   "15:00",
+   "15:30",
+   "16:00",
+   "16:30",
+   "17:30",
+   "18:00",
+   "18:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p135",
+  "name": "Даулет Пак",
+  "role": "frontend",
+  "stack": [
+   "next.js",
+   "html",
+   "figma"
+  ],
+  "experience_years": 6,
+  "interests": [
+   "edtech",
+   "ecommerce",
+   "opensource"
+  ],
+  "about": "Frontend-әзірлеуші, тәжірибем 6 жыл. next.js, html, figma құралдарымен жұмыс істеймін. Қызығатын тақырыптарым: EdTech, E-commerce, Open Source. Жаңадан бастағандарға менторлық жасауға дайынмын: код-ревью, мансап, сұхбатқа дайындық.",
+  "goal": "be_mentor",
+  "hiring_roles": [],
+  "company": "AgriTech-стартап",
+  "languages": [
+   "en",
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "12:00",
+   "14:00",
+   "15:00",
+   "15:30",
+   "17:00"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p136",
+  "name": "Шыңғыс Цой",
+  "role": "student",
+  "stack": [
+   "python",
+   "java",
+   "sql",
+   "c++"
+  ],
+  "experience_years": 0,
+  "interests": [
+   "gamedev",
+   "career",
+   "hackathons",
+   "design"
+  ],
+  "about": "Student learning python, java, sql. I love hackathons. Interested in: Game dev, IT career, Hackathons, Design & UX. Looking for a job or internship where I can grow in python.",
+  "goal": "job_seek",
+  "hiring_roles": [],
+  "company": "—",
+  "languages": [
+   "en",
+   "ru"
+  ],
+  "slots": [
+   "12:00",
+   "12:30",
+   "14:00",
+   "14:30",
+   "15:00",
+   "17:30",
+   "18:00"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p137",
+  "name": "Максим Пак",
+  "role": "student",
+  "stack": [
+   "sql",
+   "python",
+   "c++",
+   "html",
+   "java"
+  ],
+  "experience_years": 1,
+  "interests": [
+   "hackathons",
+   "career"
+  ],
+  "about": "Студент, изучаю sql, python, c++. Участвую в хакатонах. Интересуюсь темами: Хакатоны, Карьера в IT. Ищу работу или стажировку, где можно расти в sql.",
+  "goal": "job_seek",
+  "hiring_roles": [],
+  "company": "—",
+  "languages": [
+   "ru"
+  ],
+  "slots": [
+   "14:00",
+   "14:30",
+   "15:00",
+   "16:00",
+   "16:30",
+   "17:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p138",
+  "name": "Темірлан Тоқтаров",
+  "role": "security",
+  "stack": [
+   "python",
+   "owasp",
+   "network security",
+   "linux"
+  ],
+  "experience_years": 1,
+  "interests": [
+   "govtech",
+   "hackathons"
+  ],
+  "about": "Security engineer with 1 year of experience. I work with python, owasp, network security. Interested in: GovTech, Hackathons. Looking for a mentor to help me reach the next level.",
+  "goal": "find_mentor",
+  "hiring_roles": [],
+  "company": "GameDev-студия",
+  "languages": [
+   "en",
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "13:30",
+   "15:30",
+   "17:00",
+   "17:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p139",
+  "name": "Камила Петрова",
+  "role": "product",
+  "stack": [
+   "product management",
+   "sql",
+   "jira",
+   "a/b testing",
+   "customer development"
+  ],
+  "experience_years": 4,
+  "interests": [
+   "startups",
+   "fintech"
+  ],
+  "about": "Product / Project Manager с опытом 4 года. Работаю с product management, sql, jira. Интересуюсь темами: Стартапы, Финтех. Ищу работу или стажировку, где можно расти в Product / Project Manager.",
+  "goal": "job_seek",
+  "hiring_roles": [],
+  "company": "e-commerce платформа",
+  "languages": [
+   "ru"
+  ],
+  "slots": [
+   "13:00",
+   "13:30",
+   "14:00",
+   "14:30",
+   "17:30",
+   "18:00"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p140",
+  "name": "Батыр Байжанов",
+  "role": "backend",
+  "stack": [
+   "spring",
+   "kafka",
+   "node.js",
+   "redis"
+  ],
+  "experience_years": 13,
+  "interests": [
+   "cloud",
+   "ecommerce",
+   "ai",
+   "opensource"
+  ],
+  "about": "Backend developer with 13 years of experience. I work with spring, kafka, node.js. Interested in: Cloud & DevOps, E-commerce, AI & ML, Open source. Happy to mentor juniors: code review, career advice, interview prep.",
+  "goal": "be_mentor",
+  "hiring_roles": [],
+  "company": "GameDev-студия",
+  "languages": [
+   "en",
+   "ru"
+  ],
+  "slots": [
+   "11:00",
+   "12:00",
+   "12:30",
+   "15:00",
+   "15:30",
+   "18:00"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p141",
+  "name": "Гүлназ Пак",
+  "role": "frontend",
+  "stack": [
+   "next.js",
+   "vue",
+   "html",
+   "css"
+  ],
+  "experience_years": 5,
+  "interests": [
+   "mobile",
+   "opensource",
+   "startups"
+  ],
+  "about": "Frontend-әзірлеуші, тәжірибем 5 жыл. next.js, vue, html құралдарымен жұмыс істеймін. Қызығатын тақырыптарым: Мобильді қосымшалар, Open Source, Стартаптар. Командаға маман іздеймін: Frontend-әзірлеуші, Mobile-әзірлеуші.",
+  "goal": "hire",
+  "hiring_roles": [
+   "frontend",
+   "mobile"
+  ],
+  "company": "AgriTech-стартап",
+  "languages": [
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "12:00",
+   "15:00",
+   "15:30",
+   "16:00",
+   "17:30",
+   "18:00"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p142",
+  "name": "Карина Ермекова",
+  "role": "product",
+  "stack": [
+   "a/b testing",
+   "jira",
+   "customer development"
+  ],
+  "experience_years": 6,
+  "interests": [
+   "fintech",
+   "data",
+   "startups"
+  ],
+  "about": "Product / Project менеджер, тәжірибем 6 жыл. a/b testing, jira, customer development құралдарымен жұмыс істеймін. Қызығатын тақырыптарым: Финтех, Деректер және аналитика, Стартаптар. Финтех саласында стартап жасап жатырмын, техникалық (CTO) серіктес іздеймін.",
+  "goal": "find_cofounder",
+  "hiring_roles": [],
+  "company": "e-commerce платформа",
+  "languages": [
+   "en",
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "12:00",
+   "12:30",
+   "14:30",
+   "15:00"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p143",
+  "name": "Ақбота Иванова",
+  "role": "student",
+  "stack": [
+   "java",
+   "javascript",
+   "sql"
+  ],
+  "experience_years": 0,
+  "interests": [
+   "ai",
+   "hackathons"
+  ],
+  "about": "Студент, изучаю java, javascript, sql. Участвую в хакатонах. Интересуюсь темами: ИИ и ML, Хакатоны. Ищу работу или стажировку, где можно расти в java.",
+  "goal": "job_seek",
+  "hiring_roles": [],
+  "company": "—",
+  "languages": [
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "11:00",
+   "14:30",
+   "16:00",
+   "17:30",
+   "18:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p144",
+  "name": "Динара Иванова",
+  "role": "design",
+  "stack": [
+   "user research",
+   "design systems",
+   "ui/ux",
+   "prototyping"
+  ],
+  "experience_years": 2,
+  "interests": [
+   "design",
+   "startups",
+   "edtech",
+   "gamedev"
+  ],
+  "about": "UI/UX-дизайнер с опытом 2 года. Работаю с user research, design systems, ui/ux. Интересуюсь темами: Дизайн и UX, Стартапы, EdTech, Геймдев. Делаю стартап в сфере Дизайн и UX, ищу кофаундера-технаря (CTO).",
+  "goal": "find_cofounder",
+  "hiring_roles": [],
+  "company": "telecom-оператор",
+  "languages": [
+   "ru"
+  ],
+  "slots": [
+   "11:00",
+   "12:30",
+   "13:30",
+   "14:00",
+   "16:00",
+   "16:30",
+   "17:30",
+   "18:00"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p145",
+  "name": "Ернар Ким",
+  "role": "student",
+  "stack": [
+   "javascript",
+   "sql",
+   "java",
+   "c++"
+  ],
+  "experience_years": 0,
+  "interests": [
+   "ai",
+   "gamedev"
+  ],
+  "about": "Студент, изучаю javascript, sql, java. Участвую в хакатонах. Интересуюсь темами: ИИ и ML, Геймдев. Ищу работу или стажировку, где можно расти в javascript.",
+  "goal": "job_seek",
+  "hiring_roles": [],
+  "company": "—",
+  "languages": [
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "11:00",
+   "12:00",
+   "12:30",
+   "16:30",
+   "17:30",
+   "18:00",
+   "18:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p146",
+  "name": "Дмитрий Ким",
+  "role": "hr",
+  "stack": [
+   "it recruiting",
+   "hr analytics",
+   "react native",
+   "figma",
+   "flutter"
+  ],
+  "experience_years": 13,
+  "interests": [
+   "edtech",
+   "career"
+  ],
+  "about": "IT-рекрутер / HR, тәжірибем 13 жыл. it recruiting, hr analytics, react native құралдарымен жұмыс істеймін. Қызығатын тақырыптарым: EdTech, IT-дағы мансап. Командаға маман іздеймін: Frontend-әзірлеуші, Дерек талдаушы, Mobile-әзірлеуші.",
+  "goal": "hire",
+  "hiring_roles": [
+   "frontend",
+   "analyst",
+   "mobile"
+  ],
+  "company": "университет",
+  "languages": [
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "11:30",
+   "13:00",
+   "15:00",
+   "16:00",
+   "17:30",
+   "18:00"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p147",
+  "name": "Мирас Ахметов",
+  "role": "founder",
+  "stack": [
+   "marketing",
+   "fundraising",
+   "sales"
+  ],
+  "experience_years": 5,
+  "interests": [
+   "agritech",
+   "govtech"
+  ],
+  "about": "Фаундер / бизнес с опытом 5 лет. Работаю с marketing, fundraising, sales. Интересуюсь темами: AgriTech, GovTech. Делаю стартап в сфере AgriTech, ищу кофаундера-технаря (CTO).",
+  "goal": "find_cofounder",
+  "hiring_roles": [],
+  "company": "GameDev-студия",
+  "languages": [
+   "en",
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "11:30",
+   "12:30",
+   "14:30",
+   "15:00",
+   "16:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p148",
+  "name": "Ерасыл Сапаров",
+  "role": "frontend",
+  "stack": [
+   "typescript",
+   "css",
+   "html"
+  ],
+  "experience_years": 5,
+  "interests": [
+   "ecommerce",
+   "opensource"
+  ],
+  "about": "Frontend-разработчик с опытом 5 лет. Работаю с typescript, css, html. Интересуюсь темами: E-commerce, Open Source. Ищу работу или стажировку, где можно расти в Frontend-разработчик.",
+  "goal": "job_seek",
+  "hiring_roles": [],
+  "company": "e-commerce платформа",
+  "languages": [
+   "en",
+   "ru"
+  ],
+  "slots": [
+   "11:00",
+   "12:00",
+   "12:30",
+   "17:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p149",
+  "name": "Батыр Серіков",
+  "role": "founder",
+  "stack": [
+   "fundraising",
+   "sales",
+   "pitching"
+  ],
+  "experience_years": 1,
+  "interests": [
+   "govtech",
+   "agritech",
+   "startups"
+  ],
+  "about": "Фаундер / бизнес с опытом 1 год. Работаю с fundraising, sales, pitching. Интересуюсь темами: GovTech, AgriTech, Стартапы. Делаю стартап в сфере GovTech, ищу кофаундера-технаря (CTO).",
+  "goal": "find_cofounder",
+  "hiring_roles": [],
+  "company": "AgriTech-стартап",
+  "languages": [
+   "en",
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "13:00",
+   "14:00",
+   "14:30",
+   "16:30",
+   "17:00",
+   "17:30",
+   "18:00"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p150",
+  "name": "Айдар Талғатов",
+  "role": "product",
+  "stack": [
+   "sql",
+   "scrum",
+   "customer development",
+   "product management",
+   "jira"
+  ],
+  "experience_years": 2,
+  "interests": [
+   "data",
+   "product",
+   "fintech"
+  ],
+  "about": "Product / Project Manager с опытом 2 года. Работаю с sql, scrum, customer development. Интересуюсь темами: Данные и аналитика, Продуктовое мышление, Финтех. Делаю стартап в сфере Данные и аналитика, ищу кофаундера-технаря (CTO).",
+  "goal": "find_cofounder",
+  "hiring_roles": [],
+  "company": "логистическая компания",
+  "languages": [
+   "ru"
+  ],
+  "slots": [
+   "11:00",
+   "11:30",
+   "13:00",
+   "14:00",
+   "14:30",
+   "18:00",
+   "18:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p151",
+  "name": "Темірлан Қасымов",
+  "role": "backend",
+  "stack": [
+   "rest api",
+   "node.js",
+   "django",
+   "go",
+   "postgresql"
+  ],
+  "experience_years": 6,
+  "interests": [
+   "fintech",
+   "ecommerce",
+   "cloud"
+  ],
+  "about": "Backend-разработчик с опытом 6 лет. Работаю с rest api, node.js, django. Интересуюсь темами: Финтех, E-commerce, Облака и DevOps. Делаю стартап в сфере Финтех, ищу кофаундера-бизнес/продакт.",
+  "goal": "find_cofounder",
+  "hiring_roles": [],
+  "company": "финтех-компания",
+  "languages": [
+   "ru"
+  ],
+  "slots": [
+   "11:00",
+   "12:00",
+   "15:00",
+   "16:00"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p152",
+  "name": "Інжу Тен",
+  "role": "frontend",
+  "stack": [
+   "javascript",
+   "next.js",
+   "typescript",
+   "html"
+  ],
+  "experience_years": 4,
+  "interests": [
+   "edtech",
+   "opensource",
+   "design"
+  ],
+  "about": "Frontend-разработчик с опытом 4 года. Работаю с javascript, next.js, typescript. Интересуюсь темами: EdTech, Open Source, Дизайн и UX. Делаю стартап в сфере EdTech, ищу кофаундера-бизнес/продакт.",
+  "goal": "find_cofounder",
+  "hiring_roles": [],
+  "company": "продуктовый стартап",
+  "languages": [
+   "en",
+   "ru"
+  ],
+  "slots": [
+   "11:00",
+   "11:30",
+   "13:30",
+   "14:30",
+   "16:00",
+   "16:30",
+   "18:00"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p153",
+  "name": "Аяжан Ермекова",
+  "role": "founder",
+  "stack": [
+   "sales",
+   "fundraising",
+   "pitching",
+   "marketing",
+   "business development"
+  ],
+  "experience_years": 10,
+  "interests": [
+   "startups",
+   "fintech",
+   "healthtech",
+   "robotics"
+  ],
+  "about": "Founder / business with 10 years of experience. I work with sales, fundraising, pitching. Interested in: Startups, Fintech, HealthTech, Robotics & IoT. I enjoy sharing experience — can talk about sales, fundraising, pitching and learn from your cases.",
+  "goal": "exchange",
+  "hiring_roles": [],
+  "company": "университет",
+  "languages": [
+   "en",
+   "ru"
+  ],
+  "slots": [
+   "11:30",
+   "12:30",
+   "16:00",
+   "17:00",
+   "18:00",
+   "18:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p154",
+  "name": "Диана Иванова",
+  "role": "student",
+  "stack": [
+   "javascript",
+   "c++",
+   "html"
+  ],
+  "experience_years": 0,
+  "interests": [
+   "ai",
+   "robotics",
+   "edtech"
+  ],
+  "about": "Студент, изучаю javascript, c++, html. Участвую в хакатонах. Интересуюсь темами: ИИ и ML, Робототехника и IoT, EdTech. Хочу найти ментора, который поможет вырасти до следующего грейда.",
+  "goal": "find_mentor",
+  "hiring_roles": [],
+  "company": "—",
+  "languages": [
+   "en",
+   "ru"
+  ],
+  "slots": [
+   "11:00",
+   "11:30",
+   "13:30",
+   "14:00",
+   "15:30",
+   "16:30",
+   "18:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p155",
+  "name": "Нұрлан Серіков",
+  "role": "mobile",
+  "stack": [
+   "kotlin",
+   "firebase",
+   "react native",
+   "flutter",
+   "swift"
+  ],
+  "experience_years": 8,
+  "interests": [
+   "startups",
+   "design"
+  ],
+  "about": "Mobile-разработчик с опытом 8 лет. Работаю с kotlin, firebase, react native. Интересуюсь темами: Стартапы, Дизайн и UX. Люблю обмениваться опытом, могу рассказать про kotlin, firebase, react native и послушать про ваши кейсы.",
+  "goal": "exchange",
+  "hiring_roles": [],
+  "company": "EdTech-стартап",
+  "languages": [
+   "en",
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "12:30",
+   "13:00",
+   "14:00",
+   "15:00",
+   "15:30",
+   "16:00",
+   "17:00",
+   "17:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p156",
+  "name": "Абылай Ермеков",
+  "role": "student",
+  "stack": [
+   "sql",
+   "java",
+   "c++",
+   "python",
+   "html"
+  ],
+  "experience_years": 1,
+  "interests": [
+   "edtech",
+   "ai",
+   "hackathons"
+  ],
+  "about": "Студент, изучаю sql, java, c++. Участвую в хакатонах. Интересуюсь темами: EdTech, ИИ и ML, Хакатоны. Хочу найти ментора, который поможет вырасти до следующего грейда.",
+  "goal": "find_mentor",
+  "hiring_roles": [],
+  "company": "—",
+  "languages": [
+   "ru"
+  ],
+  "slots": [
+   "11:30",
+   "13:30",
+   "14:00",
+   "14:30",
+   "15:00",
+   "16:00",
+   "16:30",
+   "17:00"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p157",
+  "name": "Виктория Жақсылықова",
+  "role": "qa",
+  "stack": [
+   "playwright",
+   "pytest",
+   "selenium"
+  ],
+  "experience_years": 1,
+  "interests": [
+   "opensource",
+   "career"
+  ],
+  "about": "QA-инженер с опытом 1 год. Работаю с playwright, pytest, selenium. Интересуюсь темами: Open Source, Карьера в IT. Люблю обмениваться опытом, могу рассказать про playwright, pytest, selenium и послушать про ваши кейсы.",
+  "goal": "exchange",
+  "hiring_roles": [],
+  "company": "HealthTech-стартап",
+  "languages": [
+   "en",
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "11:00",
+   "12:30",
+   "13:00",
+   "16:30",
+   "17:30",
+   "18:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p158",
+  "name": "Жандос Бекмұратов",
+  "role": "product",
+  "stack": [
+   "customer development",
+   "a/b testing",
+   "product management",
+   "jira",
+   "scrum"
+  ],
+  "experience_years": 6,
+  "interests": [
+   "fintech",
+   "product",
+   "edtech"
+  ],
+  "about": "Product / Project Manager с опытом 6 лет. Работаю с customer development, a/b testing, product management. Интересуюсь темами: Финтех, Продуктовое мышление, EdTech. Ищу работу или стажировку, где можно расти в Product / Project Manager.",
+  "goal": "job_seek",
+  "hiring_roles": [],
+  "company": "логистическая компания",
+  "languages": [
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "13:30",
+   "14:30",
+   "16:00",
+   "16:30",
+   "17:00",
+   "17:30",
+   "18:00"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p159",
+  "name": "Жансая Смирнова",
+  "role": "backend",
+  "stack": [
+   "django",
+   "fastapi",
+   "kafka",
+   "spring",
+   "rest api"
+  ],
+  "experience_years": 5,
+  "interests": [
+   "cloud",
+   "ecommerce",
+   "opensource"
+  ],
+  "about": "Backend-разработчик с опытом 5 лет. Работаю с django, fastapi, kafka. Интересуюсь темами: Облака и DevOps, E-commerce, Open Source. Делаю стартап в сфере Облака и DevOps, ищу кофаундера-бизнес/продакт.",
+  "goal": "find_cofounder",
+  "hiring_roles": [],
+  "company": "фриланс",
+  "languages": [
+   "en",
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "11:00",
+   "12:00",
+   "13:30",
+   "14:30",
+   "16:30",
+   "18:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p160",
+  "name": "Ақбота Қуанышова",
+  "role": "analyst",
+  "stack": [
+   "power bi",
+   "sql",
+   "a/b testing",
+   "python",
+   "pandas"
+  ],
+  "experience_years": 8,
+  "interests": [
+   "govtech",
+   "fintech"
+  ],
+  "about": "Дерек талдаушы, тәжірибем 8 жыл. power bi, sql, a/b testing құралдарымен жұмыс істеймін. Қызығатын тақырыптарым: GovTech, Финтех. Тәжірибе алмасқанды ұнатамын, power bi, sql, a/b testing туралы айтып бере аламын.",
+  "goal": "exchange",
+  "hiring_roles": [],
+  "company": "университет",
+  "languages": [
+   "en",
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "13:30",
+   "14:00",
+   "16:00",
+   "17:00",
+   "17:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p161",
+  "name": "Нұрлан Бекмұратов",
+  "role": "backend",
+  "stack": [
+   "java",
+   "postgresql",
+   "node.js",
+   "kafka"
+  ],
+  "experience_years": 0,
+  "interests": [
+   "fintech",
+   "ecommerce"
+  ],
+  "about": "Backend-разработчик с опытом 0 лет. Работаю с java, postgresql, node.js. Интересуюсь темами: Финтех, E-commerce. Хочу найти ментора, который поможет вырасти до следующего грейда.",
+  "goal": "find_mentor",
+  "hiring_roles": [],
+  "company": "аутсорс-студия",
+  "languages": [
+   "en",
+   "ru"
+  ],
+  "slots": [
+   "11:00",
+   "13:30",
+   "14:30",
+   "15:00",
+   "15:30",
+   "16:00",
+   "17:00",
+   "17:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p162",
+  "name": "Мирас Ким",
+  "role": "backend",
+  "stack": [
+   "spring",
+   "rest api",
+   "python"
+  ],
+  "experience_years": 0,
+  "interests": [
+   "opensource",
+   "ai"
+  ],
+  "about": "Backend developer with 0 years of experience. I work with spring, rest api, python. Interested in: Open source, AI & ML. Looking for a mentor to help me reach the next level.",
+  "goal": "find_mentor",
+  "hiring_roles": [],
+  "company": "продуктовый стартап",
+  "languages": [
+   "en",
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "11:00",
+   "11:30",
+   "12:00",
+   "16:00",
+   "16:30",
+   "17:30",
+   "18:00",
+   "18:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p163",
+  "name": "Нәзира Петрова",
+  "role": "backend",
+  "stack": [
+   "django",
+   "node.js",
+   "postgresql",
+   "redis",
+   "go"
+  ],
+  "experience_years": 1,
+  "interests": [
+   "ecommerce",
+   "ai",
+   "opensource",
+   "mobile"
+  ],
+  "about": "Backend-әзірлеуші, тәжірибем 1 жыл. django, node.js, postgresql құралдарымен жұмыс істеймін. Қызығатын тақырыптарым: E-commerce, ЖИ және ML, Open Source, Мобильді қосымшалар. Backend-әзірлеуші саласында өсуге болатын жұмыс немесе тағылымдама іздеймін.",
+  "goal": "job_seek",
+  "hiring_roles": [],
+  "company": "финтех-компания",
+  "languages": [
+   "en",
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "11:00",
+   "11:30",
+   "12:00",
+   "13:30",
+   "15:00",
+   "15:30",
+   "16:30",
+   "17:00"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p164",
+  "name": "Аружан Жақсылықова",
+  "role": "backend",
+  "stack": [
+   "go",
+   "rest api",
+   "python",
+   "java"
+  ],
+  "experience_years": 5,
+  "interests": [
+   "ai",
+   "opensource",
+   "mobile"
+  ],
+  "about": "Backend-әзірлеуші, тәжірибем 5 жыл. go, rest api, python құралдарымен жұмыс істеймін. Қызығатын тақырыптарым: ЖИ және ML, Open Source, Мобильді қосымшалар. Тәжірибе алмасқанды ұнатамын, go, rest api, python туралы айтып бере аламын.",
+  "goal": "exchange",
+  "hiring_roles": [],
+  "company": "EdTech-стартап",
+  "languages": [
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "13:00",
+   "16:00",
+   "16:30",
+   "17:00",
+   "17:30",
+   "18:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p165",
+  "name": "Карина Сейітова",
+  "role": "frontend",
+  "stack": [
+   "html",
+   "next.js",
+   "figma",
+   "javascript",
+   "react"
+  ],
+  "experience_years": 6,
+  "interests": [
+   "ecommerce",
+   "opensource"
+  ],
+  "about": "Frontend-разработчик с опытом 6 лет. Работаю с html, next.js, figma. Интересуюсь темами: E-commerce, Open Source. Готов(а) менторить начинающих: код-ревью, карьера, подготовка к собеседованиям.",
+  "goal": "be_mentor",
+  "hiring_roles": [],
+  "company": "HealthTech-стартап",
+  "languages": [
+   "en",
+   "ru"
+  ],
+  "slots": [
+   "12:30",
+   "13:00",
+   "13:30",
+   "15:30",
+   "18:00"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p166",
+  "name": "Санжар Омаров",
+  "role": "frontend",
+  "stack": [
+   "next.js",
+   "css",
+   "javascript"
+  ],
+  "experience_years": 3,
+  "interests": [
+   "design",
+   "opensource",
+   "ecommerce"
+  ],
+  "about": "Frontend-әзірлеуші, тәжірибем 3 жыл. next.js, css, javascript құралдарымен жұмыс істеймін. Қызығатын тақырыптарым: Дизайн және UX, Open Source, E-commerce. Келесі деңгейге өсуге көмектесетін ментор іздеймін.",
+  "goal": "find_mentor",
+  "hiring_roles": [],
+  "company": "логистическая компания",
+  "languages": [
+   "en",
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "11:30",
+   "12:30",
+   "13:00",
+   "15:30",
+   "18:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p167",
+  "name": "Дильназ Әбдірова",
+  "role": "mobile",
+  "stack": [
+   "kotlin",
+   "flutter",
+   "swift"
+  ],
+  "experience_years": 10,
+  "interests": [
+   "ecommerce",
+   "fintech"
+  ],
+  "about": "Mobile developer with 10 years of experience. I work with kotlin, flutter, swift. Interested in: E-commerce, Fintech. Happy to mentor juniors: code review, career advice, interview prep.",
+  "goal": "be_mentor",
+  "hiring_roles": [],
+  "company": "HealthTech-стартап",
+  "languages": [
+   "en",
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "13:00",
+   "13:30",
+   "14:30",
+   "15:00",
+   "17:00",
+   "18:00",
+   "18:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p168",
+  "name": "Олжас Ли",
+  "role": "mobile",
+  "stack": [
+   "flutter",
+   "kotlin",
+   "firebase"
+  ],
+  "experience_years": 1,
+  "interests": [
+   "startups",
+   "mobile"
+  ],
+  "about": "Mobile developer with 1 year of experience. I work with flutter, kotlin, firebase. Interested in: Startups, Mobile apps. Looking for a mentor to help me reach the next level.",
+  "goal": "find_mentor",
+  "hiring_roles": [],
+  "company": "банк",
+  "languages": [
+   "en",
+   "ru"
+  ],
+  "slots": [
+   "11:30",
+   "13:00",
+   "15:00",
+   "17:00",
+   "18:00"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p169",
+  "name": "Томирис Сейітова",
+  "role": "mobile",
+  "stack": [
+   "firebase",
+   "kotlin",
+   "react native",
+   "swift",
+   "dart"
+  ],
+  "experience_years": 2,
+  "interests": [
+   "startups",
+   "design"
+  ],
+  "about": "Mobile-разработчик с опытом 2 года. Работаю с firebase, kotlin, react native. Интересуюсь темами: Стартапы, Дизайн и UX. Ищу работу или стажировку, где можно расти в Mobile-разработчик.",
+  "goal": "job_seek",
+  "hiring_roles": [],
+  "company": "GameDev-студия",
+  "languages": [
+   "en",
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "11:00",
+   "12:30",
+   "13:00",
+   "13:30",
+   "14:30",
+   "16:30",
+   "17:00",
+   "18:00"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p170",
+  "name": "Шыңғыс Пак",
+  "role": "mobile",
+  "stack": [
+   "react native",
+   "dart",
+   "firebase",
+   "kotlin"
+  ],
+  "experience_years": 2,
+  "interests": [
+   "fintech",
+   "mobile"
+  ],
+  "about": "Mobile-разработчик с опытом 2 года. Работаю с react native, dart, firebase. Интересуюсь темами: Финтех, Мобильные приложения. Ищу работу или стажировку, где можно расти в Mobile-разработчик.",
+  "goal": "job_seek",
+  "hiring_roles": [],
+  "company": "e-commerce платформа",
+  "languages": [
+   "ru"
+  ],
+  "slots": [
+   "13:30",
+   "14:00",
+   "15:30",
+   "16:00",
+   "18:00",
+   "18:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p171",
+  "name": "Бекзат Мұратов",
+  "role": "data_ml",
+  "stack": [
+   "llm",
+   "computer vision",
+   "mlops",
+   "sql"
+  ],
+  "experience_years": 8,
+  "interests": [
+   "agritech",
+   "llm"
+  ],
+  "about": "ML / Data Scientist с опытом 8 лет. Работаю с llm, computer vision, mlops. Интересуюсь темами: AgriTech, LLM и агенты. Готов(а) менторить начинающих: код-ревью, карьера, подготовка к собеседованиям.",
+  "goal": "be_mentor",
+  "hiring_roles": [],
+  "company": "логистическая компания",
+  "languages": [
+   "en",
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "12:00",
+   "13:30",
+   "14:00",
+   "15:30",
+   "17:30",
+   "18:00"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p172",
+  "name": "Даулет Иванов",
+  "role": "analyst",
+  "stack": [
+   "pandas",
+   "tableau",
+   "a/b testing",
+   "python"
+  ],
+  "experience_years": 2,
+  "interests": [
+   "ecommerce",
+   "data",
+   "govtech"
+  ],
+  "about": "Дерек талдаушы, тәжірибем 2 жыл. pandas, tableau, a/b testing құралдарымен жұмыс істеймін. Қызығатын тақырыптарым: E-commerce, Деректер және аналитика, GovTech. Келесі деңгейге өсуге көмектесетін ментор іздеймін.",
+  "goal": "find_mentor",
+  "hiring_roles": [],
+  "company": "GameDev-студия",
+  "languages": [
+   "en",
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "11:00",
+   "11:30",
+   "12:00",
+   "13:00",
+   "15:30",
+   "16:00",
+   "17:00",
+   "18:00"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p173",
+  "name": "Ғалым Тоқтаров",
+  "role": "analyst",
+  "stack": [
+   "pandas",
+   "power bi",
+   "sql",
+   "python",
+   "tableau"
+  ],
+  "experience_years": 0,
+  "interests": [
+   "ecommerce",
+   "fintech",
+   "data"
+  ],
+  "about": "Data analyst with 0 years of experience. I work with pandas, power bi, sql. Interested in: E-commerce, Fintech, Data & analytics. Looking for a mentor to help me reach the next level.",
+  "goal": "find_mentor",
+  "hiring_roles": [],
+  "company": "e-commerce платформа",
+  "languages": [
+   "en",
+   "ru"
+  ],
+  "slots": [
+   "12:00",
+   "13:30",
+   "15:00",
+   "16:00",
+   "16:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p174",
+  "name": "Олжас Мұратов",
+  "role": "devops",
+  "stack": [
+   "terraform",
+   "ci/cd",
+   "grafana"
+  ],
+  "experience_years": 3,
+  "interests": [
+   "cloud",
+   "cybersecurity",
+   "opensource"
+  ],
+  "about": "DevOps-инженер с опытом 3 года. Работаю с terraform, ci/cd, grafana. Интересуюсь темами: Облака и DevOps, Кибербезопасность, Open Source. Хочу найти ментора, который поможет вырасти до следующего грейда.",
+  "goal": "find_mentor",
+  "hiring_roles": [],
+  "company": "университет",
+  "languages": [
+   "en",
+   "ru"
+  ],
+  "slots": [
+   "11:00",
+   "11:30",
+   "12:00",
+   "12:30",
+   "14:30",
+   "15:00",
+   "15:30",
+   "16:00"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p175",
+  "name": "Зарина Иванова",
+  "role": "qa",
+  "stack": [
+   "rest api",
+   "java",
+   "playwright"
+  ],
+  "experience_years": 7,
+  "interests": [
+   "career",
+   "fintech"
+  ],
+  "about": "QA-инженер с опытом 7 лет. Работаю с rest api, java, playwright. Интересуюсь темами: Карьера в IT, Финтех. Люблю обмениваться опытом, могу рассказать про rest api, java, playwright и послушать про ваши кейсы.",
+  "goal": "exchange",
+  "hiring_roles": [],
+  "company": "университет",
+  "languages": [
+   "ru"
+  ],
+  "slots": [
+   "11:30",
+   "12:00",
+   "12:30",
+   "13:00",
+   "14:00",
+   "14:30",
+   "17:00",
+   "18:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p176",
+  "name": "Жандос Омаров",
+  "role": "security",
+  "stack": [
+   "linux",
+   "network security",
+   "siem",
+   "owasp",
+   "pentest"
+  ],
+  "experience_years": 13,
+  "interests": [
+   "hackathons",
+   "govtech"
+  ],
+  "about": "Специалист по ИБ с опытом 13 лет. Работаю с linux, network security, siem. Интересуюсь темами: Хакатоны, GovTech. Нанимаю в команду: Специалист по ИБ, DevOps-инженер. Ищу мотивированных людей.",
+  "goal": "hire",
+  "hiring_roles": [
+   "security",
+   "devops"
+  ],
+  "company": "университет",
+  "languages": [
+   "en",
+   "ru"
+  ],
+  "slots": [
+   "12:30",
+   "14:00",
+   "15:00",
+   "16:00",
+   "17:00",
+   "17:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p177",
+  "name": "Алихан Пак",
+  "role": "founder",
+  "stack": [
+   "sales",
+   "marketing",
+   "pentest",
+   "siem",
+   "python"
+  ],
+  "experience_years": 9,
+  "interests": [
+   "healthtech",
+   "fintech",
+   "career"
+  ],
+  "about": "Founder / business with 9 years of experience. I work with sales, marketing, pentest. Interested in: HealthTech, Fintech, IT career. Hiring for my team: Security engineer, DevOps engineer.",
+  "goal": "hire",
+  "hiring_roles": [
+   "security",
+   "devops"
+  ],
+  "company": "банк",
+  "languages": [
+   "en",
+   "ru"
+  ],
+  "slots": [
+   "12:00",
+   "14:30",
+   "17:30",
+   "18:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p178",
+  "name": "Максим Цой",
+  "role": "security",
+  "stack": [
+   "owasp",
+   "siem",
+   "python"
+  ],
+  "experience_years": 2,
+  "interests": [
+   "cybersecurity",
+   "hackathons",
+   "cloud"
+  ],
+  "about": "Специалист по ИБ с опытом 2 года. Работаю с owasp, siem, python. Интересуюсь темами: Кибербезопасность, Хакатоны, Облака и DevOps. Хочу найти ментора, который поможет вырасти до следующего грейда.",
+  "goal": "find_mentor",
+  "hiring_roles": [],
+  "company": "GameDev-студия",
+  "languages": [
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "11:00",
+   "12:30",
+   "15:00",
+   "15:30",
+   "16:00",
+   "17:00",
+   "18:00",
+   "18:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p179",
+  "name": "Ерасыл Әбдіров",
+  "role": "security",
+  "stack": [
+   "network security",
+   "siem",
+   "owasp"
+  ],
+  "experience_years": 1,
+  "interests": [
+   "hackathons",
+   "govtech",
+   "cybersecurity"
+  ],
+  "about": "Security engineer with 1 year of experience. I work with network security, siem, owasp. Interested in: Hackathons, GovTech, Cybersecurity. I enjoy sharing experience — can talk about network security, siem, owasp and learn from your cases.",
+  "goal": "exchange",
+  "hiring_roles": [],
+  "company": "банк",
+  "languages": [
+   "en",
+   "ru"
+  ],
+  "slots": [
+   "15:00",
+   "15:30",
+   "16:30",
+   "17:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p180",
+  "name": "Темірлан Ким",
+  "role": "hr",
+  "stack": [
+   "it recruiting",
+   "sourcing",
+   "figma",
+   "react",
+   "typescript"
+  ],
+  "experience_years": 12,
+  "interests": [
+   "edtech",
+   "career"
+  ],
+  "about": "IT recruiter / HR with 12 years of experience. I work with it recruiting, sourcing, figma. Interested in: EdTech, IT career. Hiring for my team: Game developer, Frontend developer.",
+  "goal": "hire",
+  "hiring_roles": [
+   "gamedev",
+   "frontend"
+  ],
+  "company": "telecom-оператор",
+  "languages": [
+   "en",
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "12:30",
+   "13:30",
+   "14:30",
+   "16:00",
+   "17:00",
+   "18:00",
+   "18:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p181",
+  "name": "Анна Бекмұратова",
+  "role": "gamedev",
+  "stack": [
+   "c#",
+   "unreal engine",
+   "blender"
+  ],
+  "experience_years": 11,
+  "interests": [
+   "gamedev",
+   "edtech",
+   "design",
+   "fintech"
+  ],
+  "about": "GameDev-әзірлеуші, тәжірибем 11 жыл. c#, unreal engine, blender құралдарымен жұмыс істеймін. Қызығатын тақырыптарым: Геймдев, EdTech, Дизайн және UX, Финтех. Командаға маман іздеймін: GameDev-әзірлеуші, Frontend-әзірлеуші.",
+  "goal": "hire",
+  "hiring_roles": [
+   "gamedev",
+   "frontend"
+  ],
+  "company": "госсектор",
+  "languages": [
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "13:30",
+   "14:30",
+   "17:30",
+   "18:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p182",
+  "name": "Санжар Ли",
+  "role": "hr",
+  "stack": [
+   "sourcing",
+   "it recruiting",
+   "c#",
+   "unity",
+   "fastapi"
+  ],
+  "experience_years": 8,
+  "interests": [
+   "career",
+   "edtech",
+   "startups"
+  ],
+  "about": "IT-рекрутер / HR, тәжірибем 8 жыл. sourcing, it recruiting, c# құралдарымен жұмыс істеймін. Қызығатын тақырыптарым: IT-дағы мансап, EdTech, Стартаптар. Командаға маман іздеймін: GameDev-әзірлеуші, Backend-әзірлеуші.",
+  "goal": "hire",
+  "hiring_roles": [
+   "gamedev",
+   "backend"
+  ],
+  "company": "госсектор",
+  "languages": [
+   "en",
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "12:00",
+   "12:30",
+   "13:00",
+   "14:00",
+   "14:30",
+   "15:00",
+   "17:00",
+   "18:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p183",
+  "name": "Інжу Омарова",
+  "role": "gamedev",
+  "stack": [
+   "c#",
+   "c++",
+   "unity",
+   "blender"
+  ],
+  "experience_years": 0,
+  "interests": [
+   "gamedev",
+   "robotics",
+   "edtech"
+  ],
+  "about": "GameDev-разработчик с опытом 0 лет. Работаю с c#, c++, unity. Интересуюсь темами: Геймдев, Робототехника и IoT, EdTech. Хочу найти ментора, который поможет вырасти до следующего грейда.",
+  "goal": "find_mentor",
+  "hiring_roles": [],
+  "company": "аутсорс-студия",
+  "languages": [
+   "en",
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "12:30",
+   "13:00",
+   "13:30",
+   "14:30",
+   "15:00",
+   "17:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p184",
+  "name": "Ернар Серіков",
+  "role": "gamedev",
+  "stack": [
+   "blender",
+   "c#",
+   "unreal engine"
+  ],
+  "experience_years": 3,
+  "interests": [
+   "gamedev",
+   "edtech",
+   "startups"
+  ],
+  "about": "GameDev-разработчик с опытом 3 года. Работаю с blender, c#, unreal engine. Интересуюсь темами: Геймдев, EdTech, Стартапы. Хочу найти ментора, который поможет вырасти до следующего грейда.",
+  "goal": "find_mentor",
+  "hiring_roles": [],
+  "company": "IT-интегратор",
+  "languages": [
+   "ru"
+  ],
+  "slots": [
+   "12:00",
+   "13:00",
+   "14:30",
+   "16:30",
+   "17:00"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p185",
+  "name": "Анна Жақсылықова",
+  "role": "gamedev",
+  "stack": [
+   "c++",
+   "unreal engine",
+   "c#",
+   "unity"
+  ],
+  "experience_years": 6,
+  "interests": [
+   "gamedev",
+   "edtech",
+   "robotics",
+   "opensource"
+  ],
+  "about": "GameDev-разработчик с опытом 6 лет. Работаю с c++, unreal engine, c#. Интересуюсь темами: Геймдев, EdTech, Робототехника и IoT, Open Source. Ищу работу или стажировку, где можно расти в GameDev-разработчик.",
+  "goal": "job_seek",
+  "hiring_roles": [],
+  "company": "EdTech-стартап",
+  "languages": [
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "13:00",
+   "13:30",
+   "15:00",
+   "16:00",
+   "16:30",
+   "17:30",
+   "18:00"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p186",
+  "name": "Жансая Сапарова",
+  "role": "design",
+  "stack": [
+   "design systems",
+   "user research",
+   "prototyping",
+   "ui/ux",
+   "figma"
+  ],
+  "experience_years": 2,
+  "interests": [
+   "startups",
+   "edtech",
+   "product"
+  ],
+  "about": "UI/UX-дизайнер с опытом 2 года. Работаю с design systems, user research, prototyping. Интересуюсь темами: Стартапы, EdTech, Продуктовое мышление. Хочу найти ментора, который поможет вырасти до следующего грейда.",
+  "goal": "find_mentor",
+  "hiring_roles": [],
+  "company": "GameDev-студия",
+  "languages": [
+   "en",
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "11:30",
+   "14:00",
+   "15:30",
+   "16:00",
+   "17:30",
+   "18:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p187",
+  "name": "Лаура Жақсылықова",
+  "role": "design",
+  "stack": [
+   "user research",
+   "prototyping",
+   "ui/ux",
+   "design systems",
+   "figma"
+  ],
+  "experience_years": 2,
+  "interests": [
+   "product",
+   "startups",
+   "design"
+  ],
+  "about": "UI/UX-дизайнер, тәжірибем 2 жыл. user research, prototyping, ui/ux құралдарымен жұмыс істеймін. Қызығатын тақырыптарым: Өнімдік ойлау, Стартаптар, Дизайн және UX. UI/UX-дизайнер саласында өсуге болатын жұмыс немесе тағылымдама іздеймін.",
+  "goal": "job_seek",
+  "hiring_roles": [],
+  "company": "продуктовый стартап",
+  "languages": [
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "11:30",
+   "12:00",
+   "14:00",
+   "18:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p188",
+  "name": "Жандос Жақсылықов",
+  "role": "design",
+  "stack": [
+   "figma",
+   "design systems",
+   "ui/ux",
+   "user research",
+   "prototyping"
+  ],
+  "experience_years": 1,
+  "interests": [
+   "edtech",
+   "product",
+   "design"
+  ],
+  "about": "UI/UX-дизайнер, тәжірибем 1 жыл. figma, design systems, ui/ux құралдарымен жұмыс істеймін. Қызығатын тақырыптарым: EdTech, Өнімдік ойлау, Дизайн және UX. Тәжірибе алмасқанды ұнатамын, figma, design systems, ui/ux туралы айтып бере аламын.",
+  "goal": "exchange",
+  "hiring_roles": [],
+  "company": "госсектор",
+  "languages": [
+   "en",
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "11:00",
+   "13:30",
+   "14:30",
+   "15:30",
+   "16:00",
+   "16:30",
+   "18:00",
+   "18:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p189",
+  "name": "Гүлназ Қуанышова",
+  "role": "design",
+  "stack": [
+   "design systems",
+   "ui/ux",
+   "prototyping",
+   "user research",
+   "figma"
+  ],
+  "experience_years": 3,
+  "interests": [
+   "edtech",
+   "mobile",
+   "startups",
+   "fintech"
+  ],
+  "about": "UI/UX designer with 3 years of experience. I work with design systems, ui/ux, prototyping. Interested in: EdTech, Mobile apps, Startups, Fintech. I enjoy sharing experience — can talk about design systems, ui/ux, prototyping and learn from your cases.",
+  "goal": "exchange",
+  "hiring_roles": [],
+  "company": "логистическая компания",
+  "languages": [
+   "en",
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "11:00",
+   "12:00",
+   "13:00",
+   "15:00",
+   "17:30",
+   "18:30"
+  ],
+  "synthetic": true
+ },
+ {
+  "id": "p190",
+  "name": "Батыр Әбдіров",
+  "role": "product",
+  "stack": [
+   "a/b testing",
+   "scrum",
+   "jira",
+   "product management"
+  ],
+  "experience_years": 3,
+  "interests": [
+   "startups",
+   "edtech",
+   "fintech"
+  ],
+  "about": "Product / Project Manager с опытом 3 года. Работаю с a/b testing, scrum, jira. Интересуюсь темами: Стартапы, EdTech, Финтех. Хочу найти ментора, который поможет вырасти до следующего грейда.",
+  "goal": "find_mentor",
+  "hiring_roles": [],
+  "company": "telecom-оператор",
+  "languages": [
+   "kk",
+   "ru"
+  ],
+  "slots": [
+   "11:30",
+   "12:30",
+   "13:00",
+   "14:00",
+   "16:00",
+   "17:00",
+   "18:00"
+  ],
+  "synthetic": true
+ }
+]

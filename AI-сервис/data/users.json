@@ -1,0 +1,247 @@
+{
+ "u-8fa2dca8": {
+  "profile": {
+   "id": "u-8fa2dca8",
+   "name": "Айжан Демо",
+   "role": "backend",
+   "stack": [
+    "python",
+    "fastapi",
+    "postgresql",
+    "docker"
+   ],
+   "experience_years": 1,
+   "interests": [
+    "fintech",
+    "ai"
+   ],
+   "about": "Junior Python-бэкендер, хочу в финтех. Делал пет-проект на FastAPI и Docker, интересуюсь LLM.",
+   "goal": "job_seek",
+   "hiring_roles": [],
+   "company": "",
+   "languages": [
+    "ru",
+    "kk"
+   ],
+   "slots": [
+    "12:00",
+    "14:00",
+    "15:30",
+    "17:00"
+   ],
+   "synthetic": false
+  },
+  "visible": false
+ },
+ "u-872b4ca9": {
+  "profile": {
+   "id": "u-872b4ca9",
+   "name": "Томирис Демо",
+   "role": "student",
+   "stack": [
+    "python"
+   ],
+   "experience_years": 0,
+   "interests": [
+    "ai",
+    "qazaq_lang"
+   ],
+   "about": "Машиналық оқытуды үйреніп жүрмін, NLP және қазақ тіліндегі LLM қызықтырады.",
+   "goal": "find_mentor",
+   "hiring_roles": [],
+   "company": "",
+   "languages": [
+    "kk",
+    "ru"
+   ],
+   "slots": [
+    "13:30",
+    "15:00"
+   ],
+   "synthetic": false
+  },
+  "visible": false
+ },
+ "u-89928358": {
+  "profile": {
+   "id": "u-89928358",
+   "name": "Recruiter Demo",
+   "role": "hr",
+   "stack": [
+    "it recruiting",
+    "react",
+    "flutter"
+   ],
+   "experience_years": 6,
+   "interests": [
+    "career",
+    "startups"
+   ],
+   "about": "Нанимаем React и Flutter разработчиков в продуктовую команду, есть удалёнка.",
+   "goal": "hire",
+   "hiring_roles": [
+    "frontend",
+    "mobile"
+   ],
+   "company": "",
+   "languages": [
+    "ru",
+    "en"
+   ],
+   "slots": [
+    "11:00",
+    "13:00",
+    "16:00"
+   ],
+   "synthetic": false
+  },
+  "visible": false
+ },
+ "u-865ff5bb": {
+  "profile": {
+   "id": "u-865ff5bb",
+   "name": "Томирис Демо",
+   "role": "student",
+   "stack": [
+    "python"
+   ],
+   "experience_years": 0,
+   "interests": [
+    "ai",
+    "qazaq_lang"
+   ],
+   "about": "Машиналық оқытуды үйреніп жүрмін, NLP және қазақ тіліндегі LLM қызықтырады.",
+   "goal": "find_mentor",
+   "hiring_roles": [],
+   "company": "",
+   "languages": [
+    "kk",
+    "ru"
+   ],
+   "slots": [
+    "13:30",
+    "15:00"
+   ],
+   "synthetic": false
+  },
+  "visible": false
+ },
+ "u-4bcdb398": {
+  "profile": {
+   "id": "u-4bcdb398",
+   "name": "Recruiter Demo",
+   "role": "hr",
+   "stack": [
+    "it recruiting",
+    "react",
+    "flutter"
+   ],
+   "experience_years": 6,
+   "interests": [
+    "career",
+    "startups"
+   ],
+   "about": "Нанимаем React и Flutter разработчиков в продуктовую команду, есть удалёнка.",
+   "goal": "hire",
+   "hiring_roles": [
+    "frontend",
+    "mobile"
+   ],
+   "company": "",
+   "languages": [
+    "ru",
+    "en"
+   ],
+   "slots": [
+    "11:00",
+    "13:00",
+    "16:00"
+   ],
+   "synthetic": false
+  },
+  "visible": false
+ },
+ "a-8a7ae27590": {
+  "account": {
+   "username": "karzaiseidahmetov0.0",
+   "name": "Muhammedkarzai Seidahmetov",
+   "salt": "e6a8de0f1690f414ef30e94ff361c98d",
+   "hash": "e89d625f61105d70f7e1335e0aeefa6105cd2f6d0bd0e390ac98d9756a1cb405",
+   "created": 1795196721
+  },
+  "profile": {
+   "id": "a-8a7ae27590",
+   "name": "Muhammedkarzai Seidahmetov",
+   "role": "backend",
+   "stack": [
+    "python",
+    "fastapi",
+    "postgresql",
+    "docker"
+   ],
+   "experience_years": 1,
+   "interests": [
+    "fintech",
+    "ai"
+   ],
+   "about": "Junior Python-бэкендер, хочу в финтех. Делал пет-проект на FastAPI и Docker, интересуюсь LLM.",
+   "goal": "job_seek",
+   "hiring_roles": [],
+   "company": "",
+   "languages": [
+    "ru",
+    "kk"
+   ],
+   "slots": [
+    "12:00",
+    "14:00",
+    "15:30",
+    "17:00"
+   ],
+   "synthetic": false
+  },
+  "visible": true,
+  "active_event": "e-llm14"
+ },
+ "a-1049d78fdf": {
+  "account": {
+   "username": "akylzhan190707",
+   "name": "Akylzhan Turat",
+   "salt": "7fb36efeae45ce3618d9275a6ebb57a5",
+   "hash": "adbc022967ff24f7efe82e47b5afc6516582577cddba10e919c45dc788f317a7",
+   "created": 1795196915
+  },
+  "profile": {
+   "id": "a-1049d78fdf",
+   "name": "Akylzhan Turat",
+   "role": "backend",
+   "stack": [
+    "python",
+    "fastapi",
+    "postgresql",
+    "docker"
+   ],
+   "experience_years": 1,
+   "interests": [
+    "fintech",
+    "ai"
+   ],
+   "about": "Junior Python-бэкендер, хочу в финтех. Делал пет-проект на FastAPI и Docker, интересуюсь LLM.",
+   "goal": "job_seek",
+   "hiring_roles": [],
+   "company": "",
+   "languages": [
+    "ru",
+    "kk"
+   ],
+   "slots": [
+    "12:00",
+    "14:00",
+    "15:30",
+    "17:00"
+   ],
+   "synthetic": false
+  },
+  "visible": true
+ }
+}

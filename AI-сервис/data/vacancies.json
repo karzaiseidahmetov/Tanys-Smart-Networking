@@ -1,0 +1,1657 @@
+[
+ {
+  "id": "v001",
+  "owner": "p009",
+  "role": "data_ml",
+  "level": "middle",
+  "stack": [
+   "pandas",
+   "scikit-learn",
+   "mlops",
+   "nlp"
+  ],
+  "format": "remote",
+  "city": "Алматы",
+  "salary_from": 650000,
+  "company": "IT-интегратор",
+  "description": {
+   "ru": "Ищем ml / data scientist в команду (IT-интегратор). Стек: pandas, scikit-learn, mlops, nlp. Задачи: развитие продукта, код-ревью, работа в команде.",
+   "kk": "Командаға ml / data scientist іздейміз (IT-интегратор). Стек: pandas, scikit-learn, mlops, nlp. Міндеттер: өнімді дамыту, код-ревью, командада жұмыс.",
+   "en": "We're looking for a ML / Data Scientist (IT-интегратор). Stack: pandas, scikit-learn, mlops, nlp. You'll grow the product, do code reviews and work in a team."
+  },
+  "created": 1795100000,
+  "synthetic": true
+ },
+ {
+  "id": "v002",
+  "owner": "p009",
+  "role": "frontend",
+  "level": "senior",
+  "stack": [
+   "vue",
+   "typescript",
+   "next.js",
+   "css",
+   "javascript"
+  ],
+  "format": "office",
+  "city": "Алматы",
+  "salary_from": 1600000,
+  "company": "IT-интегратор",
+  "description": {
+   "ru": "Ищем frontend-разработчик в команду (IT-интегратор). Стек: vue, typescript, next.js, css, javascript. Задачи: развитие продукта, код-ревью, работа в команде.",
+   "kk": "Командаға frontend-әзірлеуші іздейміз (IT-интегратор). Стек: vue, typescript, next.js, css, javascript. Міндеттер: өнімді дамыту, код-ревью, командада жұмыс.",
+   "en": "We're looking for a Frontend developer (IT-интегратор). Stack: vue, typescript, next.js, css, javascript. You'll grow the product, do code reviews and work in a team."
+  },
+  "created": 1795103600,
+  "synthetic": true
+ },
+ {
+  "id": "v003",
+  "owner": "p014",
+  "role": "frontend",
+  "level": "junior",
+  "stack": [
+   "html",
+   "typescript",
+   "react"
+  ],
+  "format": "office",
+  "city": "Алматы",
+  "salary_from": 400000,
+  "company": "аутсорс-студия",
+  "description": {
+   "ru": "Ищем frontend-разработчик в команду (аутсорс-студия). Стек: html, typescript, react. Задачи: развитие продукта, код-ревью, работа в команде.",
+   "kk": "Командаға frontend-әзірлеуші іздейміз (аутсорс-студия). Стек: html, typescript, react. Міндеттер: өнімді дамыту, код-ревью, командада жұмыс.",
+   "en": "We're looking for a Frontend developer (аутсорс-студия). Stack: html, typescript, react. You'll grow the product, do code reviews and work in a team."
+  },
+  "created": 1795107200,
+  "synthetic": true
+ },
+ {
+  "id": "v004",
+  "owner": "p014",
+  "role": "mobile",
+  "level": "senior",
+  "stack": [
+   "firebase",
+   "react native",
+   "swift",
+   "kotlin"
+  ],
+  "format": "office",
+  "city": "Алматы",
+  "salary_from": 1500000,
+  "company": "аутсорс-студия",
+  "description": {
+   "ru": "Ищем mobile-разработчик в команду (аутсорс-студия). Стек: firebase, react native, swift, kotlin. Задачи: развитие продукта, код-ревью, работа в команде.",
+   "kk": "Командаға mobile-әзірлеуші іздейміз (аутсорс-студия). Стек: firebase, react native, swift, kotlin. Міндеттер: өнімді дамыту, код-ревью, командада жұмыс.",
+   "en": "We're looking for a Mobile developer (аутсорс-студия). Stack: firebase, react native, swift, kotlin. You'll grow the product, do code reviews and work in a team."
+  },
+  "created": 1795110800,
+  "synthetic": true
+ },
+ {
+  "id": "v005",
+  "owner": "p017",
+  "role": "devops",
+  "level": "junior",
+  "stack": [
+   "ansible",
+   "ci/cd",
+   "linux",
+   "grafana",
+   "docker"
+  ],
+  "format": "hybrid",
+  "city": "Шымкент",
+  "salary_from": 300000,
+  "company": "GameDev-студия",
+  "description": {
+   "ru": "Ищем devops-инженер в команду (GameDev-студия). Стек: ansible, ci/cd, linux, grafana, docker. Задачи: развитие продукта, код-ревью, работа в команде.",
+   "kk": "Командаға devops-инженер іздейміз (GameDev-студия). Стек: ansible, ci/cd, linux, grafana, docker. Міндеттер: өнімді дамыту, код-ревью, командада жұмыс.",
+   "en": "We're looking for a DevOps engineer (GameDev-студия). Stack: ansible, ci/cd, linux, grafana, docker. You'll grow the product, do code reviews and work in a team."
+  },
+  "created": 1795114400,
+  "synthetic": true
+ },
+ {
+  "id": "v006",
+  "owner": "p017",
+  "role": "data_ml",
+  "level": "junior",
+  "stack": [
+   "scikit-learn",
+   "computer vision",
+   "pytorch"
+  ],
+  "format": "office",
+  "city": "Шымкент",
+  "salary_from": 500000,
+  "company": "GameDev-студия",
+  "description": {
+   "ru": "Ищем ml / data scientist в команду (GameDev-студия). Стек: scikit-learn, computer vision, pytorch. Задачи: развитие продукта, код-ревью, работа в команде.",
+   "kk": "Командаға ml / data scientist іздейміз (GameDev-студия). Стек: scikit-learn, computer vision, pytorch. Міндеттер: өнімді дамыту, код-ревью, командада жұмыс.",
+   "en": "We're looking for a ML / Data Scientist (GameDev-студия). Stack: scikit-learn, computer vision, pytorch. You'll grow the product, do code reviews and work in a team."
+  },
+  "created": 1795118000,
+  "synthetic": true
+ },
+ {
+  "id": "v007",
+  "owner": "p019",
+  "role": "devops",
+  "level": "middle",
+  "stack": [
+   "kubernetes",
+   "aws",
+   "ci/cd",
+   "docker",
+   "terraform"
+  ],
+  "format": "hybrid",
+  "city": "Астана",
+  "salary_from": 1050000,
+  "company": "банк",
+  "description": {
+   "ru": "Ищем devops-инженер в команду (банк). Стек: kubernetes, aws, ci/cd, docker, terraform. Задачи: развитие продукта, код-ревью, работа в команде.",
+   "kk": "Командаға devops-инженер іздейміз (банк). Стек: kubernetes, aws, ci/cd, docker, terraform. Міндеттер: өнімді дамыту, код-ревью, командада жұмыс.",
+   "en": "We're looking for a DevOps engineer (банк). Stack: kubernetes, aws, ci/cd, docker, terraform. You'll grow the product, do code reviews and work in a team."
+  },
+  "created": 1795121600,
+  "synthetic": true
+ },
+ {
+  "id": "v008",
+  "owner": "p019",
+  "role": "backend",
+  "level": "senior",
+  "stack": [
+   "go",
+   "fastapi",
+   "rest api",
+   "python"
+  ],
+  "format": "office",
+  "city": "Алматы",
+  "salary_from": 1250000,
+  "company": "банк",
+  "description": {
+   "ru": "Ищем backend-разработчик в команду (банк). Стек: go, fastapi, rest api, python. Задачи: развитие продукта, код-ревью, работа в команде.",
+   "kk": "Командаға backend-әзірлеуші іздейміз (банк). Стек: go, fastapi, rest api, python. Міндеттер: өнімді дамыту, код-ревью, командада жұмыс.",
+   "en": "We're looking for a Backend developer (банк). Stack: go, fastapi, rest api, python. You'll grow the product, do code reviews and work in a team."
+  },
+  "created": 1795125200,
+  "synthetic": true
+ },
+ {
+  "id": "v009",
+  "owner": "p021",
+  "role": "qa",
+  "level": "junior",
+  "stack": [
+   "postman",
+   "playwright",
+   "selenium",
+   "pytest",
+   "rest api"
+  ],
+  "format": "hybrid",
+  "city": "Алматы",
+  "salary_from": 300000,
+  "company": "госсектор",
+  "description": {
+   "ru": "Ищем qa-инженер в команду (госсектор). Стек: postman, playwright, selenium, pytest, rest api. Задачи: развитие продукта, код-ревью, работа в команде.",
+   "kk": "Командаға qa-инженер іздейміз (госсектор). Стек: postman, playwright, selenium, pytest, rest api. Міндеттер: өнімді дамыту, код-ревью, командада жұмыс.",
+   "en": "We're looking for a QA engineer (госсектор). Stack: postman, playwright, selenium, pytest, rest api. You'll grow the product, do code reviews and work in a team."
+  },
+  "created": 1795128800,
+  "synthetic": true
+ },
+ {
+  "id": "v010",
+  "owner": "p021",
+  "role": "backend",
+  "level": "junior",
+  "stack": [
+   "spring",
+   "django",
+   "python",
+   "java"
+  ],
+  "format": "hybrid",
+  "city": "Алматы",
+  "salary_from": 400000,
+  "company": "госсектор",
+  "description": {
+   "ru": "Ищем backend-разработчик в команду (госсектор). Стек: spring, django, python, java. Задачи: развитие продукта, код-ревью, работа в команде.",
+   "kk": "Командаға backend-әзірлеуші іздейміз (госсектор). Стек: spring, django, python, java. Міндеттер: өнімді дамыту, код-ревью, командада жұмыс.",
+   "en": "We're looking for a Backend developer (госсектор). Stack: spring, django, python, java. You'll grow the product, do code reviews and work in a team."
+  },
+  "created": 1795132400,
+  "synthetic": true
+ },
+ {
+  "id": "v011",
+  "owner": "p023",
+  "role": "backend",
+  "level": "junior",
+  "stack": [
+   "java",
+   "fastapi",
+   "python"
+  ],
+  "format": "hybrid",
+  "city": "Алматы",
+  "salary_from": 300000,
+  "company": "логистическая компания",
+  "description": {
+   "ru": "Ищем backend-разработчик в команду (логистическая компания). Стек: java, fastapi, python. Задачи: развитие продукта, код-ревью, работа в команде.",
+   "kk": "Командаға backend-әзірлеуші іздейміз (логистическая компания). Стек: java, fastapi, python. Міндеттер: өнімді дамыту, код-ревью, командада жұмыс.",
+   "en": "We're looking for a Backend developer (логистическая компания). Stack: java, fastapi, python. You'll grow the product, do code reviews and work in a team."
+  },
+  "created": 1795136000,
+  "synthetic": true
+ },
+ {
+  "id": "v012",
+  "owner": "p023",
+  "role": "frontend",
+  "level": "middle",
+  "stack": [
+   "html",
+   "vue",
+   "javascript"
+  ],
+  "format": "hybrid",
+  "city": "Шымкент",
+  "salary_from": 700000,
+  "company": "логистическая компания",
+  "description": {
+   "ru": "Ищем frontend-разработчик в команду (логистическая компания). Стек: html, vue, javascript. Задачи: развитие продукта, код-ревью, работа в команде.",
+   "kk": "Командаға frontend-әзірлеуші іздейміз (логистическая компания). Стек: html, vue, javascript. Міндеттер: өнімді дамыту, код-ревью, командада жұмыс.",
+   "en": "We're looking for a Frontend developer (логистическая компания). Stack: html, vue, javascript. You'll grow the product, do code reviews and work in a team."
+  },
+  "created": 1795139600,
+  "synthetic": true
+ },
+ {
+  "id": "v013",
+  "owner": "p025",
+  "role": "design",
+  "level": "junior",
+  "stack": [
+   "ui/ux",
+   "design systems",
+   "figma"
+  ],
+  "format": "office",
+  "city": "Астана",
+  "salary_from": 300000,
+  "company": "аутсорс-студия",
+  "description": {
+   "ru": "Ищем ui/ux-дизайнер в команду (аутсорс-студия). Стек: ui/ux, design systems, figma. Задачи: развитие продукта, код-ревью, работа в команде.",
+   "kk": "Командаға ui/ux-дизайнер іздейміз (аутсорс-студия). Стек: ui/ux, design systems, figma. Міндеттер: өнімді дамыту, код-ревью, командада жұмыс.",
+   "en": "We're looking for a UI/UX designer (аутсорс-студия). Stack: ui/ux, design systems, figma. You'll grow the product, do code reviews and work in a team."
+  },
+  "created": 1795143200,
+  "synthetic": true
+ },
+ {
+  "id": "v014",
+  "owner": "p025",
+  "role": "data_ml",
+  "level": "senior",
+  "stack": [
+   "scikit-learn",
+   "nlp",
+   "computer vision",
+   "sql"
+  ],
+  "format": "office",
+  "city": "Алматы",
+  "salary_from": 1600000,
+  "company": "аутсорс-студия",
+  "description": {
+   "ru": "Ищем ml / data scientist в команду (аутсорс-студия). Стек: scikit-learn, nlp, computer vision, sql. Задачи: развитие продукта, код-ревью, работа в команде.",
+   "kk": "Командаға ml / data scientist іздейміз (аутсорс-студия). Стек: scikit-learn, nlp, computer vision, sql. Міндеттер: өнімді дамыту, код-ревью, командада жұмыс.",
+   "en": "We're looking for a ML / Data Scientist (аутсорс-студия). Stack: scikit-learn, nlp, computer vision, sql. You'll grow the product, do code reviews and work in a team."
+  },
+  "created": 1795146800,
+  "synthetic": true
+ },
+ {
+  "id": "v015",
+  "owner": "p028",
+  "role": "data_ml",
+  "level": "senior",
+  "stack": [
+   "sql",
+   "mlops",
+   "scikit-learn",
+   "tensorflow"
+  ],
+  "format": "hybrid",
+  "city": "Алматы",
+  "salary_from": 1900000,
+  "company": "HealthTech-стартап",
+  "description": {
+   "ru": "Ищем ml / data scientist в команду (HealthTech-стартап). Стек: sql, mlops, scikit-learn, tensorflow. Задачи: развитие продукта, код-ревью, работа в команде.",
+   "kk": "Командаға ml / data scientist іздейміз (HealthTech-стартап). Стек: sql, mlops, scikit-learn, tensorflow. Міндеттер: өнімді дамыту, код-ревью, командада жұмыс.",
+   "en": "We're looking for a ML / Data Scientist (HealthTech-стартап). Stack: sql, mlops, scikit-learn, tensorflow. You'll grow the product, do code reviews and work in a team."
+  },
+  "created": 1795150400,
+  "synthetic": true
+ },
+ {
+  "id": "v016",
+  "owner": "p028",
+  "role": "backend",
+  "level": "senior",
+  "stack": [
+   "django",
+   "python",
+   "kafka",
+   "fastapi"
+  ],
+  "format": "office",
+  "city": "Алматы",
+  "salary_from": 1200000,
+  "company": "HealthTech-стартап",
+  "description": {
+   "ru": "Ищем backend-разработчик в команду (HealthTech-стартап). Стек: django, python, kafka, fastapi. Задачи: развитие продукта, код-ревью, работа в команде.",
+   "kk": "Командаға backend-әзірлеуші іздейміз (HealthTech-стартап). Стек: django, python, kafka, fastapi. Міндеттер: өнімді дамыту, код-ревью, командада жұмыс.",
+   "en": "We're looking for a Backend developer (HealthTech-стартап). Stack: django, python, kafka, fastapi. You'll grow the product, do code reviews and work in a team."
+  },
+  "created": 1795154000,
+  "synthetic": true
+ },
+ {
+  "id": "v017",
+  "owner": "p031",
+  "role": "analyst",
+  "level": "senior",
+  "stack": [
+   "pandas",
+   "sql",
+   "tableau"
+  ],
+  "format": "office",
+  "city": "Алматы",
+  "salary_from": 1450000,
+  "company": "фриланс",
+  "description": {
+   "ru": "Ищем аналитик данных в команду (фриланс). Стек: pandas, sql, tableau. Задачи: развитие продукта, код-ревью, работа в команде.",
+   "kk": "Командаға дерек талдаушы іздейміз (фриланс). Стек: pandas, sql, tableau. Міндеттер: өнімді дамыту, код-ревью, командада жұмыс.",
+   "en": "We're looking for a Data analyst (фриланс). Stack: pandas, sql, tableau. You'll grow the product, do code reviews and work in a team."
+  },
+  "created": 1795157600,
+  "synthetic": true
+ },
+ {
+  "id": "v018",
+  "owner": "p031",
+  "role": "product",
+  "level": "middle",
+  "stack": [
+   "sql",
+   "scrum",
+   "customer development",
+   "product management"
+  ],
+  "format": "hybrid",
+  "city": "Шымкент",
+  "salary_from": 1100000,
+  "company": "фриланс",
+  "description": {
+   "ru": "Ищем product / project manager в команду (фриланс). Стек: sql, scrum, customer development, product management. Задачи: развитие продукта, код-ревью, работа в команде.",
+   "kk": "Командаға product / project менеджер іздейміз (фриланс). Стек: sql, scrum, customer development, product management. Міндеттер: өнімді дамыту, код-ревью, командада жұмыс.",
+   "en": "We're looking for a Product / Project manager (фриланс). Stack: sql, scrum, customer development, product management. You'll grow the product, do code reviews and work in a team."
+  },
+  "created": 1795161200,
+  "synthetic": true
+ },
+ {
+  "id": "v019",
+  "owner": "p032",
+  "role": "data_ml",
+  "level": "middle",
+  "stack": [
+   "mlops",
+   "llm",
+   "scikit-learn"
+  ],
+  "format": "remote",
+  "city": "Шымкент",
+  "salary_from": 750000,
+  "company": "telecom-оператор",
+  "description": {
+   "ru": "Ищем ml / data scientist в команду (telecom-оператор). Стек: mlops, llm, scikit-learn. Задачи: развитие продукта, код-ревью, работа в команде.",
+   "kk": "Командаға ml / data scientist іздейміз (telecom-оператор). Стек: mlops, llm, scikit-learn. Міндеттер: өнімді дамыту, код-ревью, командада жұмыс.",
+   "en": "We're looking for a ML / Data Scientist (telecom-оператор). Stack: mlops, llm, scikit-learn. You'll grow the product, do code reviews and work in a team."
+  },
+  "created": 1795164800,
+  "synthetic": true
+ },
+ {
+  "id": "v020",
+  "owner": "p032",
+  "role": "backend",
+  "level": "middle",
+  "stack": [
+   "kafka",
+   "spring",
+   "go",
+   "rest api",
+   "node.js"
+  ],
+  "format": "hybrid",
+  "city": "Алматы",
+  "salary_from": 800000,
+  "company": "telecom-оператор",
+  "description": {
+   "ru": "Ищем backend-разработчик в команду (telecom-оператор). Стек: kafka, spring, go, rest api, node.js. Задачи: развитие продукта, код-ревью, работа в команде.",
+   "kk": "Командаға backend-әзірлеуші іздейміз (telecom-оператор). Стек: kafka, spring, go, rest api, node.js. Міндеттер: өнімді дамыту, код-ревью, командада жұмыс.",
+   "en": "We're looking for a Backend developer (telecom-оператор). Stack: kafka, spring, go, rest api, node.js. You'll grow the product, do code reviews and work in a team."
+  },
+  "created": 1795168400,
+  "synthetic": true
+ },
+ {
+  "id": "v021",
+  "owner": "p046",
+  "role": "analyst",
+  "level": "middle",
+  "stack": [
+   "power bi",
+   "pandas",
+   "sql"
+  ],
+  "format": "hybrid",
+  "city": "Шымкент",
+  "salary_from": 700000,
+  "company": "AgriTech-стартап",
+  "description": {
+   "ru": "Ищем аналитик данных в команду (AgriTech-стартап). Стек: power bi, pandas, sql. Задачи: развитие продукта, код-ревью, работа в команде.",
+   "kk": "Командаға дерек талдаушы іздейміз (AgriTech-стартап). Стек: power bi, pandas, sql. Міндеттер: өнімді дамыту, код-ревью, командада жұмыс.",
+   "en": "We're looking for a Data analyst (AgriTech-стартап). Stack: power bi, pandas, sql. You'll grow the product, do code reviews and work in a team."
+  },
+  "created": 1795172000,
+  "synthetic": true
+ },
+ {
+  "id": "v022",
+  "owner": "p046",
+  "role": "product",
+  "level": "junior",
+  "stack": [
+   "scrum",
+   "customer development",
+   "product management"
+  ],
+  "format": "office",
+  "city": "Алматы",
+  "salary_from": 500000,
+  "company": "AgriTech-стартап",
+  "description": {
+   "ru": "Ищем product / project manager в команду (AgriTech-стартап). Стек: scrum, customer development, product management. Задачи: развитие продукта, код-ревью, работа в команде.",
+   "kk": "Командаға product / project менеджер іздейміз (AgriTech-стартап). Стек: scrum, customer development, product management. Міндеттер: өнімді дамыту, код-ревью, командада жұмыс.",
+   "en": "We're looking for a Product / Project manager (AgriTech-стартап). Stack: scrum, customer development, product management. You'll grow the product, do code reviews and work in a team."
+  },
+  "created": 1795175600,
+  "synthetic": true
+ },
+ {
+  "id": "v023",
+  "owner": "p047",
+  "role": "analyst",
+  "level": "junior",
+  "stack": [
+   "pandas",
+   "python",
+   "power bi",
+   "a/b testing",
+   "excel"
+  ],
+  "format": "office",
+  "city": "Алматы",
+  "salary_from": 400000,
+  "company": "финтех-компания",
+  "description": {
+   "ru": "Ищем аналитик данных в команду (финтех-компания). Стек: pandas, python, power bi, a/b testing, excel. Задачи: развитие продукта, код-ревью, работа в команде.",
+   "kk": "Командаға дерек талдаушы іздейміз (финтех-компания). Стек: pandas, python, power bi, a/b testing, excel. Міндеттер: өнімді дамыту, код-ревью, командада жұмыс.",
+   "en": "We're looking for a Data analyst (финтех-компания). Stack: pandas, python, power bi, a/b testing, excel. You'll grow the product, do code reviews and work in a team."
+  },
+  "created": 1795179200,
+  "synthetic": true
+ },
+ {
+  "id": "v024",
+  "owner": "p047",
+  "role": "product",
+  "level": "senior",
+  "stack": [
+   "sql",
+   "product management",
+   "a/b testing",
+   "scrum",
+   "jira"
+  ],
+  "format": "office",
+  "city": "Алматы",
+  "salary_from": 1900000,
+  "company": "финтех-компания",
+  "description": {
+   "ru": "Ищем product / project manager в команду (финтех-компания). Стек: sql, product management, a/b testing, scrum, jira. Задачи: развитие продукта, код-ревью, работа в команде.",
+   "kk": "Командаға product / project менеджер іздейміз (финтех-компания). Стек: sql, product management, a/b testing, scrum, jira. Міндеттер: өнімді дамыту, код-ревью, командада жұмыс.",
+   "en": "We're looking for a Product / Project manager (финтех-компания). Stack: sql, product management, a/b testing, scrum, jira. You'll grow the product, do code reviews and work in a team."
+  },
+  "created": 1795182800,
+  "synthetic": true
+ },
+ {
+  "id": "v025",
+  "owner": "p063",
+  "role": "data_ml",
+  "level": "middle",
+  "stack": [
+   "tensorflow",
+   "computer vision",
+   "nlp",
+   "mlops",
+   "sql"
+  ],
+  "format": "hybrid",
+  "city": "Алматы",
+  "salary_from": 650000,
+  "company": "IT-интегратор",
+  "description": {
+   "ru": "Ищем ml / data scientist в команду (IT-интегратор). Стек: tensorflow, computer vision, nlp, mlops, sql. Задачи: развитие продукта, код-ревью, работа в команде.",
+   "kk": "Командаға ml / data scientist іздейміз (IT-интегратор). Стек: tensorflow, computer vision, nlp, mlops, sql. Міндеттер: өнімді дамыту, код-ревью, командада жұмыс.",
+   "en": "We're looking for a ML / Data Scientist (IT-интегратор). Stack: tensorflow, computer vision, nlp, mlops, sql. You'll grow the product, do code reviews and work in a team."
+  },
+  "created": 1795186400,
+  "synthetic": true
+ },
+ {
+  "id": "v026",
+  "owner": "p063",
+  "role": "backend",
+  "level": "junior",
+  "stack": [
+   "go",
+   "fastapi",
+   "python"
+  ],
+  "format": "remote",
+  "city": "Астана",
+  "salary_from": 400000,
+  "company": "IT-интегратор",
+  "description": {
+   "ru": "Ищем backend-разработчик в команду (IT-интегратор). Стек: go, fastapi, python. Задачи: развитие продукта, код-ревью, работа в команде.",
+   "kk": "Командаға backend-әзірлеуші іздейміз (IT-интегратор). Стек: go, fastapi, python. Міндеттер: өнімді дамыту, код-ревью, командада жұмыс.",
+   "en": "We're looking for a Backend developer (IT-интегратор). Stack: go, fastapi, python. You'll grow the product, do code reviews and work in a team."
+  },
+  "created": 1795190000,
+  "synthetic": true
+ },
+ {
+  "id": "v027",
+  "owner": "p064",
+  "role": "qa",
+  "level": "senior",
+  "stack": [
+   "selenium",
+   "rest api",
+   "java",
+   "postman",
+   "pytest"
+  ],
+  "format": "office",
+  "city": "Астана",
+  "salary_from": 2000000,
+  "company": "GameDev-студия",
+  "description": {
+   "ru": "Ищем qa-инженер в команду (GameDev-студия). Стек: selenium, rest api, java, postman, pytest. Задачи: развитие продукта, код-ревью, работа в команде.",
+   "kk": "Командаға qa-инженер іздейміз (GameDev-студия). Стек: selenium, rest api, java, postman, pytest. Міндеттер: өнімді дамыту, код-ревью, командада жұмыс.",
+   "en": "We're looking for a QA engineer (GameDev-студия). Stack: selenium, rest api, java, postman, pytest. You'll grow the product, do code reviews and work in a team."
+  },
+  "created": 1795193600,
+  "synthetic": true
+ },
+ {
+  "id": "v028",
+  "owner": "p064",
+  "role": "devops",
+  "level": "middle",
+  "stack": [
+   "linux",
+   "aws",
+   "terraform"
+  ],
+  "format": "hybrid",
+  "city": "Алматы",
+  "salary_from": 750000,
+  "company": "GameDev-студия",
+  "description": {
+   "ru": "Ищем devops-инженер в команду (GameDev-студия). Стек: linux, aws, terraform. Задачи: развитие продукта, код-ревью, работа в команде.",
+   "kk": "Командаға devops-инженер іздейміз (GameDev-студия). Стек: linux, aws, terraform. Міндеттер: өнімді дамыту, код-ревью, командада жұмыс.",
+   "en": "We're looking for a DevOps engineer (GameDev-студия). Stack: linux, aws, terraform. You'll grow the product, do code reviews and work in a team."
+  },
+  "created": 1795197200,
+  "synthetic": true
+ },
+ {
+  "id": "v029",
+  "owner": "p065",
+  "role": "analyst",
+  "level": "senior",
+  "stack": [
+   "excel",
+   "tableau",
+   "a/b testing",
+   "python"
+  ],
+  "format": "office",
+  "city": "Астана",
+  "salary_from": 1800000,
+  "company": "логистическая компания",
+  "description": {
+   "ru": "Ищем аналитик данных в команду (логистическая компания). Стек: excel, tableau, a/b testing, python. Задачи: развитие продукта, код-ревью, работа в команде.",
+   "kk": "Командаға дерек талдаушы іздейміз (логистическая компания). Стек: excel, tableau, a/b testing, python. Міндеттер: өнімді дамыту, код-ревью, командада жұмыс.",
+   "en": "We're looking for a Data analyst (логистическая компания). Stack: excel, tableau, a/b testing, python. You'll grow the product, do code reviews and work in a team."
+  },
+  "created": 1795200800,
+  "synthetic": true
+ },
+ {
+  "id": "v030",
+  "owner": "p065",
+  "role": "devops",
+  "level": "senior",
+  "stack": [
+   "ci/cd",
+   "linux",
+   "grafana",
+   "aws",
+   "ansible"
+  ],
+  "format": "hybrid",
+  "city": "Астана",
+  "salary_from": 2200000,
+  "company": "логистическая компания",
+  "description": {
+   "ru": "Ищем devops-инженер в команду (логистическая компания). Стек: ci/cd, linux, grafana, aws, ansible. Задачи: развитие продукта, код-ревью, работа в команде.",
+   "kk": "Командаға devops-инженер іздейміз (логистическая компания). Стек: ci/cd, linux, grafana, aws, ansible. Міндеттер: өнімді дамыту, код-ревью, командада жұмыс.",
+   "en": "We're looking for a DevOps engineer (логистическая компания). Stack: ci/cd, linux, grafana, aws, ansible. You'll grow the product, do code reviews and work in a team."
+  },
+  "created": 1795204400,
+  "synthetic": true
+ },
+ {
+  "id": "v031",
+  "owner": "p067",
+  "role": "frontend",
+  "level": "senior",
+  "stack": [
+   "css",
+   "html",
+   "figma",
+   "typescript",
+   "react"
+  ],
+  "format": "hybrid",
+  "city": "Астана",
+  "salary_from": 1750000,
+  "company": "банк",
+  "description": {
+   "ru": "Ищем frontend-разработчик в команду (банк). Стек: css, html, figma, typescript, react. Задачи: развитие продукта, код-ревью, работа в команде.",
+   "kk": "Командаға frontend-әзірлеуші іздейміз (банк). Стек: css, html, figma, typescript, react. Міндеттер: өнімді дамыту, код-ревью, командада жұмыс.",
+   "en": "We're looking for a Frontend developer (банк). Stack: css, html, figma, typescript, react. You'll grow the product, do code reviews and work in a team."
+  },
+  "created": 1795208000,
+  "synthetic": true
+ },
+ {
+  "id": "v032",
+  "owner": "p067",
+  "role": "qa",
+  "level": "middle",
+  "stack": [
+   "pytest",
+   "postman",
+   "playwright",
+   "rest api",
+   "java"
+  ],
+  "format": "hybrid",
+  "city": "Алматы",
+  "salary_from": 950000,
+  "company": "банк",
+  "description": {
+   "ru": "Ищем qa-инженер в команду (банк). Стек: pytest, postman, playwright, rest api, java. Задачи: развитие продукта, код-ревью, работа в команде.",
+   "kk": "Командаға qa-инженер іздейміз (банк). Стек: pytest, postman, playwright, rest api, java. Міндеттер: өнімді дамыту, код-ревью, командада жұмыс.",
+   "en": "We're looking for a QA engineer (банк). Stack: pytest, postman, playwright, rest api, java. You'll grow the product, do code reviews and work in a team."
+  },
+  "created": 1795211600,
+  "synthetic": true
+ },
+ {
+  "id": "v033",
+  "owner": "p082",
+  "role": "qa",
+  "level": "middle",
+  "stack": [
+   "rest api",
+   "selenium",
+   "postman",
+   "pytest",
+   "java"
+  ],
+  "format": "remote",
+  "city": "Алматы",
+  "salary_from": 600000,
+  "company": "фриланс",
+  "description": {
+   "ru": "Ищем qa-инженер в команду (фриланс). Стек: rest api, selenium, postman, pytest, java. Задачи: развитие продукта, код-ревью, работа в команде.",
+   "kk": "Командаға qa-инженер іздейміз (фриланс). Стек: rest api, selenium, postman, pytest, java. Міндеттер: өнімді дамыту, код-ревью, командада жұмыс.",
+   "en": "We're looking for a QA engineer (фриланс). Stack: rest api, selenium, postman, pytest, java. You'll grow the product, do code reviews and work in a team."
+  },
+  "created": 1795215200,
+  "synthetic": true
+ },
+ {
+  "id": "v034",
+  "owner": "p082",
+  "role": "devops",
+  "level": "middle",
+  "stack": [
+   "grafana",
+   "linux",
+   "terraform",
+   "docker"
+  ],
+  "format": "hybrid",
+  "city": "Алматы",
+  "salary_from": 1100000,
+  "company": "фриланс",
+  "description": {
+   "ru": "Ищем devops-инженер в команду (фриланс). Стек: grafana, linux, terraform, docker. Задачи: развитие продукта, код-ревью, работа в команде.",
+   "kk": "Командаға devops-инженер іздейміз (фриланс). Стек: grafana, linux, terraform, docker. Міндеттер: өнімді дамыту, код-ревью, командада жұмыс.",
+   "en": "We're looking for a DevOps engineer (фриланс). Stack: grafana, linux, terraform, docker. You'll grow the product, do code reviews and work in a team."
+  },
+  "created": 1795218800,
+  "synthetic": true
+ },
+ {
+  "id": "v035",
+  "owner": "p088",
+  "role": "design",
+  "level": "middle",
+  "stack": [
+   "user research",
+   "design systems",
+   "figma",
+   "ui/ux"
+  ],
+  "format": "hybrid",
+  "city": "Алматы",
+  "salary_from": 900000,
+  "company": "университет",
+  "description": {
+   "ru": "Ищем ui/ux-дизайнер в команду (университет). Стек: user research, design systems, figma, ui/ux. Задачи: развитие продукта, код-ревью, работа в команде.",
+   "kk": "Командаға ui/ux-дизайнер іздейміз (университет). Стек: user research, design systems, figma, ui/ux. Міндеттер: өнімді дамыту, код-ревью, командада жұмыс.",
+   "en": "We're looking for a UI/UX designer (университет). Stack: user research, design systems, figma, ui/ux. You'll grow the product, do code reviews and work in a team."
+  },
+  "created": 1795222400,
+  "synthetic": true
+ },
+ {
+  "id": "v036",
+  "owner": "p088",
+  "role": "frontend",
+  "level": "middle",
+  "stack": [
+   "next.js",
+   "react",
+   "vue"
+  ],
+  "format": "hybrid",
+  "city": "Алматы",
+  "salary_from": 1000000,
+  "company": "университет",
+  "description": {
+   "ru": "Ищем frontend-разработчик в команду (университет). Стек: next.js, react, vue. Задачи: развитие продукта, код-ревью, работа в команде.",
+   "kk": "Командаға frontend-әзірлеуші іздейміз (университет). Стек: next.js, react, vue. Міндеттер: өнімді дамыту, код-ревью, командада жұмыс.",
+   "en": "We're looking for a Frontend developer (университет). Stack: next.js, react, vue. You'll grow the product, do code reviews and work in a team."
+  },
+  "created": 1795226000,
+  "synthetic": true
+ },
+ {
+  "id": "v037",
+  "owner": "p089",
+  "role": "data_ml",
+  "level": "junior",
+  "stack": [
+   "pytorch",
+   "nlp",
+   "llm",
+   "tensorflow",
+   "computer vision"
+  ],
+  "format": "office",
+  "city": "Шымкент",
+  "salary_from": 400000,
+  "company": "банк",
+  "description": {
+   "ru": "Ищем ml / data scientist в команду (банк). Стек: pytorch, nlp, llm, tensorflow, computer vision. Задачи: развитие продукта, код-ревью, работа в команде.",
+   "kk": "Командаға ml / data scientist іздейміз (банк). Стек: pytorch, nlp, llm, tensorflow, computer vision. Міндеттер: өнімді дамыту, код-ревью, командада жұмыс.",
+   "en": "We're looking for a ML / Data Scientist (банк). Stack: pytorch, nlp, llm, tensorflow, computer vision. You'll grow the product, do code reviews and work in a team."
+  },
+  "created": 1795229600,
+  "synthetic": true
+ },
+ {
+  "id": "v038",
+  "owner": "p089",
+  "role": "mobile",
+  "level": "middle",
+  "stack": [
+   "kotlin",
+   "react native",
+   "swift"
+  ],
+  "format": "office",
+  "city": "Алматы",
+  "salary_from": 700000,
+  "company": "банк",
+  "description": {
+   "ru": "Ищем mobile-разработчик в команду (банк). Стек: kotlin, react native, swift. Задачи: развитие продукта, код-ревью, работа в команде.",
+   "kk": "Командаға mobile-әзірлеуші іздейміз (банк). Стек: kotlin, react native, swift. Міндеттер: өнімді дамыту, код-ревью, командада жұмыс.",
+   "en": "We're looking for a Mobile developer (банк). Stack: kotlin, react native, swift. You'll grow the product, do code reviews and work in a team."
+  },
+  "created": 1795233200,
+  "synthetic": true
+ },
+ {
+  "id": "v039",
+  "owner": "p090",
+  "role": "devops",
+  "level": "senior",
+  "stack": [
+   "linux",
+   "aws",
+   "docker",
+   "grafana"
+  ],
+  "format": "hybrid",
+  "city": "Астана",
+  "salary_from": 2400000,
+  "company": "e-commerce платформа",
+  "description": {
+   "ru": "Ищем devops-инженер в команду (e-commerce платформа). Стек: linux, aws, docker, grafana. Задачи: развитие продукта, код-ревью, работа в команде.",
+   "kk": "Командаға devops-инженер іздейміз (e-commerce платформа). Стек: linux, aws, docker, grafana. Міндеттер: өнімді дамыту, код-ревью, командада жұмыс.",
+   "en": "We're looking for a DevOps engineer (e-commerce платформа). Stack: linux, aws, docker, grafana. You'll grow the product, do code reviews and work in a team."
+  },
+  "created": 1795236800,
+  "synthetic": true
+ },
+ {
+  "id": "v040",
+  "owner": "p090",
+  "role": "security",
+  "level": "middle",
+  "stack": [
+   "owasp",
+   "pentest",
+   "siem",
+   "network security"
+  ],
+  "format": "hybrid",
+  "city": "Астана",
+  "salary_from": 650000,
+  "company": "e-commerce платформа",
+  "description": {
+   "ru": "Ищем специалист по иб в команду (e-commerce платформа). Стек: owasp, pentest, siem, network security. Задачи: развитие продукта, код-ревью, работа в команде.",
+   "kk": "Командаға ақпараттық қауіпсіздік маманы іздейміз (e-commerce платформа). Стек: owasp, pentest, siem, network security. Міндеттер: өнімді дамыту, код-ревью, командада жұмыс.",
+   "en": "We're looking for a Security engineer (e-commerce платформа). Stack: owasp, pentest, siem, network security. You'll grow the product, do code reviews and work in a team."
+  },
+  "created": 1795240400,
+  "synthetic": true
+ },
+ {
+  "id": "v041",
+  "owner": "p093",
+  "role": "mobile",
+  "level": "junior",
+  "stack": [
+   "dart",
+   "firebase",
+   "kotlin",
+   "swift",
+   "react native"
+  ],
+  "format": "hybrid",
+  "city": "Алматы",
+  "salary_from": 500000,
+  "company": "IT-интегратор",
+  "description": {
+   "ru": "Ищем mobile-разработчик в команду (IT-интегратор). Стек: dart, firebase, kotlin, swift, react native. Задачи: развитие продукта, код-ревью, работа в команде.",
+   "kk": "Командаға mobile-әзірлеуші іздейміз (IT-интегратор). Стек: dart, firebase, kotlin, swift, react native. Міндеттер: өнімді дамыту, код-ревью, командада жұмыс.",
+   "en": "We're looking for a Mobile developer (IT-интегратор). Stack: dart, firebase, kotlin, swift, react native. You'll grow the product, do code reviews and work in a team."
+  },
+  "created": 1795244000,
+  "synthetic": true
+ },
+ {
+  "id": "v042",
+  "owner": "p093",
+  "role": "backend",
+  "level": "junior",
+  "stack": [
+   "python",
+   "docker",
+   "java"
+  ],
+  "format": "remote",
+  "city": "Алматы",
+  "salary_from": 450000,
+  "company": "IT-интегратор",
+  "description": {
+   "ru": "Ищем backend-разработчик в команду (IT-интегратор). Стек: python, docker, java. Задачи: развитие продукта, код-ревью, работа в команде.",
+   "kk": "Командаға backend-әзірлеуші іздейміз (IT-интегратор). Стек: python, docker, java. Міндеттер: өнімді дамыту, код-ревью, командада жұмыс.",
+   "en": "We're looking for a Backend developer (IT-интегратор). Stack: python, docker, java. You'll grow the product, do code reviews and work in a team."
+  },
+  "created": 1795247600,
+  "synthetic": true
+ },
+ {
+  "id": "v043",
+  "owner": "p097",
+  "role": "frontend",
+  "level": "senior",
+  "stack": [
+   "vue",
+   "next.js",
+   "react"
+  ],
+  "format": "hybrid",
+  "city": "Алматы",
+  "salary_from": 2000000,
+  "company": "продуктовый стартап",
+  "description": {
+   "ru": "Ищем frontend-разработчик в команду (продуктовый стартап). Стек: vue, next.js, react. Задачи: развитие продукта, код-ревью, работа в команде.",
+   "kk": "Командаға frontend-әзірлеуші іздейміз (продуктовый стартап). Стек: vue, next.js, react. Міндеттер: өнімді дамыту, код-ревью, командада жұмыс.",
+   "en": "We're looking for a Frontend developer (продуктовый стартап). Stack: vue, next.js, react. You'll grow the product, do code reviews and work in a team."
+  },
+  "created": 1795251200,
+  "synthetic": true
+ },
+ {
+  "id": "v044",
+  "owner": "p097",
+  "role": "design",
+  "level": "junior",
+  "stack": [
+   "design systems",
+   "ui/ux",
+   "figma",
+   "prototyping",
+   "user research"
+  ],
+  "format": "remote",
+  "city": "Алматы",
+  "salary_from": 400000,
+  "company": "продуктовый стартап",
+  "description": {
+   "ru": "Ищем ui/ux-дизайнер в команду (продуктовый стартап). Стек: design systems, ui/ux, figma, prototyping, user research. Задачи: развитие продукта, код-ревью, работа в команде.",
+   "kk": "Командаға ui/ux-дизайнер іздейміз (продуктовый стартап). Стек: design systems, ui/ux, figma, prototyping, user research. Міндеттер: өнімді дамыту, код-ревью, командада жұмыс.",
+   "en": "We're looking for a UI/UX designer (продуктовый стартап). Stack: design systems, ui/ux, figma, prototyping, user research. You'll grow the product, do code reviews and work in a team."
+  },
+  "created": 1795254800,
+  "synthetic": true
+ },
+ {
+  "id": "v045",
+  "owner": "p099",
+  "role": "qa",
+  "level": "senior",
+  "stack": [
+   "selenium",
+   "java",
+   "pytest",
+   "playwright",
+   "postman"
+  ],
+  "format": "hybrid",
+  "city": "Астана",
+  "salary_from": 2300000,
+  "company": "университет",
+  "description": {
+   "ru": "Ищем qa-инженер в команду (университет). Стек: selenium, java, pytest, playwright, postman. Задачи: развитие продукта, код-ревью, работа в команде.",
+   "kk": "Командаға qa-инженер іздейміз (университет). Стек: selenium, java, pytest, playwright, postman. Міндеттер: өнімді дамыту, код-ревью, командада жұмыс.",
+   "en": "We're looking for a QA engineer (университет). Stack: selenium, java, pytest, playwright, postman. You'll grow the product, do code reviews and work in a team."
+  },
+  "created": 1795258400,
+  "synthetic": true
+ },
+ {
+  "id": "v046",
+  "owner": "p099",
+  "role": "devops",
+  "level": "junior",
+  "stack": [
+   "ansible",
+   "terraform",
+   "linux",
+   "grafana",
+   "ci/cd"
+  ],
+  "format": "hybrid",
+  "city": "Алматы",
+  "salary_from": 500000,
+  "company": "университет",
+  "description": {
+   "ru": "Ищем devops-инженер в команду (университет). Стек: ansible, terraform, linux, grafana, ci/cd. Задачи: развитие продукта, код-ревью, работа в команде.",
+   "kk": "Командаға devops-инженер іздейміз (университет). Стек: ansible, terraform, linux, grafana, ci/cd. Міндеттер: өнімді дамыту, код-ревью, командада жұмыс.",
+   "en": "We're looking for a DevOps engineer (университет). Stack: ansible, terraform, linux, grafana, ci/cd. You'll grow the product, do code reviews and work in a team."
+  },
+  "created": 1795262000,
+  "synthetic": true
+ },
+ {
+  "id": "v047",
+  "owner": "p123",
+  "role": "data_ml",
+  "level": "middle",
+  "stack": [
+   "pytorch",
+   "computer vision",
+   "pandas"
+  ],
+  "format": "remote",
+  "city": "Шымкент",
+  "salary_from": 800000,
+  "company": "IT-интегратор",
+  "description": {
+   "ru": "Ищем ml / data scientist в команду (IT-интегратор). Стек: pytorch, computer vision, pandas. Задачи: развитие продукта, код-ревью, работа в команде.",
+   "kk": "Командаға ml / data scientist іздейміз (IT-интегратор). Стек: pytorch, computer vision, pandas. Міндеттер: өнімді дамыту, код-ревью, командада жұмыс.",
+   "en": "We're looking for a ML / Data Scientist (IT-интегратор). Stack: pytorch, computer vision, pandas. You'll grow the product, do code reviews and work in a team."
+  },
+  "created": 1795265600,
+  "synthetic": true
+ },
+ {
+  "id": "v048",
+  "owner": "p123",
+  "role": "analyst",
+  "level": "middle",
+  "stack": [
+   "power bi",
+   "pandas",
+   "a/b testing",
+   "python"
+  ],
+  "format": "office",
+  "city": "Алматы",
+  "salary_from": 600000,
+  "company": "IT-интегратор",
+  "description": {
+   "ru": "Ищем аналитик данных в команду (IT-интегратор). Стек: power bi, pandas, a/b testing, python. Задачи: развитие продукта, код-ревью, работа в команде.",
+   "kk": "Командаға дерек талдаушы іздейміз (IT-интегратор). Стек: power bi, pandas, a/b testing, python. Міндеттер: өнімді дамыту, код-ревью, командада жұмыс.",
+   "en": "We're looking for a Data analyst (IT-интегратор). Stack: power bi, pandas, a/b testing, python. You'll grow the product, do code reviews and work in a team."
+  },
+  "created": 1795269200,
+  "synthetic": true
+ },
+ {
+  "id": "v049",
+  "owner": "p141",
+  "role": "frontend",
+  "level": "senior",
+  "stack": [
+   "javascript",
+   "vue",
+   "figma"
+  ],
+  "format": "hybrid",
+  "city": "Астана",
+  "salary_from": 1500000,
+  "company": "AgriTech-стартап",
+  "description": {
+   "ru": "Ищем frontend-разработчик в команду (AgriTech-стартап). Стек: javascript, vue, figma. Задачи: развитие продукта, код-ревью, работа в команде.",
+   "kk": "Командаға frontend-әзірлеуші іздейміз (AgriTech-стартап). Стек: javascript, vue, figma. Міндеттер: өнімді дамыту, код-ревью, командада жұмыс.",
+   "en": "We're looking for a Frontend developer (AgriTech-стартап). Stack: javascript, vue, figma. You'll grow the product, do code reviews and work in a team."
+  },
+  "created": 1795272800,
+  "synthetic": true
+ },
+ {
+  "id": "v050",
+  "owner": "p141",
+  "role": "mobile",
+  "level": "senior",
+  "stack": [
+   "dart",
+   "swift",
+   "flutter",
+   "firebase"
+  ],
+  "format": "office",
+  "city": "Шымкент",
+  "salary_from": 1550000,
+  "company": "AgriTech-стартап",
+  "description": {
+   "ru": "Ищем mobile-разработчик в команду (AgriTech-стартап). Стек: dart, swift, flutter, firebase. Задачи: развитие продукта, код-ревью, работа в команде.",
+   "kk": "Командаға mobile-әзірлеуші іздейміз (AgriTech-стартап). Стек: dart, swift, flutter, firebase. Міндеттер: өнімді дамыту, код-ревью, командада жұмыс.",
+   "en": "We're looking for a Mobile developer (AgriTech-стартап). Stack: dart, swift, flutter, firebase. You'll grow the product, do code reviews and work in a team."
+  },
+  "created": 1795276400,
+  "synthetic": true
+ },
+ {
+  "id": "v051",
+  "owner": "p146",
+  "role": "frontend",
+  "level": "middle",
+  "stack": [
+   "figma",
+   "typescript",
+   "vue",
+   "css",
+   "next.js"
+  ],
+  "format": "hybrid",
+  "city": "Алматы",
+  "salary_from": 700000,
+  "company": "университет",
+  "description": {
+   "ru": "Ищем frontend-разработчик в команду (университет). Стек: figma, typescript, vue, css, next.js. Задачи: развитие продукта, код-ревью, работа в команде.",
+   "kk": "Командаға frontend-әзірлеуші іздейміз (университет). Стек: figma, typescript, vue, css, next.js. Міндеттер: өнімді дамыту, код-ревью, командада жұмыс.",
+   "en": "We're looking for a Frontend developer (университет). Stack: figma, typescript, vue, css, next.js. You'll grow the product, do code reviews and work in a team."
+  },
+  "created": 1795280000,
+  "synthetic": true
+ },
+ {
+  "id": "v052",
+  "owner": "p146",
+  "role": "analyst",
+  "level": "junior",
+  "stack": [
+   "python",
+   "sql",
+   "power bi"
+  ],
+  "format": "remote",
+  "city": "Алматы",
+  "salary_from": 450000,
+  "company": "университет",
+  "description": {
+   "ru": "Ищем аналитик данных в команду (университет). Стек: python, sql, power bi. Задачи: развитие продукта, код-ревью, работа в команде.",
+   "kk": "Командаға дерек талдаушы іздейміз (университет). Стек: python, sql, power bi. Міндеттер: өнімді дамыту, код-ревью, командада жұмыс.",
+   "en": "We're looking for a Data analyst (университет). Stack: python, sql, power bi. You'll grow the product, do code reviews and work in a team."
+  },
+  "created": 1795283600,
+  "synthetic": true
+ },
+ {
+  "id": "v053",
+  "owner": "p176",
+  "role": "security",
+  "level": "middle",
+  "stack": [
+   "pentest",
+   "network security",
+   "siem",
+   "python",
+   "owasp"
+  ],
+  "format": "hybrid",
+  "city": "Алматы",
+  "salary_from": 1050000,
+  "company": "университет",
+  "description": {
+   "ru": "Ищем специалист по иб в команду (университет). Стек: pentest, network security, siem, python, owasp. Задачи: развитие продукта, код-ревью, работа в команде.",
+   "kk": "Командаға ақпараттық қауіпсіздік маманы іздейміз (университет). Стек: pentest, network security, siem, python, owasp. Міндеттер: өнімді дамыту, код-ревью, командада жұмыс.",
+   "en": "We're looking for a Security engineer (университет). Stack: pentest, network security, siem, python, owasp. You'll grow the product, do code reviews and work in a team."
+  },
+  "created": 1795287200,
+  "synthetic": true
+ },
+ {
+  "id": "v054",
+  "owner": "p176",
+  "role": "devops",
+  "level": "junior",
+  "stack": [
+   "ansible",
+   "grafana",
+   "kubernetes",
+   "docker"
+  ],
+  "format": "remote",
+  "city": "Шымкент",
+  "salary_from": 350000,
+  "company": "университет",
+  "description": {
+   "ru": "Ищем devops-инженер в команду (университет). Стек: ansible, grafana, kubernetes, docker. Задачи: развитие продукта, код-ревью, работа в команде.",
+   "kk": "Командаға devops-инженер іздейміз (университет). Стек: ansible, grafana, kubernetes, docker. Міндеттер: өнімді дамыту, код-ревью, командада жұмыс.",
+   "en": "We're looking for a DevOps engineer (университет). Stack: ansible, grafana, kubernetes, docker. You'll grow the product, do code reviews and work in a team."
+  },
+  "created": 1795290800,
+  "synthetic": true
+ },
+ {
+  "id": "v055",
+  "owner": "p177",
+  "role": "security",
+  "level": "junior",
+  "stack": [
+   "network security",
+   "python",
+   "owasp",
+   "pentest",
+   "siem"
+  ],
+  "format": "remote",
+  "city": "Алматы",
+  "salary_from": 400000,
+  "company": "банк",
+  "description": {
+   "ru": "Ищем специалист по иб в команду (банк). Стек: network security, python, owasp, pentest, siem. Задачи: развитие продукта, код-ревью, работа в команде.",
+   "kk": "Командаға ақпараттық қауіпсіздік маманы іздейміз (банк). Стек: network security, python, owasp, pentest, siem. Міндеттер: өнімді дамыту, код-ревью, командада жұмыс.",
+   "en": "We're looking for a Security engineer (банк). Stack: network security, python, owasp, pentest, siem. You'll grow the product, do code reviews and work in a team."
+  },
+  "created": 1795294400,
+  "synthetic": true
+ },
+ {
+  "id": "v056",
+  "owner": "p177",
+  "role": "devops",
+  "level": "junior",
+  "stack": [
+   "ci/cd",
+   "linux",
+   "aws",
+   "kubernetes"
+  ],
+  "format": "hybrid",
+  "city": "Астана",
+  "salary_from": 300000,
+  "company": "банк",
+  "description": {
+   "ru": "Ищем devops-инженер в команду (банк). Стек: ci/cd, linux, aws, kubernetes. Задачи: развитие продукта, код-ревью, работа в команде.",
+   "kk": "Командаға devops-инженер іздейміз (банк). Стек: ci/cd, linux, aws, kubernetes. Міндеттер: өнімді дамыту, код-ревью, командада жұмыс.",
+   "en": "We're looking for a DevOps engineer (банк). Stack: ci/cd, linux, aws, kubernetes. You'll grow the product, do code reviews and work in a team."
+  },
+  "created": 1795298000,
+  "synthetic": true
+ },
+ {
+  "id": "v057",
+  "owner": "p180",
+  "role": "gamedev",
+  "level": "junior",
+  "stack": [
+   "unity",
+   "c++",
+   "unreal engine",
+   "c#",
+   "blender"
+  ],
+  "format": "hybrid",
+  "city": "Алматы",
+  "salary_from": 450000,
+  "company": "telecom-оператор",
+  "description": {
+   "ru": "Ищем gamedev-разработчик в команду (telecom-оператор). Стек: unity, c++, unreal engine, c#, blender. Задачи: развитие продукта, код-ревью, работа в команде.",
+   "kk": "Командаға gamedev-әзірлеуші іздейміз (telecom-оператор). Стек: unity, c++, unreal engine, c#, blender. Міндеттер: өнімді дамыту, код-ревью, командада жұмыс.",
+   "en": "We're looking for a Game developer (telecom-оператор). Stack: unity, c++, unreal engine, c#, blender. You'll grow the product, do code reviews and work in a team."
+  },
+  "created": 1795301600,
+  "synthetic": true
+ },
+ {
+  "id": "v058",
+  "owner": "p180",
+  "role": "frontend",
+  "level": "middle",
+  "stack": [
+   "css",
+   "react",
+   "typescript"
+  ],
+  "format": "hybrid",
+  "city": "Астана",
+  "salary_from": 1100000,
+  "company": "telecom-оператор",
+  "description": {
+   "ru": "Ищем frontend-разработчик в команду (telecom-оператор). Стек: css, react, typescript. Задачи: развитие продукта, код-ревью, работа в команде.",
+   "kk": "Командаға frontend-әзірлеуші іздейміз (telecom-оператор). Стек: css, react, typescript. Міндеттер: өнімді дамыту, код-ревью, командада жұмыс.",
+   "en": "We're looking for a Frontend developer (telecom-оператор). Stack: css, react, typescript. You'll grow the product, do code reviews and work in a team."
+  },
+  "created": 1795305200,
+  "synthetic": true
+ },
+ {
+  "id": "v059",
+  "owner": "p181",
+  "role": "gamedev",
+  "level": "senior",
+  "stack": [
+   "c++",
+   "unity",
+   "blender",
+   "unreal engine"
+  ],
+  "format": "office",
+  "city": "Астана",
+  "salary_from": 1350000,
+  "company": "госсектор",
+  "description": {
+   "ru": "Ищем gamedev-разработчик в команду (госсектор). Стек: c++, unity, blender, unreal engine. Задачи: развитие продукта, код-ревью, работа в команде.",
+   "kk": "Командаға gamedev-әзірлеуші іздейміз (госсектор). Стек: c++, unity, blender, unreal engine. Міндеттер: өнімді дамыту, код-ревью, командада жұмыс.",
+   "en": "We're looking for a Game developer (госсектор). Stack: c++, unity, blender, unreal engine. You'll grow the product, do code reviews and work in a team."
+  },
+  "created": 1795308800,
+  "synthetic": true
+ },
+ {
+  "id": "v060",
+  "owner": "p181",
+  "role": "frontend",
+  "level": "middle",
+  "stack": [
+   "typescript",
+   "vue",
+   "react",
+   "next.js"
+  ],
+  "format": "hybrid",
+  "city": "Алматы",
+  "salary_from": 700000,
+  "company": "госсектор",
+  "description": {
+   "ru": "Ищем frontend-разработчик в команду (госсектор). Стек: typescript, vue, react, next.js. Задачи: развитие продукта, код-ревью, работа в команде.",
+   "kk": "Командаға frontend-әзірлеуші іздейміз (госсектор). Стек: typescript, vue, react, next.js. Міндеттер: өнімді дамыту, код-ревью, командада жұмыс.",
+   "en": "We're looking for a Frontend developer (госсектор). Stack: typescript, vue, react, next.js. You'll grow the product, do code reviews and work in a team."
+  },
+  "created": 1795312400,
+  "synthetic": true
+ },
+ {
+  "id": "v061",
+  "owner": "p182",
+  "role": "gamedev",
+  "level": "junior",
+  "stack": [
+   "unity",
+   "unreal engine",
+   "c++",
+   "blender"
+  ],
+  "format": "hybrid",
+  "city": "Алматы",
+  "salary_from": 450000,
+  "company": "госсектор",
+  "description": {
+   "ru": "Ищем gamedev-разработчик в команду (госсектор). Стек: unity, unreal engine, c++, blender. Задачи: развитие продукта, код-ревью, работа в команде.",
+   "kk": "Командаға gamedev-әзірлеуші іздейміз (госсектор). Стек: unity, unreal engine, c++, blender. Міндеттер: өнімді дамыту, код-ревью, командада жұмыс.",
+   "en": "We're looking for a Game developer (госсектор). Stack: unity, unreal engine, c++, blender. You'll grow the product, do code reviews and work in a team."
+  },
+  "created": 1795316000,
+  "synthetic": true
+ },
+ {
+  "id": "v062",
+  "owner": "p182",
+  "role": "backend",
+  "level": "middle",
+  "stack": [
+   "postgresql",
+   "rest api",
+   "python"
+  ],
+  "format": "hybrid",
+  "city": "Алматы",
+  "salary_from": 1050000,
+  "company": "госсектор",
+  "description": {
+   "ru": "Ищем backend-разработчик в команду (госсектор). Стек: postgresql, rest api, python. Задачи: развитие продукта, код-ревью, работа в команде.",
+   "kk": "Командаға backend-әзірлеуші іздейміз (госсектор). Стек: postgresql, rest api, python. Міндеттер: өнімді дамыту, код-ревью, командада жұмыс.",
+   "en": "We're looking for a Backend developer (госсектор). Stack: postgresql, rest api, python. You'll grow the product, do code reviews and work in a team."
+  },
+  "created": 1795319600,
+  "synthetic": true
+ },
+ {
+  "id": "v063",
+  "owner": "p019",
+  "role": "gamedev",
+  "level": "junior",
+  "stack": [
+   "c++",
+   "c#",
+   "unreal engine"
+  ],
+  "format": "remote",
+  "city": "Шымкент",
+  "salary_from": 500000,
+  "company": "банк",
+  "description": {
+   "ru": "Ищем gamedev-разработчик в команду (банк). Стек: c++, c#, unreal engine. Задачи: развитие продукта, код-ревью, работа в команде.",
+   "kk": "Командаға gamedev-әзірлеуші іздейміз (банк). Стек: c++, c#, unreal engine. Міндеттер: өнімді дамыту, код-ревью, командада жұмыс.",
+   "en": "We're looking for a Game developer (банк). Stack: c++, c#, unreal engine. You'll grow the product, do code reviews and work in a team."
+  },
+  "created": 1795323200,
+  "synthetic": true
+ },
+ {
+  "id": "v064",
+  "owner": "p023",
+  "role": "frontend",
+  "level": "junior",
+  "stack": [
+   "javascript",
+   "next.js",
+   "html",
+   "react"
+  ],
+  "format": "office",
+  "city": "Алматы",
+  "salary_from": 300000,
+  "company": "логистическая компания",
+  "description": {
+   "ru": "Ищем frontend-разработчик в команду (логистическая компания). Стек: javascript, next.js, html, react. Задачи: развитие продукта, код-ревью, работа в команде.",
+   "kk": "Командаға frontend-әзірлеуші іздейміз (логистическая компания). Стек: javascript, next.js, html, react. Міндеттер: өнімді дамыту, код-ревью, командада жұмыс.",
+   "en": "We're looking for a Frontend developer (логистическая компания). Stack: javascript, next.js, html, react. You'll grow the product, do code reviews and work in a team."
+  },
+  "created": 1795326800,
+  "synthetic": true
+ },
+ {
+  "id": "v065",
+  "owner": "p009",
+  "role": "frontend",
+  "level": "junior",
+  "stack": [
+   "javascript",
+   "figma",
+   "vue",
+   "next.js"
+  ],
+  "format": "hybrid",
+  "city": "Астана",
+  "salary_from": 500000,
+  "company": "IT-интегратор",
+  "description": {
+   "ru": "Ищем frontend-разработчик в команду (IT-интегратор). Стек: javascript, figma, vue, next.js. Задачи: развитие продукта, код-ревью, работа в команде.",
+   "kk": "Командаға frontend-әзірлеуші іздейміз (IT-интегратор). Стек: javascript, figma, vue, next.js. Міндеттер: өнімді дамыту, код-ревью, командада жұмыс.",
+   "en": "We're looking for a Frontend developer (IT-интегратор). Stack: javascript, figma, vue, next.js. You'll grow the product, do code reviews and work in a team."
+  },
+  "created": 1795330400,
+  "synthetic": true
+ },
+ {
+  "id": "v066",
+  "owner": "p123",
+  "role": "frontend",
+  "level": "junior",
+  "stack": [
+   "javascript",
+   "figma",
+   "typescript",
+   "next.js"
+  ],
+  "format": "hybrid",
+  "city": "Алматы",
+  "salary_from": 450000,
+  "company": "IT-интегратор",
+  "description": {
+   "ru": "Ищем frontend-разработчик в команду (IT-интегратор). Стек: javascript, figma, typescript, next.js. Задачи: развитие продукта, код-ревью, работа в команде.",
+   "kk": "Командаға frontend-әзірлеуші іздейміз (IT-интегратор). Стек: javascript, figma, typescript, next.js. Міндеттер: өнімді дамыту, код-ревью, командада жұмыс.",
+   "en": "We're looking for a Frontend developer (IT-интегратор). Stack: javascript, figma, typescript, next.js. You'll grow the product, do code reviews and work in a team."
+  },
+  "created": 1795334000,
+  "synthetic": true
+ },
+ {
+  "id": "v067",
+  "owner": "p047",
+  "role": "analyst",
+  "level": "junior",
+  "stack": [
+   "sql",
+   "a/b testing",
+   "python",
+   "pandas",
+   "excel"
+  ],
+  "format": "hybrid",
+  "city": "Алматы",
+  "salary_from": 500000,
+  "company": "финтех-компания",
+  "description": {
+   "ru": "Ищем аналитик данных в команду (финтех-компания). Стек: sql, a/b testing, python, pandas, excel. Задачи: развитие продукта, код-ревью, работа в команде.",
+   "kk": "Командаға дерек талдаушы іздейміз (финтех-компания). Стек: sql, a/b testing, python, pandas, excel. Міндеттер: өнімді дамыту, код-ревью, командада жұмыс.",
+   "en": "We're looking for a Data analyst (финтех-компания). Stack: sql, a/b testing, python, pandas, excel. You'll grow the product, do code reviews and work in a team."
+  },
+  "created": 1795337600,
+  "synthetic": true
+ },
+ {
+  "id": "v068",
+  "owner": "p146",
+  "role": "product",
+  "level": "junior",
+  "stack": [
+   "sql",
+   "a/b testing",
+   "customer development"
+  ],
+  "format": "office",
+  "city": "Алматы",
+  "salary_from": 450000,
+  "company": "университет",
+  "description": {
+   "ru": "Ищем product / project manager в команду (университет). Стек: sql, a/b testing, customer development. Задачи: развитие продукта, код-ревью, работа в команде.",
+   "kk": "Командаға product / project менеджер іздейміз (университет). Стек: sql, a/b testing, customer development. Міндеттер: өнімді дамыту, код-ревью, командада жұмыс.",
+   "en": "We're looking for a Product / Project manager (университет). Stack: sql, a/b testing, customer development. You'll grow the product, do code reviews and work in a team."
+  },
+  "created": 1795341200,
+  "synthetic": true
+ },
+ {
+  "id": "v069",
+  "owner": "p176",
+  "role": "frontend",
+  "level": "junior",
+  "stack": [
+   "html",
+   "react",
+   "javascript",
+   "css"
+  ],
+  "format": "hybrid",
+  "city": "Алматы",
+  "salary_from": 400000,
+  "company": "университет",
+  "description": {
+   "ru": "Ищем frontend-разработчик в команду (университет). Стек: html, react, javascript, css. Задачи: развитие продукта, код-ревью, работа в команде.",
+   "kk": "Командаға frontend-әзірлеуші іздейміз (университет). Стек: html, react, javascript, css. Міндеттер: өнімді дамыту, код-ревью, командада жұмыс.",
+   "en": "We're looking for a Frontend developer (университет). Stack: html, react, javascript, css. You'll grow the product, do code reviews and work in a team."
+  },
+  "created": 1795344800,
+  "synthetic": true
+ },
+ {
+  "id": "v070",
+  "owner": "p180",
+  "role": "mobile",
+  "level": "junior",
+  "stack": [
+   "flutter",
+   "dart",
+   "kotlin",
+   "swift"
+  ],
+  "format": "remote",
+  "city": "Шымкент",
+  "salary_from": 400000,
+  "company": "telecom-оператор",
+  "description": {
+   "ru": "Ищем mobile-разработчик в команду (telecom-оператор). Стек: flutter, dart, kotlin, swift. Задачи: развитие продукта, код-ревью, работа в команде.",
+   "kk": "Командаға mobile-әзірлеуші іздейміз (telecom-оператор). Стек: flutter, dart, kotlin, swift. Міндеттер: өнімді дамыту, код-ревью, командада жұмыс.",
+   "en": "We're looking for a Mobile developer (telecom-оператор). Stack: flutter, dart, kotlin, swift. You'll grow the product, do code reviews and work in a team."
+  },
+  "created": 1795348400,
+  "synthetic": true
+ },
+ {
+  "id": "v071",
+  "owner": "p017",
+  "role": "qa",
+  "level": "junior",
+  "stack": [
+   "rest api",
+   "selenium"
+  ],
+  "format": "hybrid",
+  "city": "Алматы",
+  "salary_from": 450000,
+  "company": "GameDev-студия",
+  "description": {
+   "ru": "Ищем qa-инженер в команду (GameDev-студия). Стек: rest api, selenium. Задачи: развитие продукта, код-ревью, работа в команде.",
+   "kk": "Командаға qa-инженер іздейміз (GameDev-студия). Стек: rest api, selenium. Міндеттер: өнімді дамыту, код-ревью, командада жұмыс.",
+   "en": "We're looking for a QA engineer (GameDev-студия). Stack: rest api, selenium. You'll grow the product, do code reviews and work in a team."
+  },
+  "created": 1795352000,
+  "synthetic": true
+ },
+ {
+  "id": "v072",
+  "owner": "p019",
+  "role": "security",
+  "level": "junior",
+  "stack": [
+   "network security",
+   "siem",
+   "pentest",
+   "owasp"
+  ],
+  "format": "remote",
+  "city": "Алматы",
+  "salary_from": 400000,
+  "company": "банк",
+  "description": {
+   "ru": "Ищем специалист по иб в команду (банк). Стек: network security, siem, pentest, owasp. Задачи: развитие продукта, код-ревью, работа в команде.",
+   "kk": "Командаға ақпараттық қауіпсіздік маманы іздейміз (банк). Стек: network security, siem, pentest, owasp. Міндеттер: өнімді дамыту, код-ревью, командада жұмыс.",
+   "en": "We're looking for a Security engineer (банк). Stack: network security, siem, pentest, owasp. You'll grow the product, do code reviews and work in a team."
+  },
+  "created": 1795355600,
+  "synthetic": true
+ }
+]
